@@ -8,7 +8,7 @@
 
 ## Stanford MOOC on Writing in the Sciences
 
-This [writing checklist](/manual/guides/writing/checklist) is mostly from advice in this  [massively open online course](https://online.stanford.edu/course/writing-sciences-self-paced-spring-2016). You can take it yourself, for free, at your own pace.
+This [writing checklist](/manual/guides/writing/checklist) is mostly from advice in this  [massively open online course](https://www.coursera.org/learn/sciwrite). You can take it yourself, for free, at your own pace.
 
 ## Checklist
 
