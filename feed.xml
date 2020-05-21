@@ -1,30 +1,357 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>ARFC</title>
+    <description>Website for the Advanced Reactors and Fuel Cycles group</description>
+    <link>http://arfc.github.io/</link>
+    <atom:link href="http://arfc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 14 May 2020 19:16:48 -0500</pubDate>
+    <lastBuildDate>Thu, 14 May 2020 19:16:48 -0500</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Two ARFC Graduate Students Recognized with ANS Scholarships</title>
+        <description>&lt;p&gt;Two ARFC graduate students, &lt;strong&gt;Andrei Rykhlevskii&lt;/strong&gt; and &lt;strong&gt;Anshuman Chaube&lt;/strong&gt; were 
+recognized this year by the American Nuclear Society at the national level with 
+the &lt;strong&gt;2018 John and Muriel Landis Scholarship.&lt;/strong&gt; This award, given by the ANS 
+NEED Committee, consists of a monetary award, a certificate, and placement in 
+the online archive of recipients on the &lt;a href=&quot;http://www.ans.org/honors/scholarships/recipients/&quot;&gt;ANS honors and awards 
+website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This award recognizes students with exceptional potential in nuclear science and 
+engineering who also pursue graduate school despite greater than average 
+constraints. We applaud the committee’s selection of these two students. They 
+each have chosen to pursue their graduate degrees in the face of all challenges 
+presented to them. They each hold extraordinary promise as future nuclear 
+engineering researchers.&lt;/p&gt;
+
+&lt;p&gt;Andrei joined ARFC in Fall 2016, and has made significant achievements in 
+graduate research. He has successfully passed his qualifying exam and this 
+semester he completed his MS degree. We are thrilled that he intends to 
+continue toward his PhD in nuclear engineering. Andrei’s research work focuses 
+on high performance multi-physics modeling and simulation and fuel cycle 
+analysis of the molten salt breeder reactor.&lt;/p&gt;
+
+&lt;p&gt;Ansh joined ARFC in Fall 2017 and is already working toward two compelling 
+projects. First, he is building a computational model of energy generation and 
+consumption in Japan and is working toward dynamic transition analyses of a 
+reduced carbon future. This work is supported as part of the I2CNER 
+collaboration.  Additionally, Ansh has begun neutronics analysis in support of 
+future multi-physics simulations of the Transatomic Power Reactor design.&lt;/p&gt;
+
+&lt;p&gt;ARFC is lucky to have an accomplished group of students and we are particularly 
+delighted to congratulate Andrei and Ansh on this award. It recognizes 
+something of great importance to our mission : the humanity and dedication 
+required to pursue an advanced degree in nuclear engineering.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 10 May 2018 15:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2018/05/10/ansh-andrei-landis/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2018/05/10/ansh-andrei-landis/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Gyu Tae Park Recognized for Outstanding Undergraduate Research</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/people/parkg.jpg&quot; alt=&quot;Gyu Tae Park&quot; class=&quot;img-responsive&quot; style=&quot;width: 200px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ARFC undergraduate student, &lt;strong&gt;Gyu Tae Park&lt;/strong&gt;, Jack for short, was recognized this 
+month with the &lt;strong&gt;2018 Nuclear, Plasma, and Radiological Engineering Outstanding 
+Undergraduate Research Award.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gyu Tae accepted the award at the NPRE Department 
+Honors and Awards Banquet on April 19th.
+This recognition consists of a monetary award, a certificate, and a 
+listing on a plaque that is permanently displayed in Talbot Laboratory.&lt;/p&gt;
+
+&lt;p&gt;In Fall 2016, Gyu Tae joined the group as an undergraduate researcher in ARFC. 
+This semester he is completing his undergraduate degree. Upon graduation, he 
+will return to South Korea to complete his military obligation. We hope he 
+will return to Illinois some time in the future!&lt;/p&gt;
+
+&lt;p&gt;Gyu Tae is being recognized for his significant achievements in research as an 
+undergraduate. In particular, he led a project to incorporate geospatial 
+information into the Cyclus nuclear fuel cycle simulator. This work resulted in 
+analytical mapping capabilities which will be very valuable in years to come.&lt;br /&gt;
+Additionally, Gyu Tae collaborated with other students in incorporating a 
+wealth of data from the IAEA PRIS database into formats appropriate for use in 
+the Cyclus simulator.&lt;/p&gt;
+
+&lt;p&gt;ARFC is lucky to have an accomplished group of students. We especially congratulate 
+Gyu Tae on this award as it recognizes a core value of our research group: 
+excellence in scholarship.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Apr 2018 15:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2018/04/20/park-ugrad-award/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2018/04/20/park-ugrad-award/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Bae Presents Poster at GLOBAL 2017</title>
+        <description>&lt;p&gt;ARFC graduate student, &lt;strong&gt;Jin Whan Bae&lt;/strong&gt;, Teddy for short, travelled to Seoul, 
+South Korea in September to present a poster at the &lt;a href=&quot;http://www.global2017.org/&quot;&gt;GLOBAL 2017 Nuclear Fuel 
+cycle Conference.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;His poster, titled “Current Status of Predictive Transition Capability in Fuel 
+Cycle Simulation,” was accompanied by a conference paper of the same name. It 
+established the state of the art of predictive fuel cycle facility deployment 
+in exising nuclear fuel cycle simulators.&lt;/p&gt;
+
+&lt;p&gt;Bae said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Thanks to ARFC, I was able to network with professionals and academics
+worldwide in my field. I think the experience and things I learned in the
+conference will help me greatly in my research and my career.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pres/bae-global-2017.jpg&quot; alt=&quot;bae-global-2017.jpg&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 02 Oct 2017 15:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2017/10/02/bae-global/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2017/10/02/bae-global/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Andrei Rykhlevskii Recognized with ANS Scholarship</title>
+        <description>&lt;p&gt;Second year ARFC graduate student, &lt;strong&gt;Andrei Rykhlevskii&lt;/strong&gt;, was recognized this year by the 
+American Nuclear Society at the national level with a &lt;strong&gt;2017 John and Muriel 
+Landis Scholarship.&lt;/strong&gt; This award, given by the ANS NEED Committee,
+consists of a monetary award, a certificate, and placement in 
+the online archive of recipients on the &lt;a href=&quot;http://www.ans.org/honors/scholarships/recipients/&quot;&gt;ANS honors and awards 
+website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This award recognizes students with exceptional potential in nuclear science 
+and engineering who also pursue graduate school despite greater than average 
+financial constraints. We applaud the committee’s selection of Andrei, who is 
+simultaneously an exceptionally promising graduate student, a husband, and a 
+father of two.&lt;/p&gt;
+
+&lt;p&gt;Andrei joined ARFC in Fall 2016, and has already made significant achievements 
+in graduate research.  In particular, Andrei has completed a full 
+core neutronic model of the Molten Salt Breeder Reactor with unprecedented 
+geometric detail. Additionally, he conducted an accompanying online fuel 
+reprocessing analysis for that reactor.  For this work, Andrei consulted 
+technically with Prof. Huff as well as the larger Serpent 2 neutronics 
+simulation community. His dedication has resulted in a strong foundation for 
+future multi-physics and fuel cycle analysis of molten salt breeder
+reactor designs more broadly. This work culminated in two conference paper 
+submissions to the 2017 American Nuclear Society Winter Meeting.&lt;/p&gt;
+
+&lt;p&gt;ARFC is lucky to have an accomplished group of students and we are particularly 
+delighted to congratulate Andrei on this award. It recognizes something of 
+great importance to our mission : the humanity and dedication required to 
+pursue an advanced degree in nuclear engineering.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 23 Aug 2017 15:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2017/08/23/andrei-landis/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2017/08/23/andrei-landis/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Jin Whan Bae Recognized for Outstanding Undergraduate Research</title>
+        <description>&lt;p&gt;ARFC graduate student, &lt;strong&gt;Jin Whan Bae&lt;/strong&gt;, Teddy for short, will be recognized this 
+month with the &lt;strong&gt;2017 Nuclear, Plasma, and Radiological Engineering Outstanding 
+Undergraduate Research Award.&lt;/strong&gt;  Teddy has been invited to attend the Department 
+Honors and Awards Banquet on April 13th, where he will formally receive his 
+award.  This recognition consists of a monetary award, a certificate, and a 
+listing on a plaque that is permanently displayed in Talbot Laboratory.&lt;/p&gt;
+
+&lt;p&gt;In Fall 2016, Teddy was an undergraduate researcher in ARFC. This semester he
+is completing his undergraduate degree while beginning his first semester as a
+graduate student in ARFC.&lt;/p&gt;
+
+&lt;p&gt;He is being recognized for his significant achievements in research as an
+undergraduate. In particular, in Fall 2016, Teddy led a project to quantify the
+feasibility, benefits, and drawbacks of a creative disposal concept.  For this
+work, Teddy consulted technically with Prof. Huff as well as key NPRE experts, 
+Dr. William  Roy and Prof. Cliff Singer. This work culminated in a paper 
+submission to the International High-Level Radioactive Waste Management 
+Conference (IHLRWM2017).  This paper, “Benefits of Siting a Borehole Repository 
+on Non-Operating Nuclear Facility,” was exceptional work and was 
+enthusiastically accepted.  Expert reviewers said about this paper “Wonderful 
+paper! Publish basically as is.” and “This is an excellent paper that maps out 
+an entirely plausible new way to look at nuclear waste storage in the US.”&lt;/p&gt;
+
+&lt;p&gt;ARFC is lucky to have an accomplished group of students. We especially congratulate 
+Teddy on this award as it recognizes a core value of our research group: 
+exceptional scholarship.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 04 Apr 2017 15:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2017/04/04/bae-ugrad-award/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2017/04/04/bae-ugrad-award/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Kathryn Mummah Rakes in Awards</title>
+        <description>&lt;p&gt;Senior ARFC undergraduate Kathryn Mummah, Katie for short, has recently received 
+honors from the Roy G. Post Foundation as well as a Knights of St. Patrick.&lt;/p&gt;
+
+&lt;p&gt;She is the University of Illinois’ first recipient of a Roy G. Post Foundation 
+undergraduate scholarship and has been invited to attend the Waste Management 
+Symposium in Arizona, March 5-9, in order to receive her award.&lt;/p&gt;
+
+&lt;p&gt;Similarly, when The Knights of St. Patrick of the University of Illinois 
+announced their award recipients (by covertly decorating the Grainger Library 
+with St. Patrick’s Day ephemera), Katie was among the short list of 2017 
+honorees.&lt;/p&gt;
+
+&lt;p&gt;ARFC is lucky to have an accomplished group of students and we congratulate 
+Katie on both of these awards which give, in their own way, special recognition 
+of her outstanding record of service and academic performance.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Feb 2017 20:00:00 -0600</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2017/02/01/mummah-wins-awards/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2017/02/01/mummah-wins-awards/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>New Group Members Join ARFC</title>
+        <description>&lt;p&gt;As the first semester of the ARFC group begins this fall, I’m excited to 
+announce that a number of researchers will join the group.&lt;/p&gt;
+
+&lt;p&gt;Alexander Lindsay will be joining us a postdoctoral scholar. He received his
+undergraduate degree in Chemical Engineering from the University of Washington
+and received his PhD this summer from North Carolina State University. He will
+be joining ARFC as well as the &lt;a href=&quot;https://dxl.ncsa.illinois.edu/&quot;&gt;Data Exploration Laboratory
+(DXL)&lt;/a&gt; led by Matthew Turk. His activities will
+emphasize open source advanced reactor multiphysics and his collaboration with
+DXL may advance visual exploration of simulation results.&lt;/p&gt;
+
+&lt;p&gt;Andrei Rykhlevskii will be joining the group as a PhD student. He has a degree
+in Nuclear Engineering from Bauman Moscow State Technical University as well as
+a Masters of Science in Finanace from the Financial University in Moscow. His
+work will likely also emphasize open source advanced reactor multiphysics.&lt;/p&gt;
+
+&lt;p&gt;Additionally, a small team of undergraduate researchers will join the group 
+this year.  These include Kathryn Mummah and Jin Whan Bae of NPRE as well as 
+Matthew Worley and Yukun Tan who will join us through the &lt;a href=&quot;http://spin.ncsa.illinois.edu/&quot;&gt;NCSA 
+SPIN&lt;/a&gt; program.&lt;/p&gt;
+
+&lt;p&gt;With the help of all of these researchers, I expect ARFC will really be able to
+hit the ground running.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 16 Aug 2016 21:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2016/08/16/new-arfc-members/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2016/08/16/new-arfc-members/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Huff Featured in NPRE News</title>
+        <description>&lt;p&gt;I am thrilled to be featured in the NPRE news today. Susan Mumm wrote a lovely 
+article announcing that I’ll be joining NPRE. You can read the article 
+&lt;a href=&quot;http://npre.illinois.edu/news/reactor-physicist-katy-huff-joins-npre-faculty&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 12 Jul 2016 21:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2016/07/12/huff-npre-article/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2016/07/12/huff-npre-article/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>ARFC and ERGS Receive NEUP R&amp;D Award</title>
+        <description>&lt;p&gt;The United State Department of Energy &lt;a href=&quot;https://neup.inl.gov/Lists/Headlines/AnnouncementDispForm.aspx?ID=134&quot;&gt;announced&lt;/a&gt; today that ARFC, in collaboration with the University of South Carolina’s Energy and Resources Group led by Anthony Scopatz 
+(&lt;a href=&quot;http://www.ergs.sc.edu/&quot;&gt;ERGS&lt;/a&gt;), would recieve 3 years of NEUP R&amp;amp;D support. The 
+ARFC group will be able to support extensive work on predictive deployment 
+models for the Cyclus fuel cycle simulator and its library of available 
+modules, Cycamore. The abstract for this award, 
+“Demand Driven Cycamore Archetypes” can be 
+found 
+&lt;a href=&quot;https://neup.inl.gov/FY16%20Abstracts/Research%20and%20Development/CFA-16-10512_TechnicalAbstract_2016CFATechnicalAbstract10512.pdf&quot;&gt;online&lt;/a&gt;
+alongside 
+&lt;a href=&quot;https://neup.inl.gov/SitePages/FY16%20RandD%20Awards.aspx&quot;&gt;many other 2016 NEUP awards&lt;/a&gt;, 
+including others involving faculty from NPRE.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 Jun 2016 21:00:00 -0500</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2016/06/14/neup-demand-driven/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2016/06/14/neup-demand-driven/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Huff Plans to Join NPRE</title>
+        <description>&lt;p&gt;I am thrilled to be joining the University of Illinois at Urbana-Champaign as 
+an Assistant Professor in the Department of Nuclear, Plasma and Radiological 
+Engineering. I was honored to have been awarded a Blue Waters Assistant 
+Professorship as well as an affiliate faculty appointment with the National 
+Center for Supercomputing Applications. The support of NCSA is very meaningful 
+to me and I hope to make important use of the high performance computing 
+resources on campus when I arrive.&lt;/p&gt;
+
+&lt;p&gt;I will begin my appointment on August 16, 2016. Until then, I’ll be wrapping up 
+my work at the University of California, Berkeley. In addition, I’ll be 
+preparing my first NPRE course, seeking graduate students and postdocs for a 
+research group, finding a home in the Urbana-Champaign area, and setting up 
+this website.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Feb 2016 20:03:54 -0600</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2016/02/06/huff-joins-npre/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2016/02/06/huff-joins-npre/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
   </channel>
 </rss>

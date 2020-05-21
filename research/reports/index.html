@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Advanced Reactors and Fuel Cycles</title>
+  <title>Reports</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/">
+  <link rel="canonical" href="http://arfc.github.io/research/reports/">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -257,180 +257,318 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- Page -->
-    <section id="code" class="">
+        <!--- PUBLICATIONS -->
+<section id="reports" class="">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Advanced Reactors and Fuel Cycles</h2>
-                    <h3 class="section-subheading text-muted">University of Illinois at Urbana-Champaign</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">
-			This group is led by Kathryn Huff, an Assistant Professor at the <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a> in the Department <a href="http://npre.illinois.edu">Nuclear, Plasma, and Radiological Engineering</a>. We design and conduct simulations to understand and improve the safety and sustainability of nuclear energy.
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="/research/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <h2 class="section-heading">Reports</h2>
+                                <h3 class="section-subheading text-muted">Our report series is archived below</h3>
                         </div>
-                        <img src="img/research/multiphysics.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Coupled Multiphysics of Advanced Reactors</h4>
-                        <br/>
-                        <p class="text-muted">Advanced nuclear reactors often involve complex geometries, unique materials, and new physical regimes. To simulate the coupled physics in such designs, current tools must be extended to capture those geometries, materials, and regimes. Our work focuses on extending current tools with features essential to simulating advanced reactor multiphysics.</p>
-                    </div>
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.fuelcycle.org" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                        <div class="row">
+                                <div class="col-lg-12">
+                                        <h3>ARFC Technical Reports</h3>
+                                        <ol class="bibliography"><li><span id="rykhlevskii_milestone_2019">Rykhlevskii, Andrei, and Kathryn Huff. 2019. “Milestone 2.1 Report: Demonstration of SaltProc.” Milestone Report UIUC-ARFC-2019-04 DOI: 10.5281/zenodo.3355649. Urbana, IL: University of Illinois at Urbana-Champaign. https://doi.org/10.5281/zenodo.3355649.</span>
+
+<div id="rykhlevskii_milestone_2019-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#rykhlevskii_milestone_2019-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#rykhlevskii_milestone_2019-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/rykhlevskii_milestone_2019.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="rykhlevskii_milestone_2019-abstract" class="collapse">The University of Illinois, Urbana-Champaign (UIUC) is engaged in work to develop a fuel processing system that enables load-following in Molten Salt Reactors (MSRs), an important ability that allows nuclear power plants to ramp electricity production up or down to meet changing electricity demand. Nuclear reactions in MSRs produce unwanted byproducts (such as xenon and krypton) that can adversely affect power production. In steady, baseload operation, these byproducts form and decay at the same rate. When electricity production is ramped down, however, the byproducts start to be produced at a greater rate than they decay, leading to a buildup within the reactor. When power production must be once again increased, the response rate is slowed by the time needed for the byproducts to reach their equilibrium level (determined by the radioactive decay half-life, which is on the order of hours). Thus, buildup of these unwanted byproducts resulting from ramping down inhibit proper load following for molten salt reactors. Fortunately, MSRs transport fuel in a flowing molten salt fuel loop, which means that a section of the reactor, outside the core, can be leveraged for fuel processing and "cleanup." The team will determine the feasibility of removal of these unwanted byproducts and de- sign a fuel reprocessing system, removing a major barrier to commercialization for molten salt reactors.
+
+Toward this work, we initiated the Fuel Cycle Simulation task (Task 2) in August 2018 to more realistically model the online reprocessing system of the Transatomic Power (TAP) MSR. A Python toolkit, SaltProc v0.1 [1–3], was developed to represent the simplified online fuel salt processing of a Molten Salt Breeder Reactor (MSBR). More recently, an advanced SaltProc version (SaltProc v0.2) was developed to generically simulate complex molten salt fuel reprocessing systems, including the TAP system, incorporating user-parametrized components into the fuel salt processing design. This report summarizes the progress we have made towards milestone M2.1: Demonstrate SaltProc and the steps toward the subsequent Task 2 objectives.</p>
+  
+
+  <pre id="rykhlevskii_milestone_2019-bibtex" class="pre pre-scrollable collapse">@techreport{rykhlevskii_milestone_2019,
+  address = {Urbana, IL},
+  type = {Milestone {Report}},
+  title = {Milestone 2.1 {Report}: {Demonstration} of {SaltProc}},
+  shorttitle = {Contract {DE}-{AR0000983}, {Enabling} {Load} {Following} {Capability} in the {Transatomic} {MSR}},
+  url = {https://zenodo.org/record/3355649#.XZuyEEFKjdI},
+  language = {english},
+  number = {UIUC-ARFC-2019-04 DOI: 10.5281/zenodo.3355649},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Rykhlevskii, Andrei and Huff, Kathryn},
+  month = jun,
+  year = {2019},
+  doi = {10.5281/zenodo.3355649},
+  keywords = {cyclus, nuclear engineering, arfc, report, molten salt reactor, nuclear fuel cycle},
+  pages = {1--23},
+  file = {Zenodo Full Text PDF:/Users/huff/Zotero/storage/ZFLGME7X/Andrei Rykhlevskii and Kathryn Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf;Zenodo Full Text PDF:/Users/huff/Zotero/storage/RYZ3VPVQ/Andrei Rykhlevskii and Kathryn Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf;Zenodo Full Text PDF:/Users/huff/Zotero/storage/BN8EED2W/Andrei Rykhlevskii and Kathryn Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf;Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:/Users/huff/Zotero/storage/WJUPG67I/Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="chaube_dynamic_2019-2">Chaube, Anshuman, and Kathryn D. Huff. 2019. “Dynamic Transition Analysis With The Integrated Markal-EFOM System (TIMES): International Institute for Carbon-Neutral Energy Research (I2CNER) Project Report.” Technical Report UIUC-ARFC-2019-02. Urbana, IL: University of Illinois at Urbana-Champaign. https://doi.org/10.5281/zenodo.3354538.</span>
+
+<div id="chaube_dynamic_2019-2-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#chaube_dynamic_2019-2-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#chaube_dynamic_2019-2-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/chaube_dynamic_2019-2.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="chaube_dynamic_2019-2-abstract" class="collapse">We initiated a project in January 2018 to simulate dynamic transition scenarios for the energy industry in Japan to suggest pathways for minimizing carbon emissions. This report is a summary of the progress we have made so far, the challenges we currently face, and the future direction of this research.</p>
+  
+
+  <pre id="chaube_dynamic_2019-2-bibtex" class="pre pre-scrollable collapse">@techreport{chaube_dynamic_2019-2,
+  address = {Urbana, IL},
+  type = {Technical {Report}},
+  title = {Dynamic {Transition} {Analysis} {With} {The} {Integrated} {Markal}-{EFOM} {System} ({TIMES}): {International} {Institute} for {Carbon}-{Neutral} {Energy} {Research} ({I2CNER}) {Project} {Report}},
+  url = {https://zenodo.org/record/3354538#.XT9WlpNKirw},
+  language = {eng},
+  number = {UIUC-ARFC-2019-02},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Chaube, Anshuman and Huff, Kathryn D.},
+  collaborator = {Stubbins, James and Itaoka, Kenshi and Chapman, Andrew and Faradi, Hadi},
+  month = may,
+  year = {2019},
+  doi = {10.5281/zenodo.3354538},
+  keywords = {arfc, report, i2cner, energy analysis, japan},
+  pages = {0--17},
+  file = {Zenodo Full Text PDF:/Users/huff/Zotero/storage/TGLY26H3/Anshuman Chaube and Kathryn Huff - 2019 - Dynamic Transition Analysis With The Integrated Ma.pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="huff_identifying_2019">Huff, Kathryn D. 2019. “Identifying MSR Multiphysics Modeling Challenges.” Technical Report UIUC-ARFC-2019-01. Urbana, IL: University of Illinois at Urbana-Champaign. https://doi.org/10.5281/zenodo.3354563.</span>
+
+<div id="huff_identifying_2019-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#huff_identifying_2019-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#huff_identifying_2019-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/huff_identifying_2019.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="huff_identifying_2019-abstract" class="collapse">Solid fueled nuclear reactors differ from liquid fueled reactors with re- spect to many physical domains including neutronics, thermal hydraulics, and materials performance. Accordingly, liquid fueled reactors challenge the capabilities of conventional computational tools designed for modeling and simulating the physics of solid fueled reactors.</p>
+  
+
+  <pre id="huff_identifying_2019-bibtex" class="pre pre-scrollable collapse">@techreport{huff_identifying_2019,
+  address = {Urbana, IL},
+  type = {Technical {Report}},
+  title = {Identifying {MSR} {Multiphysics} {Modeling} {Challenges}},
+  shorttitle = {Contract {DE}-{AC07}-{05ID14517}},
+  url = {https://zenodo.org/record/3354563#.XT9bZ5NKirw},
+  language = {english},
+  number = {UIUC-ARFC-2019-01},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Huff, Kathryn D.},
+  collaborator = {Sabharwall, Piyush},
+  month = feb,
+  year = {2019},
+  doi = {10.5281/zenodo.3354563},
+  keywords = {nuclear, molten salt reactor, multiphysics},
+  pages = {1--12},
+  file = {Zenodo Full Text PDF:/Users/huff/Zotero/storage/RI2BAY9M/Kathryn Huff - 2019 - Identifying MSR Multiphysics Modeling Challenges.pdf:application/pdf;uiuc-arfc-2019-01.pdf:/Users/huff/Zotero/storage/CSVHID3A/uiuc-arfc-2019-01.pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="chee_transition_2019">Chee, Gwendolyn, Roberto Fairhurst, and Kathryn Huff. 2019. “Transition Scenario Demonstrations of CYCAMORE Demand Driven Deployment Capabilities.” Technical Report UIUC-ARFC-2019-03. Urbana, IL: University of Illinois at Urbana-Champaign. https://zenodo.org/record/3354507.</span>
+
+<div id="chee_transition_2019-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#chee_transition_2019-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#chee_transition_2019-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/chee_transition_2019.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="chee_transition_2019-abstract" class="collapse">In many fuel cycle simulators, the user must define a deployment scheme for all supporting facilities to avoid supply chain gaps. To ease setting up nuclear fuel cycle simulations, Nuclear Fuel Cycle (NFC) simulators should bring demand-responsive deployment decisions into the dynamics of the simulation logic. Thus, a next-generation NFC simulator should predictively and automatically deploy fuel cycle facilities to meet a user-defined power demand. CYCLUS is an agent-based nuclear fuel cycle simulation framework [4]. In CYCLUS, each entity (i.e. Region, Institution, or Facility) in the fuel cycle is an agent. Region agents represent geographical or political areas that institution and facility agents can be grouped into. Institution agents control the deployment and decommission of facility agents and represents legal operating organizations such as a utility, government, etc. Facility agents represent nuclear fuel cycle facilities. CYCAMORE provides agents to represent process physics of various components in the nuclear fuel cycle (e.g. mine, fuel enrichment facility, reactor). The Demand-Driven CYCAMORE Archetypes project (NEUP-FY16-10512) aims to develop CYCLUS’ demand-driven deployment capabilities. This capability is added as a CYCLUS Institution agent that deploys facilities to meet the front-end and back-end fuel cycle demands based on a user-defined commodity demand. This demand-driven deployment capability is called d3ploy. In this paper, we explain the capabilities of d3ploy and demonstrate how d3ploy minimizes undersupply of all commodities in a few simulations while meeting key simulation constraints. Constant, linearly increasing, and sinusoidal power demand transition scenarios are demonstrated. Insights are discussed to inform parameter input decisions for future work in setting up larger transition scenarios that include many facilities. And finally, the more complex transition scenarios are demonstrated.</p>
+  
+
+  <pre id="chee_transition_2019-bibtex" class="pre pre-scrollable collapse">@techreport{chee_transition_2019,
+  address = {Urbana, IL},
+  type = {Technical {Report}},
+  title = {Transition {Scenario} {Demonstrations} of {CYCAMORE} {Demand} {Driven} {Deployment} {Capabilities}},
+  shorttitle = {Contract {DE}-{NE0008567}},
+  url = {https://zenodo.org/record/3354507},
+  language = {english},
+  number = {UIUC-ARFC-2019-03},
+  urldate = {2019-07-29},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Chee, Gwendolyn and Fairhurst, Roberto and Huff, Kathryn},
+  month = jun,
+  year = {2019},
+  note = {https://zenodo.org/record/3354507},
+  keywords = {cyclus, arfc, report, nuclear fuel cycle},
+  pages = {1--23},
+  file = {Chee - 2019 - Transition Scenario Demonstrations of ARFC CYCAMOR.pdf:/Users/huff/Zotero/storage/RV5PZF3E/Chee - 2019 - Transition Scenario Demonstrations of ARFC CYCAMOR.pdf:application/pdf;Zenodo Full Text PDF:/Users/huff/Zotero/storage/FZWMCLYT/Gwendolyn Chee et al. - 2019 - Transition Scenario Demonstrations of CYCAMORE Dem.pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="bae_numerical_2018">Bae, Jin Whan, Gwendolyn Chee, and Kathryn Huff. 2018. “Numerical Experiments for Verifying Demand Driven Deployment Algorithms.” Graduate Report UIUC-ARFC-2018-01. Urbana, IL: University of Illinois at Urbana-Champaign. https://github.com/arfc/ddca_numerical_exp.</span>
+
+<div id="bae_numerical_2018-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#bae_numerical_2018-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#bae_numerical_2018-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/bae_numerical_2018.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="bae_numerical_2018-abstract" class="collapse">For many fuel cycle simulations, it is currently up to the user to define a deployment scheme, or facility parameters, to make sure that there’s no gap in the supply chain. Or, the same goal is achieved by setting the facility capacity to infinity, which does not reflect real-world conditions.
+The Demand-Driven Cycamore Archetype project (NEUP-FY16-10512) aims to develop Cycamore demand-driven deployment capabilities. The developed algorithm, in the form of Cyclus Institution agent, deploys Facilities to meet the front-end and back-end demands of the fuel cycle.
+This report describes numerical tests for non-optimizing, deterministic- optimizing and stochastic-optimizing prediction algorithms.
+These prediction models are being developed by the University of South Carolina. In this report, we discuss numerical experiments for testing the non-optimizing, deterministic optimizing and stochastic optimizing meth- ods. The numerical experiments will be designed for both the once through nuclear fuel cycle and advanced fuel cycles.</p>
+  
+
+  <pre id="bae_numerical_2018-bibtex" class="pre pre-scrollable collapse">@techreport{bae_numerical_2018,
+  address = {Urbana, IL},
+  type = {Graduate {Report}},
+  title = {Numerical {Experiments} for {Verifying} {Demand} {Driven} {Deployment} {Algorithms}},
+  url = {https://github.com/arfc/ddca_numerical_exp},
+  number = {UIUC-ARFC-2018-01},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Bae, Jin Whan and Chee, Gwendolyn and Huff, Kathryn},
+  month = apr,
+  year = {2018},
+  keywords = {arfc, report},
+  pages = {0--21},
+  file = {Bae et al. - 2018 - Numerical Experiments for Verifying Demand Driven .pdf:/Users/huff/Zotero/storage/5X9YWIQW/Bae et al. - 2018 - Numerical Experiments for Verifying Demand Driven .pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="bae_non-algorithmic_2017">Bae, Jin Whan, and Kathryn D. Huff. 2017. “Non-Algorithmic Capability Gaps for Cyclus and Cycamore Transition Analyses.” Graduate Report UIUC-ARFC-2017-02. Urbana, IL: University of Illinois at Urbana-Champaign. https://doi.org/10.5281/zenodo.1145439.</span>
+
+<div id="bae_non-algorithmic_2017-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#bae_non-algorithmic_2017-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#bae_non-algorithmic_2017-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/bae_non-algorithmic_2017.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="bae_non-algorithmic_2017-abstract" class="collapse">As part of NEUP-FY16-10512, fuel cycle
+transition scenarios were simulated using Cyclus and existing Cycamore archetypes.
+
+The purpose of this study
+is to identify current non-algorithmic gaps in the capabilities necessary for key transition scenarios.
+
+The gaps identified through this exercise mainly pertain to the greedy exchange model, and the manual, static parameter of fuel cycle facilities. 
+
+The scenarios are from the Idaho National Laboratory Nuclear Fuel Cycle Evaluation and Screening Report. The transition scenarios begin with EG01 and transition to EG23, EG24, EG29, EG30,
+separately.</p>
+  
+
+  <pre id="bae_non-algorithmic_2017-bibtex" class="pre pre-scrollable collapse">@techreport{bae_non-algorithmic_2017,
+  address = {Urbana, IL},
+  type = {Graduate {Report}},
+  title = {Non-algorithmic {Capability} {Gaps} for {Cyclus} and {Cycamore} transition analyses},
+  url = {https://github.com/arfc/transition-scenarios},
+  number = {UIUC-ARFC-2017-02},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Bae, Jin Whan and Huff, Kathryn D.},
+  month = nov,
+  year = {2017},
+  doi = {10.5281/zenodo.1145439},
+  keywords = {arfc, report},
+  pages = {0--12},
+  file = {uiuc-arfc-2017-02.pdf:/Users/huff/Zotero/storage/3GFDQRRG/uiuc-arfc-2017-02.pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="ridley_multiphysics_2017">Ridley, Gavin, Alexander Lindsay, Matthew Turk, and Kathryn Huff. 2017. “Multiphysics Analysis of Molten Salt Reactor Transients.” Undergraduate Report UIUC-ARFC-2017-01. Urbana, IL: University of Illinois at Urbana-Champaign. https://github.com/arfc/publications/tree/2017-ridley-msrTransients.</span>
+
+<div id="ridley_multiphysics_2017-materials">
+  <ul class="nav nav-pills">
+    
+    <li><a data-toggle="collapse" href="#ridley_multiphysics_2017-abstract">Abstract</a></li>
+    
+
+    <li><a data-toggle="collapse" href="#ridley_multiphysics_2017-bibtex">BibTeX</a></li>
+
+    
+    <li><a href="/papers/ridley_multiphysics_2017.pdf">Download</a></li>
+    
+  </ul>
+
+  
+  <p id="ridley_multiphysics_2017-abstract" class="collapse">Molten salt nuclear reactor technology has not yet been constructed for industrial scale. High fidelity simulation capability of both transients and steady-state behavior must be developed for reactor licensing. The simulations should make use of high performance computing (HPC) in order
+to come to realistic results while minimizing assumptions. High resolution simulation of limiting reactor transients using
+open-source software can inform reproducible results suitable for preliminary licensing activity. We present example results of the new code.</p>
+  
+
+  <pre id="ridley_multiphysics_2017-bibtex" class="pre pre-scrollable collapse">@techreport{ridley_multiphysics_2017,
+  address = {Urbana, IL},
+  type = {Undergraduate {Report}},
+  title = {Multiphysics {Analysis} of {Molten} {Salt} {Reactor} {Transients}},
+  url = {https://github.com/arfc/publications/tree/2017-ridley-msrTransients},
+  number = {UIUC-ARFC-2017-01},
+  institution = {University of Illinois at Urbana-Champaign},
+  author = {Ridley, Gavin and Lindsay, Alexander and Turk, Matthew and Huff, Kathryn},
+  month = aug,
+  year = {2017},
+  note = {DOI 10.5281/zenodo.1145437},
+  keywords = {arfc, report},
+  pages = {0--12},
+  file = {uiuc-arfc-2017-01.pdf:/Users/huff/Zotero/storage/ASUYNNXT/uiuc-arfc-2017-01.pdf:application/pdf}
+}
+</pre>
+
+</div>
+</li></ol>
+                                </div>
                         </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Nuclear_Fuel_Cycle.svg/820px-Nuclear_Fuel_Cycle.svg.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Fuel Cycle Analysis</h4>
-                        <br/>
-                        <p class="text-muted">Our nuclear energy future may involve a mixture of technologies, reprocessing schemes, and waste management strategies. Deployments may be driven by politics or demand, the options may be constrained by complex logistics, and the assessment of impacts requires analysis at scale. Our work focuses on modeling, simulation, and analysis of the global nuclear fuel cycle, with an emphasis on sustainability.</p>
-                    </div>
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.ncsa.illinois.edu/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/bw_cropped.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Advanced Computation</h4>
-                        <br/>
-                        <p class="text-muted">A crosscutting theme of our research is an emphasis on advancing methods and software for computational nuclear engineering. Simulations of reactors and fuel cycle systems are sufficiently complex that sophisticated scientific software and high-performance computing resources are essential to understanding and improving them. Accordingly, the Advanced Reactors and Fuel Cycles group is proud to be affiliated with the University of Illinois National Center for Supercomputing Applications and its Blue Waters computing facility.</p>
-                    </div>
-                </div>
-            
-            </div>
         </div>
-    </section>
+</section>
 
-
-
-<!--- NEWS -->
-    <section id="news" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">News</h2>
-                    <h3 class="section-subheading text-muted">Updates from the research group.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-		    
-                    <span class="post-meta"><h2>May 10, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/05/10/ansh-andrei-landis/">Two ARFC Graduate Students Recognized with ANS Scholarships</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 20, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/04/20/park-ugrad-award/">Gyu Tae Park Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Oct 2, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/10/02/bae-global/">Bae Presents Poster at GLOBAL 2017</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 23, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/08/23/andrei-landis/">Andrei Rykhlevskii Recognized with ANS Scholarship</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 4, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/04/04/bae-ugrad-award/">Jin Whan Bae Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 1, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/02/01/mummah-wins-awards/">Kathryn Mummah Rakes in Awards</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 16, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/08/16/new-arfc-members/">New Group Members Join ARFC</a></h3>
-		    
-                    <span class="post-meta"><h2>Jul 12, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/07/12/huff-npre-article/">Huff Featured in NPRE News</a></h3>
-		    
-                    <span class="post-meta"><h2>Jun 14, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/06/14/neup-demand-driven/">ARFC and ERGS Receive NEUP R&D Award</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 6, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/02/06/huff-joins-npre/">Huff Plans to Join NPRE</a></h3>
-		    
-		<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!--- LICENSE -->
-    <section id="license" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">License</h2>
-                    <h3 class="section-subheading text-muted">This website and 
-                            all its contents are CC-BY-4.0 licensed.
-                     So, you may share and adapt this material as long as 
-                        you give appropriate credit, provide a link to the 
-                        license, and indicate if changes were made. You may do 
-                        so in any reasonable manner, but not in any way that 
-                        suggests the licensor endorses you or your use.
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center">
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Advanced Reactors and Fuel Cycles</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://arfc.github.io" property="cc:attributionName" rel="cc:attributionURL">ARFC Research Group</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/arfc/arfc.github.io" rel="dct:source">github.com/arfc/arfc.github.io</a>.
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!--- Software
-    <section id="software" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Software</h2>
-                    <h3 class="section-subheading text-muted">Simulation leverages the ubiquity of data, the efficiency of computation, and the purity of mathematics toward scientific discovery.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-right">
-                    <p class="large text-muted">This group strives create reproducible, transparent, extendible research products.</p> 
-                </div>
-                <div class="col-md-6">
-                    <ul class="code">
-                        <li>
-                            <h4><i class="fa fa-"></i> &nbsp;
-                            <a href=""></a></h4>
-                            <p></p>
-                        </li>
-                    </ul>
-                </div>                
-            </div>
-        </div>
-    </section>
--->
 
       </div>
     </div>

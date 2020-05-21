@@ -1,0 +1,143 @@
+I"�<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started">Read this page first</a></p>
+
+<h2 id="step-0-get-a-license-for-serpent">Step 0. Get a license for Serpent</h2>
+<p>Register for Serpent through RSICC and deposit your license documentation in 
+the Google Drive software licenses directory.</p>
+
+<h2 id="step-1-communication">Step 1. Communication</h2>
+<p>Have Prof Huff get you approved for Blue Waters!</p>
+
+<h2 id="step-2-apply-for-blue-waters">Step 2. Apply for Blue Waters</h2>
+<p>Follow the link and fill out the application
+        You can either receive a virtual token or a physical token
+        A Virutal token is done through your mobile device,
+        and a physical token looks like this:</p>
+
+<p><img src="/img/manual/guides/bw-token.jpg" alt="alt text" /></p>
+
+<p>Or, if you chose a soft token, install the RSA SecurID app and 
+follow the instruction sent to you by email.</p>
+
+<h2 id="step-3-wait">Step 3. Wait</h2>
+<p>Wait patiently for the token to arrive.</p>
+
+<h2 id="step-4-activating-token">Step 4. Activating Token</h2>
+<p>With your token, open the email ‘Blue Waters Instructions’
+Click the <a href="https://otp.ncsa.illinois.edu">link</a>
+and follow its directions, and activate your token.</p>
+
+<p>** tip) the pin must be 8 digits, letters and numbers, something that you’ll never forget!</p>
+
+<h2 id="step-5-loggin-in">Step 5. Loggin In</h2>
+<p>Open terminal, type</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [username]@h2ologin.ncsa.illinois.edu
+</code></pre></div></div>
+
+<p>type in PIN+Token#</p>
+
+<h4 id="tip-you-can-shortname-your-ssh-command">tip) you can shortname your ssh command:</h4>
+<p>Open the terminal</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$cd
+$cd .ssh
+$vim config
+</code></pre></div></div>
+
+<p>write:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        Host [desired_name]
+        HostName h2ologin.ncsa.illinois.edu
+        User [Blue_Waters_User_Name] 
+</code></pre></div></div>
+
+<p>Then you’d just have to type in</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [desired_name]
+</code></pre></div></div>
+
+<p>For example, you might have named Blue Waters “bw”.
+In that case, you simply type</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh bw
+</code></pre></div></div>
+
+<h2 id="step-6-congratz">Step 6. Congratz!</h2>
+<p>You’re in! :)</p>
+
+<p><img src="/img/manual/guides/bw-welcome.png" alt="alt text" /></p>
+
+<h2 id="step-7-module-loading">Step 7. Module Loading</h2>
+<p>Various modules can be loaded and the available modules can be listed using the following commands:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Command</th>
+      <th style="text-align: left">Suffix</th>
+      <th style="text-align: right">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">module avail </code></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: right">List all available modules</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">module avail </code></td>
+      <td style="text-align: left"><code class="highlighter-rouge"> |grep -r [keyword] </code></td>
+      <td style="text-align: right">Search module with keywords</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">module load </code></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: right">Load module onto environment</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">module swap </code></td>
+      <td style="text-align: left"><code class="highlighter-rouge"> [original] [new] </code></td>
+      <td style="text-align: right">replace [orignal] with [new]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="tip-bashrc">tip) ~/.bashrc</h4>
+<p>If you don’t want to load your modules every time, edit ~/.bashrc 
+and have all your ‘module load/swap’ commands.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$vim ~/.bashrc
+</code></pre></div></div>
+<p>after editing the bashrc, you must source it:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$source ~/.bashrc
+</code></pre></div></div>
+
+<h2 id="the-group-directory">The Group Directory</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/sciteam/bahg
+</code></pre></div></div>
+
+<h2 id="how-to-download-source-code">How to Download Source Code</h2>
+<p>Because Blue Waters is an HPC machine, it does
+not have a package manager (like Ubuntu’s apt-get).
+This is the reason why one has to build from source.</p>
+
+<p>Also, one does not have sudo, which means that
+the packages should be built either in your
+home directory(~) or in the group directory (bahg)</p>
+
+<p>Get source codes by:</p>
+
+<ol>
+  <li>
+    <p>Github</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone [clone_link]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>wget</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget [link to source code tar.xz or zip file]
+</code></pre></div>    </div>
+
+    <p>Expand the archive with the tar or the unzip command.</p>
+  </li>
+</ol>
+
+:ET

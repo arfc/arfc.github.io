@@ -1,0 +1,21 @@
+I",<p>When learning Moltres and the underlying MOOSE framework, it may be best to
+start with a
+<a href="http://mooseframework.org/wiki/MooseTutorials/DarcyThermoMechanical/">tutorial</a>
+and <a href="http://mooseframework.org/wiki/MooseExamples/">examples</a>.</p>
+
+<p>The following pages give the math behind the <code class="highlighter-rouge">Kernel</code> and <code class="highlighter-rouge">BC</code> classes that are
+used to construct the weak forms of the PDEs required for the finite element
+method:</p>
+
+<ul>
+  <li><a href="./kernels/">Kernels</a></li>
+  <li><a href="./bcs/">BCs</a></li>
+</ul>
+
+<p>The page below gives a detailed outline of a typical Moltres input file and
+should help the user prepare his/her own customized input:</p>
+
+<ul>
+  <li><a href="./input_example/">Example Input</a></li>
+</ul>
+:ET

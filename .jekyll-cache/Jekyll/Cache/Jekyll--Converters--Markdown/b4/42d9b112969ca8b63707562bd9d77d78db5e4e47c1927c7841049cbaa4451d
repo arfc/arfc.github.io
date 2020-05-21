@@ -1,0 +1,42 @@
+I"v	<p>This part of the website is intended to be a living document capturing the
+norms and processes behind this research group. The following sections were
+inspired by <a href="http://labcarpentry.org">Lab Carpentry</a> and its implementation at
+the <a href="https://dxl.ncsa.illinois.edu/">Data Exploration Laboratory</a> and the 
+<a href="http://ivory.idyll.org/lab/">Lab for Data Intensive Biology</a>.</p>
+
+<h1 id="mission">Mission</h1>
+
+<p>The <strong><a href="/manual/mission">mission</a></strong> section is a place to state our evolving vision for the safe,
+sustainable future of nuclear energy through advanced modeling and simulation
+of advanced reactors and fuel cycles.</p>
+
+<h1 id="expectations">Expectations</h1>
+
+<p>The section on <strong><a href="/manual/expectations">expectations</a></strong> addresses mutual
+expectations among members of the group, with special attention to
+student-advisor expectations. Again, a great deal of this section came from
+<a href="http://labcarpentry.org">Lab Carpentry</a> and
+<a href="https://dxl.ncsa.illinois.edu.">DXL</a>, but other inspiration also came from
+<a href="http://chrisblattman.com/graduate-advising/">Chris Blattman</a>,
+<a href="http://cnerg.github.io/">Paul Wilson</a>,
+<a href="http://www.carlboettiger.info">Carl Boettiger</a>,
+<a href="http://ivory.idyll.org/lab/">Titus Brown</a> and lots of posts on
+<a href="http://chronicle.com/blogs/profhacker/">the Professor Hacker Blog</a>.</p>
+
+<h1 id="code-of-conduct">Code of Conduct</h1>
+
+<p>The mutual expectations within the group are built on a foundation of
+respect, integrity, and professional conduct. In addition to institutional
+standards, this group upholds our own evolving <strong><a href="/manual/coc">code of conduct</a></strong>.</p>
+
+<h1 id="guides">Guides</h1>
+
+<p><strong><a href="/manual/guides/">The guides</a></strong> are a set of overviews and checklists
+for mastering the practical, administrative, and computational infrastructure
+ARFC relies on for various common tasks. All research group members should
+contribute to this section early and often. If you’re new to the research
+group, you’ll want to use the getting started guide. Additionally, the various channels
+through which we communicate both internally and externally are documented in a
+set of communication guides. Finally, approaches to productively working with
+Katy are captured in some of the guides as well.</p>
+:ET

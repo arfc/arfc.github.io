@@ -1,0 +1,179 @@
+I"�<p>It’s up to you how you prefer to communicate with the rest of the group. 
+Please remember that the <a href="/manual/coc">Code of Conduct</a> applies in all of these 
+channels.</p>
+
+<h2 id="github">GitHub</h2>
+
+<p>GitHub is where we store our code. So, it’s also a place where we can discuss 
+that code. We have a GitHub organization for the group at 
+<a href="https:github.com/arfc">github.com/arfc</a>. More about using GitHub can be found 
+in the in <a href="http://physics.codes">the book</a>.</p>
+
+<h3 id="issues">Issues</h3>
+
+<p>Create issues with lots of information about how to replicate the issue, what 
+has been tried, etc. Use tags and milestones where possible. If you or someone 
+else is going to start working on the issue immediately, assign the issue to that 
+person.</p>
+
+<p>As things move forward with the solution to an issue, continue to discuss 
+progress on the issue itself.</p>
+
+<h3 id="milestones">Milestones</h3>
+
+<p>Milestones are groups of issues accompanied by a description and deadline. 
+These will often be created for a code release, publication submission, or 
+similarly multifaceted large goal.</p>
+
+<h3 id="gists">Gists</h3>
+
+<p>Sometimes, it’s helpful to be able to communicate just a snippet of code. Gists 
+are one way to do this: https://gist.github.com/</p>
+
+<h2 id="chatting">Chatting</h2>
+
+<p>If you like synchronous communication, there are a couple of ways to chat with 
+the group or members of the group without causing extra email traffic. You are 
+not required to participate in synchronous communication.</p>
+
+<h3 id="slack">Slack</h3>
+
+<p>The ARFC group has an organizational account with <a href="slack.com">Slack</a>. To use 
+Slack:</p>
+
+<ul>
+  <li>Sign up for the group at <a href="https://arfc.slack.com/signup">https://arfc.slack.com/signup</a></li>
+  <li>You may need to use your illinois.edu account to sign up.</li>
+  <li>If you would prefer it to be associated with a different email address, sign 
+up with your illinois email and then once you’re logged in and signed up for 
+the group, you can change your email address in the preferences panel.</li>
+  <li>There is a desktop application you can download.</li>
+  <li>There are also native apps for both ios and android.</li>
+</ul>
+
+<p>Feel free to add channels for anything related to the group. Feel free to use 
+the random channel for fun, non-work stuff.</p>
+
+<h3 id="google-hangout">Google Hangout</h3>
+
+<p>The current preferred video-conferencing platform in the group is <a href="https://hangouts.google.com/">Google 
+Hangout</a>.</p>
+
+<p>You can <a href="https://support.google.com/a/answer/4362302?hl=en">add a google hangout to any google calendar 
+event</a>. This is encouraged 
+if you plan to host the meeting virtually.</p>
+
+<h3 id="be-careful">Be careful</h3>
+
+<p>Note that both google hangouts and Slack may push notifications to your 
+desktop. This can be distracting while you’re trying to focus. It can also be 
+embarassing if one of these notifications pops up in the middle of a public 
+presentation, while you are broadcasting from your laptop. <strong>When you don’t 
+want these notifications to pop up and interrupt, you can pause them.</strong> Both 
+apps have a setting for this.</p>
+
+<h2 id="email">Email</h2>
+
+<p>Sign up for the <a href="https://groups.google.com/forum/#!forum/arfc">private ARFC 
+listhost</a>. This is where most 
+announcements will appear.</p>
+
+<h2 id="twitter">Twitter</h2>
+
+<p>ARFC is not on Twitter. Let me know if you think we should be.
+For now, if you like Twitter, though, don’t hesitate to follow :</p>
+
+<ul>
+  <li><a href="@katyhuff">https://twitter.com/katyhuff</a></li>
+  <li><a href="@illinoisNPRE">https://twitter.com/illinoisNPRE</a></li>
+  <li><a href="@NCSAatIllinois">https://twitter.com/NCSAatIllinois</a></li>
+  <li><a href="@EngineeringAtIL">https://twitter.com/EngineeringAtIL</a></li>
+</ul>
+
+<h2 id="blog">Blog</h2>
+
+<p>This website has a news section. Blog posts are strongly encouraged!  To post, 
+add a markdown file to the <code class="highlighter-rouge">_posts</code> directory in the arfc/arfc.github.io source 
+repository. Submit it as a pull request. You can follow the <a href="https://arfc.github.io/feed.xml">RSS 
+feed</a> if you use a feed reader.</p>
+
+<h2 id="documents">Documents</h2>
+
+<p>Any research group is going to have a lot of documents. Ideally, they will be 
+easily found by the members of the group who should have access. When in doubt, 
+make documents as public as possible. We use the following places to edit and 
+store documents.</p>
+
+<h3 id="github-1">GitHub</h3>
+
+<p>Any documents related to software development should probably be in the 
+documentation for the code itself, version controlled in GitHub. Similarly, 
+manuscripts for publication should be developed on GitHub.</p>
+
+<h3 id="guides">Guides</h3>
+
+<p>Permanent documents and records related to the operation of the research group 
+might be appropriate for these guides, here on the website. To add or edit a 
+guide, you will first need to have the website repository forked and cloned.</p>
+
+<ul>
+  <li>fork the website repository</li>
+  <li>clone your fork of the website repository</li>
+</ul>
+
+<p>You’ll also need to <a href="https://jekyllrb.com/docs/installation/">have jekyll installed.</a></p>
+
+<p>Once you have the repository cloned and jekyll is installed:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">cd arfc.github.io</code></li>
+  <li><code class="highlighter-rouge">git checkout source</code></li>
+  <li><code class="highlighter-rouge">cd manual/guides</code></li>
+  <li>Add or edit the markdown file of your choice.</li>
+  <li>Git add, git commit, and git push your changes to the source branch of your 
+fork.</li>
+  <li>Check that it looks ok by running <code class="highlighter-rouge">jekyll serve</code>.</li>
+  <li>In your browser, navigate to <a href="http://localhost:4000/">localhost:4000</a> to see the site rendered.</li>
+  <li>Once you’re satisfied, press Ctrl-C to stop serving the site locally.</li>
+  <li>Once it’s all looking nice, make a pull request to the source branch of <a href="https://github.com/arfc/arfc.github.io/">arfc/arfc.github.io</a>.</li>
+</ul>
+
+<h3 id="wiki">Wiki</h3>
+
+<p>There’s also <a href="https://wiki.cites.illinois.edu/wiki/display/ARFC/">a wiki for the ARFC 
+group</a>. If that seems like 
+the appropriate place for a document then please use that.  You’ll need to log 
+in with your Illinois credentials.</p>
+
+<h3 id="google-drive">Google Drive</h3>
+
+<p>Notes in meetings and other really simultaneous editing is probably easiest in 
+Google Docs. We have a group Google Drive directory for information that should be 
+shared and accessible to all group members. To use google drive</p>
+
+<ul>
+  <li>Learn about the Illinois Google Drive setup <a href="https://answers.uillinois.edu/illinois/55050">here</a>.</li>
+  <li>Consider installing the <a href="https://www.google.com/drive/download/">Google Drive desktop application</a> for ease of use.</li>
+  <li>Tell Katy what email address(es) to give read/write permission for the group 
+directory.</li>
+  <li>Try to keep the ARFC directory tidy by categorizing new documents as logically as 
+possible.</li>
+</ul>
+
+<h2 id="calendar">Calendar</h2>
+
+<p>ARFC has a google calendar. It has various scholarship, fellowship, and grant 
+deadlines that group members might want to be aware of. It also is a great 
+place for group meetings, outings, deadlines, etc. To be added to the calendar:</p>
+
+<ul>
+  <li>Have a google calendar account. All UIUC students and staff have one.</li>
+  <li>Tell Katy what email address to use to add you to the calendar so you can create events and such.</li>
+  <li>You should get an email alerting you that you have access.</li>
+  <li>Once this has happened, go to <a href="https://calendar.google.com">calendar.google.com</a>.</li>
+  <li>The calendar should show up under “Other Calendars.” If it doesn’t:</li>
+  <li>Click the down arrow next to Other Calendars.</li>
+  <li>Click “Add a friend’s calendar”</li>
+  <li>Put this email address in: v3ih5p16gub2a2q32t23pv4esc@group.calendar.google.com</li>
+</ul>
+:ET

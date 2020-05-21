@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Advanced Reactors and Fuel Cycles</title>
+  <title>Guides</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -257,180 +257,150 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- Page -->
-    <section id="code" class="">
+        <!-- Manual -->
+    <section id="title" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Advanced Reactors and Fuel Cycles</h2>
-                    <h3 class="section-subheading text-muted">University of Illinois at Urbana-Champaign</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">
-			This group is led by Kathryn Huff, an Assistant Professor at the <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a> in the Department <a href="http://npre.illinois.edu">Nuclear, Plasma, and Radiological Engineering</a>. We design and conduct simulations to understand and improve the safety and sustainability of nuclear energy.
-                    </h3>
+                    <h2 class="section-heading">Guides</h2>
+                    <h3 class="section-subheading text-muted">Instructions and Checklists for practical, common tasks.</h3>
                 </div>
             </div>
         </div>
+
         <div class="container">
             <div class="row">
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="/research/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/multiphysics.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Coupled Multiphysics of Advanced Reactors</h4>
-                        <br/>
-                        <p class="text-muted">Advanced nuclear reactors often involve complex geometries, unique materials, and new physical regimes. To simulate the coupled physics in such designs, current tools must be extended to capture those geometries, materials, and regimes. Our work focuses on extending current tools with features essential to simulating advanced reactor multiphysics.</p>
-                    </div>
+                <div class="col-md-2">
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.fuelcycle.org" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Nuclear_Fuel_Cycle.svg/820px-Nuclear_Fuel_Cycle.svg.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Fuel Cycle Analysis</h4>
-                        <br/>
-                        <p class="text-muted">Our nuclear energy future may involve a mixture of technologies, reprocessing schemes, and waste management strategies. Deployments may be driven by politics or demand, the options may be constrained by complex logistics, and the assessment of impacts requires analysis at scale. Our work focuses on modeling, simulation, and analysis of the global nuclear fuel cycle, with an emphasis on sustainability.</p>
-                    </div>
+                <div class="col-md-8">
+    <p>This page is an index of the growing set of guides behind the operations of the 
+research group. It is intended to be a living document capturing the overviews 
+and checklists for mastering the practical, administrative, and computational 
+infrastructure that ARFC relies on for various common tasks. All research group 
+members should contribute to this section early and often. If possible, link to 
+github repositories, gists, or Jupyter notebooks when there is a guide item 
+that can be captured in one.</p>
+
+<h1 id="getting-started"><a name="gettingstarted"></a>Getting Started</h1>
+
+<p>You’re new to the research group. There are a lot of tasks to get done before 
+you can really fly.</p>
+
+<ul>
+  <li>Handle HR stuff.</li>
+  <li>Get a <a href="https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration">GitHub</a> account</li>
+  <li>Add yourself to the <a href="/manual/guides/communication">communication channels</a>.</li>
+  <li>If you have an office, work with Katy and the NPRE Department office to get a key.</li>
+  <li>If you have an ARFC computer, work with Katy to get a login name.</li>
+  <li>Get a <a href="https://www.zotero.org/user/register/">Zotero account</a>.</li>
+  <li>Join the <a href="https://www.zotero.org/groups/498713/arfc">ARFC Zotero group</a>.</li>
+  <li><a href="https://rsicc.ornl.gov">Request licenses</a> for export controlled software. (Ask Katy if any are needed for your project.)</li>
+  <li>Read the <a href="/manual/coc">Code of Conduct</a>.</li>
+  <li>Download the <a href="http://proquest.safaribooksonline.com/9781491901564">book</a>. Browse it now and use it as a reference when you are lost.</li>
+  <li>Install a text editor of your choosing. (e.g. <a href="http://www.vim.org/">vim</a>, <a href="https://www.gnu.org/software/emacs/">emacs</a>, <a href="https://atom.io/">atom</a>, or <a href="https://github.com/scopatz/xo">xo</a>).</li>
+  <li>Install <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">git</a>.</li>
+  <li><a href="http://swcarpentry.github.io/git-novice/02-setup/">Configure</a> git.</li>
+  <li>Install the <a href="https://www.zotero.org/download/">Zotero desktop application</a>.</li>
+  <li><a href="/manual/guides/zotero">Learn how to use Zotero</a>.</li>
+  <li><a href="http://www.library.illinois.edu/library-technology/proxy-bookmarklet/">Learn how to access articles through the university library</a>.</li>
+  <li>Add yourself to <a href="/manual/guides/website">this website.</a></li>
+  <li>Email Katy your:
+    <ul>
+      <li>GitHub username (Katy will add you to the <a href="https://github.com/arfc">ARFC github organization.</a>)</li>
+      <li>Email address(es) to invite to the group:
+        <ul>
+          <li>Google Drive directory.</li>
+          <li>Box Directory</li>
+          <li>Email List</li>
+          <li>Slack</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Register for <a href="/manual/guides/classes">classes</a>.</li>
+  <li>Explore <a href="https://localwiki.org/cu/">Chambana</a>.</li>
+</ul>
+
+<h1 id="dealing-with-katy">Dealing with Katy</h1>
+
+<p>Here are some ways to interact with me that will make my life (and sometimes 
+yours) easier.</p>
+
+<ul>
+  <li><a href="/manual/guides/katy/meeting">Scheduling to meet with Katy</a></li>
+  <li><a href="/manual/guides/katy/recreq">Requesting a recommendation letter</a></li>
+  <li><a href="/manual/guides/katy/revreq">Requesting comments on a document</a></li>
+  <li><a href="/manual/guides/katy/codereq">Requesting help with software</a></li>
+  <li><a href="/manual/guides/katy/commreq">Asking Katy to be on your PhD committee</a></li>
+</ul>
+
+<h1 id="communication">Communication</h1>
+
+<p>We communicate through many channels. Use the 
+<a href="/manual/guides/communication">communication</a> guide to understand and be 
+prepared to make use of the various meetings, listhosts, chat media, calendars, 
+twitter accounts, and whatnot that tie us together.</p>
+
+<h1 id="writing">Writing</h1>
+
+<ul>
+  <li><a href="/manual/guides/writing/">how to write</a></li>
+</ul>
+
+<h1 id="administrative">Administrative</h1>
+
+<ul>
+  <li><a href="/manual/guides/travel">travel</a></li>
+  <li>purchasing</li>
+  <li>printing</li>
+  <li>internet</li>
+  <li>courses</li>
+  <li>qualifying exam</li>
+  <li>thesis proposal</li>
+  <li>editing this website</li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+
+<ul>
+  <li>install git</li>
+  <li>install python</li>
+  <li>install pyne</li>
+  <li>install moose</li>
+  <li><a href="/manual/guides/cyclus">install cyclus</a></li>
+</ul>
+
+<h1 id="software">Software</h1>
+
+<ul>
+  <li>prototyping</li>
+  <li>collaborating</li>
+  <li>pull requests</li>
+  <li>issues</li>
+  <li>releases</li>
+  <li>data management</li>
+  <li>cloud computing</li>
+  <li><a href="/manual/guides/bluewaters">using Blue Waters</a></li>
+  <li><a href="/manual/guides/git-lfs">using Git Large File Storage</a></li>
+</ul>
+
+<h1 id="presenting-work">Presenting Work</h1>
+
+<ul>
+  <li>how to present</li>
+  <li>what to present</li>
+  <li>where to present</li>
+</ul>
+
+
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.ncsa.illinois.edu/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/bw_cropped.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Advanced Computation</h4>
-                        <br/>
-                        <p class="text-muted">A crosscutting theme of our research is an emphasis on advancing methods and software for computational nuclear engineering. Simulations of reactors and fuel cycle systems are sufficiently complex that sophisticated scientific software and high-performance computing resources are essential to understanding and improving them. Accordingly, the Advanced Reactors and Fuel Cycles group is proud to be affiliated with the University of Illinois National Center for Supercomputing Applications and its Blue Waters computing facility.</p>
-                    </div>
+                <div class="col-md-2">
                 </div>
-            
             </div>
         </div>
+    </div>
     </section>
-
-
-
-<!--- NEWS -->
-    <section id="news" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">News</h2>
-                    <h3 class="section-subheading text-muted">Updates from the research group.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-		    
-                    <span class="post-meta"><h2>May 10, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/05/10/ansh-andrei-landis/">Two ARFC Graduate Students Recognized with ANS Scholarships</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 20, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/04/20/park-ugrad-award/">Gyu Tae Park Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Oct 2, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/10/02/bae-global/">Bae Presents Poster at GLOBAL 2017</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 23, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/08/23/andrei-landis/">Andrei Rykhlevskii Recognized with ANS Scholarship</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 4, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/04/04/bae-ugrad-award/">Jin Whan Bae Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 1, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/02/01/mummah-wins-awards/">Kathryn Mummah Rakes in Awards</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 16, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/08/16/new-arfc-members/">New Group Members Join ARFC</a></h3>
-		    
-                    <span class="post-meta"><h2>Jul 12, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/07/12/huff-npre-article/">Huff Featured in NPRE News</a></h3>
-		    
-                    <span class="post-meta"><h2>Jun 14, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/06/14/neup-demand-driven/">ARFC and ERGS Receive NEUP R&D Award</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 6, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/02/06/huff-joins-npre/">Huff Plans to Join NPRE</a></h3>
-		    
-		<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!--- LICENSE -->
-    <section id="license" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">License</h2>
-                    <h3 class="section-subheading text-muted">This website and 
-                            all its contents are CC-BY-4.0 licensed.
-                     So, you may share and adapt this material as long as 
-                        you give appropriate credit, provide a link to the 
-                        license, and indicate if changes were made. You may do 
-                        so in any reasonable manner, but not in any way that 
-                        suggests the licensor endorses you or your use.
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center">
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Advanced Reactors and Fuel Cycles</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://arfc.github.io" property="cc:attributionName" rel="cc:attributionURL">ARFC Research Group</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/arfc/arfc.github.io" rel="dct:source">github.com/arfc/arfc.github.io</a>.
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!--- Software
-    <section id="software" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Software</h2>
-                    <h3 class="section-subheading text-muted">Simulation leverages the ubiquity of data, the efficiency of computation, and the purity of mathematics toward scientific discovery.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-right">
-                    <p class="large text-muted">This group strives create reproducible, transparent, extendible research products.</p> 
-                </div>
-                <div class="col-md-6">
-                    <ul class="code">
-                        <li>
-                            <h4><i class="fa fa-"></i> &nbsp;
-                            <a href=""></a></h4>
-                            <p></p>
-                        </li>
-                    </ul>
-                </div>                
-            </div>
-        </div>
-    </section>
--->
+    
 
       </div>
     </div>

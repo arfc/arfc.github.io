@@ -1,0 +1,59 @@
+I"è
+<p>Moltres is a MOOSE-application code designed for simulation of molten salt
+reactors.</p>
+
+<h2 id="use">Use</h2>
+
+<p>Outlines of the kernels and boundary
+conditions used to construct the Moltres governing equations can be found on the
+<a href="./wiki/">Moltres wiki</a>. Breakdown of a
+full-fledged Moltres input file can be found
+<a href="./wiki/input_example/">here</a>. New Moltres
+users who have never used MOOSE before are encouraged to check-out its
+<a href="http://mooseframework.org/wiki/">wiki</a>,
+<a href="http://mooseframework.org/wiki/MooseTutorials/">tutorials</a>, and
+<a href="http://mooseframework.org/wiki/MooseExamples/">examples</a> to help understand the
+underlying Moltres components.</p>
+
+<h2 id="install">Install</h2>
+
+<p>Moltres relies on the MOOSE framework. To install MOOSE please follow the
+instructions at http://mooseframework.org/getting-started/. After installing
+MOOSE, you can install Moltres by running the following commands in a shell
+after changing into the directory holding your MOOSE directory (perhaps <code class="highlighter-rouge">~/projects</code>):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/arfc/moltres
+<span class="nb">cd </span>moltres
+git submodule init
+git submodule update
+make <span class="nt">-j8</span>
+</code></pre></div></div>
+
+<p>You may also compile a debug version of Moltres by running <code class="highlighter-rouge">METHOD=dbg make
+-j8</code>. Note that you should replace <code class="highlighter-rouge">8</code> with the number of processors available
+on your machine.</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>To ensure that Moltres is functioning properly, run <code class="highlighter-rouge">./run_tests -j8</code> from the
+root of the Moltres directory.</p>
+
+<h2 id="development">Development</h2>
+
+<p>API documentation for those interested in understanding or developing Moltres
+can be found <a href="https://arfc.github.io/moltres/">here</a>. If you ever want to
+contribute changes to the Moltres repository, make sure you run
+<code class="highlighter-rouge">scripts/install-format-hook.sh</code> before making any commits. This will ensure
+that any commits you make adhere to the MOOSE/Moltres C++ style. Pull requests
+should be submitted to the <code class="highlighter-rouge">devel</code> branch of the <code class="highlighter-rouge">arfc/moltres</code> repository. Each
+pull request is automatically tested for style and for whether it breaks any of
+the core Moltres physics capabilities.</p>
+
+<h2 id="contact">Contact</h2>
+
+<p>Contact Alex Lindsay at al007@illinois.edu for more information or
+even better, please post to our discussion list at
+moltres-users@googlegroups.com.</p>
+
+<p><img src="phoenix_CC0.jpg" alt="" /></p>
+:ET

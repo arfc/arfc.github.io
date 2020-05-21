@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Advanced Reactors and Fuel Cycles</title>
+  <title>Writing Checklist</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/writing/checklist/">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -257,180 +257,107 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- Page -->
-    <section id="code" class="">
+        <!-- Manual -->
+    <section id="title" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Advanced Reactors and Fuel Cycles</h2>
-                    <h3 class="section-subheading text-muted">University of Illinois at Urbana-Champaign</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">
-			This group is led by Kathryn Huff, an Assistant Professor at the <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a> in the Department <a href="http://npre.illinois.edu">Nuclear, Plasma, and Radiological Engineering</a>. We design and conduct simulations to understand and improve the safety and sustainability of nuclear energy.
-                    </h3>
+                    <h2 class="section-heading">Writing Checklist</h2>
+                    <h3 class="section-subheading text-muted">Reduce clutter and increase clarity of any document with these rules.</h3>
                 </div>
             </div>
         </div>
+
         <div class="container">
             <div class="row">
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="/research/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/multiphysics.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Coupled Multiphysics of Advanced Reactors</h4>
-                        <br/>
-                        <p class="text-muted">Advanced nuclear reactors often involve complex geometries, unique materials, and new physical regimes. To simulate the coupled physics in such designs, current tools must be extended to capture those geometries, materials, and regimes. Our work focuses on extending current tools with features essential to simulating advanced reactor multiphysics.</p>
-                    </div>
+                <div class="col-md-2">
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.fuelcycle.org" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Nuclear_Fuel_Cycle.svg/820px-Nuclear_Fuel_Cycle.svg.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Fuel Cycle Analysis</h4>
-                        <br/>
-                        <p class="text-muted">Our nuclear energy future may involve a mixture of technologies, reprocessing schemes, and waste management strategies. Deployments may be driven by politics or demand, the options may be constrained by complex logistics, and the assessment of impacts requires analysis at scale. Our work focuses on modeling, simulation, and analysis of the global nuclear fuel cycle, with an emphasis on sustainability.</p>
-                    </div>
+                <div class="col-md-8">
+    <h2 id="stanford-mooc-on-writing-in-the-sciences">Stanford MOOC on Writing in the Sciences</h2>
+
+<p>This <a href="/manual/guides/writing/checklist">writing checklist</a> is mostly from advice in this  <a href="https://online.stanford.edu/course/writing-sciences-self-paced-spring-2016">massively open online course</a>. You can take it yourself, for free, at your own pace.</p>
+
+<h2 id="checklist">Checklist</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] Run a spell checker.
+<span class="p">-</span> [ ] The Oxford comma must appears in lists ("lions, tigers, and bears.")
+<span class="p">-</span> [ ] Do not use the word "where" unless referring to a location (try "such that" or "in which").
+<span class="p">-</span> [ ] Do not use the word "when" unless referring to a time (try "if" instead).
+<span class="p">-</span> [ ] Only use "large" when referring to size.
+<span class="p">-</span> [ ] Use of "very" suggests that a cooler word exists.
+<span class="p">-</span> [ ] Other misused/overused words include: code, input, output, different, value, amount, model.
+<span class="p">-</span> [ ] Articles such as "a" "the" "some" "any" and "each" must appear where necessary.
+<span class="p">-</span> [ ] All subjects match the plurality of their verbs ( no: "Apples is tasty" yes: "Apples are tasty")
+<span class="p">-</span> [ ] Avoid run-on sentences.
+<span class="p">-</span> [ ] clunky nouns -&gt; spunky verbs (progression, expression --&gt; progress, express)
+<span class="p">-</span> [ ] reduce vague words (important, methodologic)
+<span class="p">-</span> [ ] reduce acronyms / jargon
+<span class="p">-</span> [ ] expand all acronyms on first use (rely on the acros.tex file and glossaries package to automate this)
+<span class="p">-</span> [ ] get rid of unnecessary prepositional phrases -- author clearing throat (It can be shown that)
+<span class="p">-</span> [ ] get rid of extraneous adverbs (very, really, quite, basically, generally)
+<span class="p">-</span> [ ] get rid of there are / there is
+<span class="p">-</span> [ ] turn negatives to positives (she was not often right -&gt; she was usually wrong)
+<span class="p">-</span> [ ] get rid of extraneous prepositions (the meeting happened on monday -&gt; the meeting happened monday) (they agreed that it was true -&gt; they agreed it was true)
+<span class="p">-</span> [ ] get rid of passive voice (is/was/are/were/be/been/am + past tense verb), replace with active voice
+<span class="p">-</span> [ ] use strong verbs (use sparingly: is, are, was, were, be, been, am)
+<span class="p">-</span> [ ] avoid turning verbs into nouns ("obtain estimates of" -&gt; "estimates"; "provides a description of" -&gt; "describes")
+<span class="p">-</span> [ ] don't bury the verb (keep the predicate close to the subject at the beginning of the sentence)
+<span class="p">-</span> [ ] data is plural (the data are critical)
+<span class="p">-</span> [ ] compare to (point out similarities between different things) vs.  compared with (point out differences between similar things)
+<span class="p">-</span> [ ] punctuation helps you to vary your sentence structure
+<span class="p">-</span> [ ] Power to separate in increasing power: comma, colon, dash, parentheses, semicolon, period
+<span class="p">-</span> [ ] In increasing order of formality: dash, parentheses, all of the others. Don't overdo it with the dash and parentheses
+<span class="p">-</span> [ ] semicolon: connects two independent clauses. OR used to separate when the items in the list contain internal punctuation.
+<span class="p">-</span> [ ] use a colon to introduce a list, quote, explanation, conclusion, or amplification
+<span class="p">-</span> [ ] if there's a list in a sentence, it shouldn't come before the colon
+<span class="p">-</span> [ ] use a dash to insert something in the middle of the sentence. Don't overuse it.
+<span class="p">-</span> [ ] Always use isotopic notation like <span class="sb">`$^{239}Pu$`</span>. Never $Pu-239$ or plutonium-239.
+<span class="p">-</span> [ ] Elemental symbols (Ni, Li, Na, Pu) are capitalized, but their names are not (nickel, lithium, sodium, plutonium).
+<span class="p">-</span> [ ] A phrase of the form <span class="nt">&lt;verb&gt;</span>ion of <span class="nt">&lt;noun&gt;</span> is probably clearer as <span class="nt">&lt;noun&gt;</span> <span class="nt">&lt;verb&gt;</span>ion. (For example, convert "calculation of velocity" to "velocity calculation".)
+<span class="p">-</span> <span class="p">[</span><span class="nv"> ] Cite all software. Review [the principles</span><span class="p">](</span><span class="sx">https://www.force11.org/software-citation-principles</span><span class="p">)</span> and try <span class="p">[</span><span class="nv">CiteAs</span><span class="p">](</span><span class="sx">https://citeas.org/about</span><span class="p">)</span> if necessary.
+<span class="p">-</span> [ ] Refer to software consistently by name.
+</code></pre></div></div>
+
+<p>Additional Table and Figure Checklist:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] The text should refer to all tables and figures.
+<span class="p">-</span> [ ] When referring to figures by their number, use <span class="sb">`Figure 1`</span> and <span class="sb">`Table 1.`</span> They should be capitalized and not abbreviated (not <span class="sb">`fig. 1`</span> or <span class="sb">`figure 1`</span>.)
+<span class="p">-</span> [ ] In tables, align all columns of numbers such that the decimals line up.
+<span class="p">-</span> [ ] In a single column, all values should probably have the same number of significant digits.
+<span class="p">-</span> [ ] Give units for each numerical column.
+<span class="p">-</span> [ ] A table should have only 3 horizontal lines (no vertical lines and no more than 3.)
+</code></pre></div></div>
+
+<p>Additional Math Comments:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] define all variables, with units. If unitless, indicate that this is the case <span class="sb">`$[-]$`</span>.
+<span class="p">-</span> [ ] subscripts should be brief and can be avoided with common notation. For example, <span class="sb">`$\dot{m}$`</span> is better than <span class="sb">`$m_f$`</span> which is superior to <span class="sb">`$m_{flow}$`</span>.
+<span class="p">-</span> [ ] variable names should be symbols rather than words <span class="sb">`m`</span> is better than <span class="sb">`mass`</span> and <span class="sb">`\ksi`</span> is better than <span class="sb">`one_time_use_variable`</span>.
+<span class="p">-</span> [ ] The notation $3.0<span class="se">\t</span>imes10^12$ is preferred over $3e12$.
+<span class="p">-</span> [ ] Equations should be part of a sentence.
+<span class="p">-</span> [ ] Equations should be in the <span class="sb">`align`</span> environment. Align them at the <span class="sb">`=`</span> sign.
+<span class="p">-</span> [ ] Variables should be defined in the <span class="sb">`align`</span> environment as well, not buried in paragraphs.
+</code></pre></div></div>
+
+<p>Here’s an example of an equation:</p>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The line is defined as
+<span class="nt">\begin{align}</span>
+y<span class="p">&amp;</span>=mx + b
+<span class="k">\intertext</span><span class="p">{</span>where<span class="p">}</span>
+y<span class="p">&amp;</span>= <span class="k">\mbox</span><span class="p">{</span> height of the line, also known as rise [m]<span class="p">}</span><span class="k">\nonumber\\</span>
+m<span class="p">&amp;</span>= <span class="k">\mbox</span><span class="p">{</span> slope [-]<span class="p">}</span><span class="k">\nonumber\\</span>
+x<span class="p">&amp;</span>=<span class="k">\mbox</span><span class="p">{</span> independent parameter, known as run [m]<span class="p">}</span><span class="k">\nonumber\\</span>
+b<span class="p">&amp;</span>= <span class="k">\mbox</span><span class="p">{</span> y intercept [m].<span class="p">}</span>
+<span class="nt">\end{align}</span>
+</code></pre></div></div>
+
+
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.ncsa.illinois.edu/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/bw_cropped.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Advanced Computation</h4>
-                        <br/>
-                        <p class="text-muted">A crosscutting theme of our research is an emphasis on advancing methods and software for computational nuclear engineering. Simulations of reactors and fuel cycle systems are sufficiently complex that sophisticated scientific software and high-performance computing resources are essential to understanding and improving them. Accordingly, the Advanced Reactors and Fuel Cycles group is proud to be affiliated with the University of Illinois National Center for Supercomputing Applications and its Blue Waters computing facility.</p>
-                    </div>
+                <div class="col-md-2">
                 </div>
-            
             </div>
         </div>
+    </div>
     </section>
-
-
-
-<!--- NEWS -->
-    <section id="news" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">News</h2>
-                    <h3 class="section-subheading text-muted">Updates from the research group.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-		    
-                    <span class="post-meta"><h2>May 10, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/05/10/ansh-andrei-landis/">Two ARFC Graduate Students Recognized with ANS Scholarships</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 20, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/04/20/park-ugrad-award/">Gyu Tae Park Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Oct 2, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/10/02/bae-global/">Bae Presents Poster at GLOBAL 2017</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 23, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/08/23/andrei-landis/">Andrei Rykhlevskii Recognized with ANS Scholarship</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 4, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/04/04/bae-ugrad-award/">Jin Whan Bae Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 1, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/02/01/mummah-wins-awards/">Kathryn Mummah Rakes in Awards</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 16, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/08/16/new-arfc-members/">New Group Members Join ARFC</a></h3>
-		    
-                    <span class="post-meta"><h2>Jul 12, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/07/12/huff-npre-article/">Huff Featured in NPRE News</a></h3>
-		    
-                    <span class="post-meta"><h2>Jun 14, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/06/14/neup-demand-driven/">ARFC and ERGS Receive NEUP R&D Award</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 6, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/02/06/huff-joins-npre/">Huff Plans to Join NPRE</a></h3>
-		    
-		<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!--- LICENSE -->
-    <section id="license" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">License</h2>
-                    <h3 class="section-subheading text-muted">This website and 
-                            all its contents are CC-BY-4.0 licensed.
-                     So, you may share and adapt this material as long as 
-                        you give appropriate credit, provide a link to the 
-                        license, and indicate if changes were made. You may do 
-                        so in any reasonable manner, but not in any way that 
-                        suggests the licensor endorses you or your use.
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center">
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Advanced Reactors and Fuel Cycles</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://arfc.github.io" property="cc:attributionName" rel="cc:attributionURL">ARFC Research Group</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/arfc/arfc.github.io" rel="dct:source">github.com/arfc/arfc.github.io</a>.
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!--- Software
-    <section id="software" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Software</h2>
-                    <h3 class="section-subheading text-muted">Simulation leverages the ubiquity of data, the efficiency of computation, and the purity of mathematics toward scientific discovery.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-right">
-                    <p class="large text-muted">This group strives create reproducible, transparent, extendible research products.</p> 
-                </div>
-                <div class="col-md-6">
-                    <ul class="code">
-                        <li>
-                            <h4><i class="fa fa-"></i> &nbsp;
-                            <a href=""></a></h4>
-                            <p></p>
-                        </li>
-                    </ul>
-                </div>                
-            </div>
-        </div>
-    </section>
--->
+    
 
       </div>
     </div>

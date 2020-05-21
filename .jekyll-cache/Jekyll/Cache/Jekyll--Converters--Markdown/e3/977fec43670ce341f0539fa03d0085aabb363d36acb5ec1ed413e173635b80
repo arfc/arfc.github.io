@@ -1,0 +1,786 @@
+I"x�<p>The input file example documented here is taken from
+<a href="https://github.com/arfc/moltres/blob/devel/tests/twod_axi_coupled/auto_diff_rho.i"><code class="highlighter-rouge">moltres/tests/twod_axi_coupled/auto_diff_rho.i</code></a>.
+This is a simple 2-D axisymmetric core model of the Molten Salt Reactor Experiment (MSRE)
+that was developed at Oak Ridge National Laboratory and was operated from 1965
+through 1969. Simulation results from this 2-D model are documented in the
+article, <a href="http://arfc.github.io/papers/lindsay_introduction_2018.pdf">Introduction to Moltres: An application for simulation of Molten Salt
+Reactors</a>,
+which discusses simulation results, and compares them to a 3-D Motlres model of
+the MSRE and to MSRE data and calculated results. It should be noted that
+Figure 1 of the article indicates that the width of the model is 145 cm. This
+however, is the diameter of the entire core. A careful reader would notice that
+the width of the plots in the article is 1/2 this width, and the width indicated
+in Figure 1 is not representative of the model.</p>
+
+<p>Assuming that Moltres has been successfully compiled, to execute this input file
+from the command line, run the following from a terminal window, substituting
+<code class="highlighter-rouge">$moltres_root</code> with the path to the Moltres root directory:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $moltres_root/tests/twod_axi_coupled
+../../moltres-opt -i auto_diff_rho.i
+</code></pre></div></div>
+
+<p>In serial, this job takes around 90 seconds on a 2.7 GHz machine. To run the job in
+parallel, execute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mpirun -np 2 ../../moltres-opt -i auto_diff_rho.i
+</code></pre></div></div>
+
+<p>where the number of processors can be changed from 2 to however many processes
+you want to run. The parallel performance of the job depends on the number of
+degrees of freedom in the problem and the preconditioner used. A general rule of
+thumb for optimal scaling is not to go below 20k degrees of freedom per
+processor, otherwise communication becomes a performance drag. Additionally many
+preconditioners do not perform as well when spread over multiple processes as
+they lose access to “new” information. (See
+http://www.mcs.anl.gov/petsc/documentation/faq.html#slowerparallel for more
+discussion of this). This particular input file (<code class="highlighter-rouge">auto_diff_rho.i</code>) only has
+8,697 degrees of freedom so communication is a factor; however, the executioner
+used is a direct solver which scales well. On the same 2.7 GHz machine, the
+solution times for 1-4 processors are given below.</p>
+
+<ul>
+  <li>Single processor solution time: 90 seconds</li>
+  <li>Two processors: 50 seconds</li>
+  <li>Three: 35 seconds</li>
+  <li>Four: 30 seconds</li>
+</ul>
+
+<p>Before delving into a description of the input file, we note that all the
+parameter options for different input blocks can be seen by executing
+<code class="highlighter-rouge">moltres-opt --dump</code>.</p>
+
+<p>Example output corresponding to the input file under discussion can be found in
+<code class="highlighter-rouge">$moltres_root/tests/twod_axi_coupled/gold/auto_diff_rho.e</code>. The most common
+application for visualizing output files is
+<a href="https://www.paraview.org/">ParaView</a>, although
+<a href="https://wci.llnl.gov/simulation/computer-codes/visit/">VisIt</a> or
+<a href="http://yt-project.org/">yt</a> may also be used.</p>
+
+<h4 id="model-geometry">Model Geometry</h4>
+
+<p>The figure below shows the domain for the 2-D MSRE model. It is a
+72.5 cm by 151.75 cm rectangle that is
+slightly smaller than the total height of the core, and includes 1/2 the width
+of the core, extending from the core center line on the left to the core wall on
+the right. For this steady-state simulation, the core center line is a symmetry
+boundary. The domain consists of 14 fuel channels, alternating with
+14 solid graphite moderator regions, represented in the figure by
+cyan and grey rectangles respectively.</p>
+
+<p><img src="../figures/input_example_mesh.png" alt="1/2 Core Model" /></p>
+
+<h4 id="file-format">File Format</h4>
+
+<p>Moltres is built on top of the MOOSE framework, and the input file uses the “hierarchal
+input text format” (hit) input format adopted by MOOSE. A brief description of the
+input syntax is presented <a href="https://www.mooseframework.org/application_usage/input_syntax.html">here</a>.
+This is a relatively simple file format that uses <code class="highlighter-rouge">[names in brackets]</code> to mark the
+start and end of input blocks. The format is loosely based on a directory structure
+with nesting of blocks allowed and <code class="highlighter-rouge">[../]</code> being used to indicate the end of a
+block (i.e., going up one level). Empty brackets <code class="highlighter-rouge">[]</code> can also be used to indicate
+the end of a block. <em>Note that block names and parameter names are generally case
+sensitive in the input file.</em> In addition, in Moltres/MOOSE input files, the <code class="highlighter-rouge">#</code>
+symbol is used to mark the start of a comment. Comments may start anywhere on a line.</p>
+
+<h4 id="substitution-variables">Substitution Variables</h4>
+
+<p>Root level variables can be used as substitution variables throughout the document
+by using the syntax <code class="highlighter-rouge">${varname}</code>. Starting at the top of the input file, the
+following substitution variables are defined:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flow_velocity=21.7      # cm/s. See MSRE-properties.ods
+ini_temp=922
+diri_temp=922
+nt_scale=1e13
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">flow_velocity</code> is used to set the upward flow velocity of the fuel / molton
+salt in this model.</li>
+  <li><code class="highlighter-rouge">ini_temp</code> is used below to set the initial temperature in the fuel and moderator.</li>
+  <li><code class="highlighter-rouge">diri_temp</code> is used to control the inlet temperature boundary condition.</li>
+  <li><code class="highlighter-rouge">nt_scale</code> is a transient fission heat source term scaling factor.</li>
+</ul>
+
+<p>These variables may be modified to affect our primary system variables:
+temperature, neutron flux, and precursor concentrations. Decreasing the flow velocity
+will increase the temperature through the reactor. Because of the negative
+feedback coefficients of fuel and moderator for this reactor composition (modeled
+after Oak Ridge’s MSRE), the increase in average reactor temperature decreases the
+total reactor power and consequently the neutron fluxes and precursor
+concentrations. Similarly, increasing the inlet temperature via <code class="highlighter-rouge">diri_temp</code>
+decreases reactor power.</p>
+
+<h4 id="globalparams-block"><code class="highlighter-rouge">GlobalParams</code> Block<a name="GlobalParams"></a></h4>
+
+<p>Following the substitution variable definitions, we have the <code class="highlighter-rouge">GlobalParams</code> block:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[GlobalParams]
+  num_groups = 2
+  num_precursor_groups = 6
+  use_exp_form = false
+  group_fluxes = 'group1 group2'
+  temperature = temp
+  sss2_input = false
+  pre_concs = 'pre1 pre2 pre3 pre4 pre5 pre6'
+  account_delayed = true
+[]
+</code></pre></div></div>
+
+<p>In <code class="highlighter-rouge">GlobalParams</code>, parameters like <code class="highlighter-rouge">num_groups</code> can be globally set to a
+value. Consequently any class (e.g. the kernel class <code class="highlighter-rouge">GroupDiffusion</code>) that has
+the parameter <code class="highlighter-rouge">num_groups</code> will read in a value of <code class="highlighter-rouge">2</code> unless it is overridden
+locally in its input block. It should be noted that the <code class="highlighter-rouge">GlobalParams</code>
+block and any other MOOSE input block can be placed anywhere in the input file.
+At execution time each block will be read when it is needed. Below is a description
+of the parameters included in the GlobalParams section:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">num_groups</code>: The number of energy groups for neutron diffusion</li>
+  <li><code class="highlighter-rouge">num_precursor_groups</code>: The number of delayed neutron precursor groups</li>
+  <li><code class="highlighter-rouge">use_exp_form</code>: Whether the actual neutron/precursor fluxes/concentrations
+should be represented by <script type="math/tex">u</script> or <script type="math/tex">e^u</script> where <script type="math/tex">u</script> is the actual variable
+value</li>
+  <li><code class="highlighter-rouge">group_fluxes</code>: The names of the neutron group fluxes</li>
+  <li><code class="highlighter-rouge">temperature</code>: The name of the temperature variable. Some of the kernel or boundary
+ condition variables require an input named <code class="highlighter-rouge">temperature</code> which specifies the
+ variable used to represent temperature. The variable <code class="highlighter-rouge">temp</code> will be specified
+ below in the <code class="highlighter-rouge">[Variables]</code> block.</li>
+  <li><code class="highlighter-rouge">sss2_input</code>: True if the macroscopic group constants were generated by
+Serpent 2. False otherwise</li>
+  <li><code class="highlighter-rouge">pre_concs</code>: The names of the precursor concentration variables</li>
+  <li><code class="highlighter-rouge">account_delayed</code>: Whether to account for delayed neutron production. Modifies
+the neutron source term</li>
+</ul>
+
+<h4 id="variables-block"><code class="highlighter-rouge">Variables</code> Block</h4>
+
+<p>The <code class="highlighter-rouge">Variables</code> block is used to indicate the primary solution variables, or
+equivalently, to indicate the number of partial differential equations (PDEs)
+that will be defined in the <a href="#Kernels">Kernels</a> and <a href="#BCs">BCs</a> blocks. For this
+model, the <code class="highlighter-rouge">group1</code> and <code class="highlighter-rouge">group2</code> neutron fluxes and the fuel and moderator
+<code class="highlighter-rouge">temp</code> (temperature) are the system variables that are being solved for by the
+PDEs. In the <a href="#Kernels">Kernels</a> and <a href="#BCs">BCs</a> blocks described below, each
+kernel and BC term must be associated with one primary variable from the
+<code class="highlighter-rouge">Variables</code> list below to indicate which PDE the term is included in.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [Variables]
+    [./group1]
+      order = FIRST
+      family = LAGRANGE
+      initial_condition = 1
+      scaling = 1e4
+    [../]
+    [./group2]
+      order = FIRST
+      family = LAGRANGE
+      initial_condition = 1
+      scaling = 1e4
+    [../]
+    [./temp]
+      initial_condition = ${ini_temp}
+      scaling = 1e-4
+    [../]
+  []
+</code></pre></div></div>
+
+<p>Sub-blocks are initialized with <code class="highlighter-rouge">[./&lt;object_name&gt;]</code> and closed with <code class="highlighter-rouge">[../]</code>. The
+<code class="highlighter-rouge">[./group1]</code> sub-block creates a <code class="highlighter-rouge">MooseVariable</code> object with the name <code class="highlighter-rouge">group1</code>.
+The parameters purpose of the parameter is as follows:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">family</code> describes the shape function type used to form the
+approximate finite element solution.</li>
+  <li><code class="highlighter-rouge">order</code> denotes the polynomial order of the shape functions.</li>
+  <li><code class="highlighter-rouge">initial_condition</code> is an optional parameter that can be used to set a spatially
+uniform initial value for the variable.</li>
+  <li><code class="highlighter-rouge">scaling</code> is another optional parameter that can be used to scale the residual
+of the corresponding variable; this is usually done when different
+variables have residuals of different orders of magnitude.</li>
+</ul>
+
+<h4 id="mesh-block"><code class="highlighter-rouge">Mesh</code> Block<a name="Mesh"></a></h4>
+
+<p>Next in our input file we have the <code class="highlighter-rouge">Mesh</code> block. The two most commonly used <code class="highlighter-rouge">Mesh</code>
+types are <code class="highlighter-rouge">FileMesh</code> and <code class="highlighter-rouge">GeneratedMesh</code>. The <code class="highlighter-rouge">Mesh</code> input block by default assumes
+type <code class="highlighter-rouge">FileMesh</code> and takes a parameter argument <code class="highlighter-rouge">file = &lt;mesh_file_name&gt;</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Mesh]
+  file = '2-D_lattice_structured.msh'
+[]
+</code></pre></div></div>
+
+<p>Many MOOSE users generate their meshes using
+Cubit/Trelis. For national lab employees this software is free; however,
+academic or industry users must pay. Consequently, Moltres meshes to date have
+been generated using the software <a href="http://gmsh.info/">gmsh</a> which is free and
+open source. Binaries for Windows, Mac, and Linux as well as source code can be
+downloaded <a href="http://gmsh.info/#Download">here</a>. Ubuntu users may also install
+<code class="highlighter-rouge">gmsh</code> using <code class="highlighter-rouge">sudo apt-get install gmsh</code>. We will not go into the details of
+using <code class="highlighter-rouge">gmsh</code> but the interested user should peruse its
+<a href="http://gmsh.info/doc/texinfo/gmsh.html">documentation</a>. There are many example
+<code class="highlighter-rouge">gmsh</code> input files in the Moltres repository (denoted by the <code class="highlighter-rouge">.geo</code>
+extension). To generate a mesh for use with Moltres, a typical bash command is
+<code class="highlighter-rouge">gmsh -2 -o file_name.msh file_name.geo</code> where <code class="highlighter-rouge">2</code> should be replaced with the
+dimension of the mesh, the argument following <code class="highlighter-rouge">-o</code> is the name of the output
+<code class="highlighter-rouge">.msh</code> file, and the last argument is the input <code class="highlighter-rouge">.geo</code> file.</p>
+
+<p>Gmsh or Cubit can be used for generation of highly complex mesh
+structures. However, if the user just wishes to generate a simple mesh, he/she
+may use MOOSE’s built-in type <code class="highlighter-rouge">GeneratedMesh</code>. For using <code class="highlighter-rouge">GeneratedMesh</code> we
+refer the reader <a href="http://mooseframework.org/wiki/MooseSystems/Mesh/">here</a>.</p>
+
+<h4 id="problem-block"><code class="highlighter-rouge">Problem</code> Block</h4>
+
+<p>Next in our example input file, we have the <code class="highlighter-rouge">Problem</code> block. The <code class="highlighter-rouge">Problem</code> block
+may usually be omitted from the input file for a Cartesian simulation. However,
+since this particular example is using 2D-axisymmetric coordinates, we have to
+convey this information using <code class="highlighter-rouge">Problem</code>’s <code class="highlighter-rouge">coord_type</code> parameter.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Problem]
+  coord_type = RZ
+[]
+</code></pre></div></div>
+
+<h4 id="precursors-block"><code class="highlighter-rouge">Precursors</code> Block<a name="Precursors"></a></h4>
+
+<p>Whereas all the other blocks that have been introduced are standard MOOSE
+blocks, <code class="highlighter-rouge">Precursors</code> is a custom input file block unique to Moltres. The
+<code class="highlighter-rouge">Precursors</code> action sets up the delayed neutron precursor concentration equations:</p>
+
+<script type="math/tex; mode=display">\frac{\partial C_i}{\partial t} + \bar{u} \cdot \nabla C_i + \lambda_i C_i
+   - \sum_{g'=1}^{G} \beta_i \nu \Sigma_{g'}^f \phi_{g'} = 0</script>
+
+<p>The precursor variables, kernels, and boundary conditions necessary for solving
+the precursor governing equations are all instantiated by the <code class="highlighter-rouge">Precursors</code> action.
+Six precursor groups (symbolized by the index i in the equation above)
+are modeled, as specified via the <code class="highlighter-rouge">num_precursor_groups</code> in the
+<a href="#GlobalParams"><code class="highlighter-rouge">GlobalParams</code></a> block. <script type="math/tex">G</script> is the number of neutron flux energy
+groups, and <script type="math/tex">g'</script> is the index associated with the energy groups. For this problem
+two energy groups are modeled, with the equations configured explicitly in the
+<a href="#Kernels">Kernels</a> and <a href="#BCs">BCs</a> blocks documented after this section.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Precursors]
+  [./pres]
+    var_name_base = pre
+    block = 'fuel'
+    outlet_boundaries = 'fuel_tops'
+    u_def = 0
+    v_def = ${flow_velocity}
+    w_def = 0
+    nt_exp_form = false
+    family = MONOMIAL
+    order = CONSTANT
+    # jac_test = true
+  [../]
+[]
+</code></pre></div></div>
+
+<p>Parameter descriptions:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">var_name_base</code>: The prefix for the precursor variable names. Name suffixes are
+numbers, e.g. <code class="highlighter-rouge">pre1, pre2, ...</code></li>
+  <li><code class="highlighter-rouge">block</code>: This is a parameter ubiquitous to many MOOSE classes such as kernels
+and materials. By specifying a value for <code class="highlighter-rouge">block</code> the user is asking that in
+this case, precursors and their associated governing equations only be
+solved for in the <code class="highlighter-rouge">fuel</code> mesh subdomains</li>
+  <li><code class="highlighter-rouge">outlet_boundaries</code>: The mesh boundaries from which the precursors flow out</li>
+  <li><code class="highlighter-rouge">u_def, v_def, w_def</code>: The x, y, and z components of velocity, or in the case
+of an RZ simulation, <code class="highlighter-rouge">u_def</code> is the r velocity component, <code class="highlighter-rouge">v_def</code> is the
+z-component, and <code class="highlighter-rouge">w_def</code> has no meaning</li>
+  <li><code class="highlighter-rouge">nt_exp_form</code>: Whether the neutron group fluxes have their concentrations in
+an exponential form. If <code class="highlighter-rouge">use_exp_form</code> is false in the <code class="highlighter-rouge">GlobalParams</code> block,
+this should also be false</li>
+  <li><code class="highlighter-rouge">jac_test</code>: true if testing the application developer’s jacobian against a
+jacobian formed through finite differencing of the residuals. Defaults to
+false.</li>
+</ul>
+
+<h4 id="kernels-block-"><code class="highlighter-rouge">Kernels</code> Block <a name="Kernels"></a></h4>
+
+<p>The <code class="highlighter-rouge">Kernels</code> block is used to construct PDEs that are included in the system of
+equations that are solved. Each PDE has a primary variable that is being solved for,
+and the list of variables being solved for is defined in the <a href="#Variables">Variables</a>
+block shown above. There is an additional PDE solved as part of the system of
+PDEs for each variable defined in the <code class="highlighter-rouge">Variables</code> section. In this case, three
+solution variables were defined in the variable section:</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">group1</code> fast group neutron flux.</li>
+  <li>The <code class="highlighter-rouge">group2</code> thermal group neutron flux.</li>
+  <li>The molten salt / moderator temperature (<code class="highlighter-rouge">temp</code>).</li>
+</ul>
+
+<p>Note that additional precursor variables are automatically defined by the
+<a href="#Precursors"><code class="highlighter-rouge">Precursors</code></a> block.</p>
+
+<p>The <code class="highlighter-rouge">Kernels</code> section defines a set of “Kernels”, where a “Kernel” represents a
+single term included in a PDE. A PDE is constructed by specifying the set of terms
+(or Kernels) that will be included in the PDE in the <code class="highlighter-rouge">Kernels</code> block, and by
+specifying which PDE the kernel is associated with. This is done by indicating
+which of the above three variables the kernel is associated with (i.e., <code class="highlighter-rouge">group1</code>,
+<code class="highlighter-rouge">group2</code>, or <code class="highlighter-rouge">temp</code>).</p>
+
+<p>Thus each entry in the <code class="highlighter-rouge">Kernels</code> block specifies a term to include in one of
+PDEs that are solved. The <code class="highlighter-rouge">type = &lt;kernel type&gt;</code> parameter associated with a
+kernel entry identifies the term (or Kernel) that will be included in the PDE,
+and the <code class="highlighter-rouge">variable = &lt;primary variable&gt;</code> value indicates the primary solution
+variable (from the <a href="#Variables">Variables</a> block) associated with the term, or
+equivalently which PDE the term will be included in. MOOSE provides several
+standard kernels that can be included in a PDE. Moltres defines an additional set
+of kernels that are useful in modeling neutron flux and associated phenomenon in
+molton salt reactors. The mathematical form of the Moltres kernels can be found
+on the <a href="/software/moltres/wiki/kernels">kernel wiki page</a>.</p>
+
+<p>Kernels can be optionally restricted to specific subdomains within the model by setting
+<code class="highlighter-rouge">block = &lt;subdomain_names&gt;</code>. Note that this implies that the form of the equation
+that is solved may differ in different mesh regions. The equations that are modeled
+are represented below, followed by the input required to construct these equations.
+In the <code class="highlighter-rouge">group1</code> and <code class="highlighter-rouge">group2</code> neutron flux equations below and in the input that
+follows, notice that the fission kernel (<code class="highlighter-rouge">CoupledFissionKernel</code>)
+is only included in the fuel region, and is not included in the moderator region
+(since there is no fuel in the moderator region). Also, the <code class="highlighter-rouge">DelayedNeutronSource</code>
+kernel, which contributes neutrons from the precursor group equations, is only
+included as part of the <code class="highlighter-rouge">group1</code> or fast group equation.</p>
+
+<p>In the heat transfer equation, the advection kernel (<code class="highlighter-rouge">ConservativeTemperatureAdvection</code>)
+is only included in the fuel region since advection is not relevant in the solid
+graphite moderator region. The fission heat source term is also restricted to the
+‘Fuel’ region, since fission only occurs in the fuel region and not in the moderator
+region.</p>
+
+<p><strong>Neutronics Equation for <code class="highlighter-rouge">group1</code> and <code class="highlighter-rouge">group2</code> Variables (g = 1 or 2)</strong></p>
+
+<script type="math/tex; mode=display">\underbrace{\frac{1}{v_g}\frac{\partial \phi_g}{\partial t}}_{NtTimeDerivative}
+  + \underbrace{\Sigma_g^r \phi_g}_{SigmaR}
+  - \underbrace{\nabla \cdot D_g \nabla \phi_g}_{GroupDiffusion}
+  - \underbrace{\sum_{g \ne g'}^G \Sigma_{g'\rightarrow g}^s \phi_{g'}}_{InScatter}
+  - \underbrace{\chi_g^p \sum_{g' = 1}^G (1 - \beta) \nu \Sigma_{f,g'} \phi_{g'}}_{CoupledFissionKernel\\ \textrm{'Fuel' region only}}
+  - \underbrace{\chi_g^d \sum_i^I \lambda_i C_i}_{DelayedNeutronSource\\ \textrm{'Fuel' region only} \\ \textrm{Not in group2 Eqn}}
+  = 0</script>
+
+<p><strong>Heat Transfer Equation for <code class="highlighter-rouge">temp</code> Variable</strong></p>
+
+<script type="math/tex; mode=display">\underbrace{\rho c_p \frac{\partial T}{\partial t}}_{[1]}
+   + \underbrace{\rho c_p \bar{u} \cdot \nabla T}_{[2]~\textrm{'Fuel' region only}}
+   - \underbrace{k \nabla^2 T}_{MatDiffusion \\ \textrm{(Conduction)}}
+   - \underbrace{\sum_{g=1}^G \epsilon_{f,g}\Sigma_{f,g}\phi_g}_{TransientFissionHeatSource \\ \textrm{'Fuel' region only}}
+   = 0</script>
+
+<ul>
+  <li>[1] = MatINSTemperatureTimeDerivative</li>
+  <li>[2] = ConservativeTemperatureAdvection</li>
+  <li><script type="math/tex">\bar{u}</script> = fuel / molten salt velocity</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Kernels]
+  #---------------------------------------------------------------------
+  # Group 1 Neutronics
+  #---------------------------------------------------------------------
+  [./time_group1]
+    type = NtTimeDerivative
+    variable = group1
+    group_number = 1
+  [../]
+  [./sigma_r_group1]
+    type = SigmaR
+    variable = group1
+    group_number = 1
+  [../]
+  [./diff_group1]
+    type = GroupDiffusion
+    variable = group1
+    group_number = 1
+  [../]
+  [./inscatter_group1]
+    type = InScatter
+    variable = group1
+    group_number = 1
+  [../]
+  [./fission_source_group1]
+    type = CoupledFissionKernel
+    variable = group1
+    group_number = 1
+    block = 'fuel'
+  [../]
+  [./delayed_group1]
+    type = DelayedNeutronSource
+    variable = group1
+    block = 'fuel'
+  [../]
+
+  #---------------------------------------------------------------------
+  # Group 2 Neutronics
+  #---------------------------------------------------------------------
+  [./time_group2]
+    type = NtTimeDerivative
+    variable = group2
+    group_number = 2
+  [../]
+  [./sigma_r_group2]
+    type = SigmaR
+    variable = group2
+    group_number = 2
+  [../]
+  [./diff_group2]
+    type = GroupDiffusion
+    variable = group2
+    group_number = 2
+  [../]
+  [./inscatter_group2]
+    type = InScatter
+    variable = group2
+    group_number = 2
+  [../]
+  [./fission_source_group2]
+    type = CoupledFissionKernel
+    variable = group2
+    group_number = 2
+    block = 'fuel'
+  [../]
+
+  #---------------------------------------------------------------------
+  # Temperature
+  #---------------------------------------------------------------------
+  [./temp_time_derivative]
+    type = MatINSTemperatureTimeDerivative
+    variable = temp
+  [../]
+  [./temp_advection_fuel]
+    type = ConservativeTemperatureAdvection
+    velocity = '0 ${flow_velocity} 0'
+    variable = temp
+    block = 'fuel'
+  [../]
+  [./temp_diffusion]
+    type = MatDiffusion
+    D_name = 'k'
+    variable = temp
+  [../]
+  [./temp_source_fuel]
+    type = TransientFissionHeatSource
+    variable = temp
+    nt_scale=${nt_scale}
+    block = 'fuel'
+  [../]
+  # [./temp_source_mod]
+  #   type = GammaHeatSource
+  #   variable = temp
+  #   gamma = .0144 # Cammi .0144
+  #   block = 'moder'
+  #   average_fission_heat = 'average_fission_heat'
+  # [../]
+[]
+</code></pre></div></div>
+
+<h4 id="bcs-block-"><code class="highlighter-rouge">BCs</code> Block <a name="BCs"></a></h4>
+
+<p>The <code class="highlighter-rouge">BCs</code> block is very similar to the <code class="highlighter-rouge">Kernels</code> block except the
+<code class="highlighter-rouge">boundary = &lt;boundary_names&gt;</code> parameter must be specified to indicate where the boundary
+conditions should be applied. The mathematical form of the BCs can be found on
+the <a href="/software/moltres/wiki/bcs">BCs wiki page</a>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[BCs]
+  [./vacuum_group1]
+    type = VacuumConcBC
+    boundary = 'fuel_bottoms fuel_tops moder_bottoms moder_tops outer_wall'
+    variable = group1
+  [../]
+  [./vacuum_group2]
+    type = VacuumConcBC
+    boundary = 'fuel_bottoms fuel_tops moder_bottoms moder_tops outer_wall'
+    variable = group2
+  [../]
+  [./temp_diri_cg]
+    boundary = 'moder_bottoms fuel_bottoms outer_wall'
+    type = FunctionDirichletBC
+    function = 'temp_bc_func'
+    variable = temp
+  [../]
+  [./temp_advection_outlet]
+    boundary = 'fuel_tops'
+    type = TemperatureOutflowBC
+    variable = temp
+    velocity = '0 ${flow_velocity} 0'
+  [../]
+[]
+</code></pre></div></div>
+
+<h4 id="functions-block"><code class="highlighter-rouge">Functions</code> Block</h4>
+
+<p>The <code class="highlighter-rouge">Functions</code> block is necessary when other MOOSE/Moltres objects specified in
+the input file require functions. In this example we have a boundary condition
+object <code class="highlighter-rouge">temp_diri_cg</code> of type <code class="highlighter-rouge">FunctionDirichletBC</code> that requires a function
+object to specify the values of the variable <code class="highlighter-rouge">temp</code> along the reactor
+boundaries. We name this function object <code class="highlighter-rouge">temp_bc_func</code> and specify it to be of
+type <code class="highlighter-rouge">ParsedFunction</code> which is a function type that can be written in terms of
+constants and the independent variables <script type="math/tex">x, y, z</script> and <script type="math/tex">t</script>. Here we see the
+use of substitution variable syntax <code class="highlighter-rouge">${&lt;variable_name&gt;}$</code> to access the values
+of <code class="highlighter-rouge">ini_temp</code> and <code class="highlighter-rouge">diri_temp</code> specified at the top of the input file.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Functions]
+  [./temp_bc_func]
+    type = ParsedFunction
+    value = '${ini_temp} - (${ini_temp} - ${diri_temp}) * tanh(t/1e-2)'
+  [../]
+[]
+</code></pre></div></div>
+
+<h4 id="materials-block"><code class="highlighter-rouge">Materials</code> Block</h4>
+
+<p>In the <code class="highlighter-rouge">Materials</code> block we specify materials that live on a mesh
+subdomain. Any given subdomain can have as many materials as desired. An
+important material in Moltres is <code class="highlighter-rouge">GenericMoltresMaterial</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Materials]
+  [./fuel]
+    type = GenericMoltresMaterial
+    property_tables_root = '../property_file_dir/newt_msre_fuel_'
+    interp_type = 'spline'
+    block = 'fuel'
+    prop_names = 'k cp'
+    prop_values = '.0553 1967' # Robertson MSRE technical report @ 922 K
+  [../]
+  [./rho_fuel]
+    type = DerivativeParsedMaterial
+    f_name = rho
+    function = '2.146e-3 * exp(-1.8 * 1.18e-4 * (temp - 922))'
+    args = 'temp'
+    derivative_order = 1
+    block = 'fuel'
+  [../]
+  [./moder]
+    type = GenericMoltresMaterial
+    property_tables_root = '../property_file_dir/newt_msre_mod_'
+    interp_type = 'spline'
+    prop_names = 'k cp'
+    prop_values = '.312 1760' # Cammi 2011 at 908 K
+    block = 'moder'
+  [../]
+  [./rho_moder]
+    type = DerivativeParsedMaterial
+    f_name = rho
+    function = '1.86e-3 * exp(-1.8 * 1.0e-5 * (temp - 922))'
+    args = 'temp'
+    derivative_order = 1
+    block = 'moder'
+  [../]
+[]
+</code></pre></div></div>
+
+<p>Materials within the <code class="highlighter-rouge">Materials</code> block support the following parameters:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">property_tables_root</code>: The path and prefix of the files that contain the
+macroscopic group constants that define neutron reaction rates. The suffix of
+these files identifies the property that each conveys. For example the file
+containing the fuel fission cross sections is in this example
+<code class="highlighter-rouge">newt_msre_fuel_FISSXS.txt</code>. Each of these files contains an interpolation
+table. The left column (column 1) is temperature. The remaining columns
+contain the macroscopic constants for different energy groups corresponding to
+the tabulated temperature, e.g. column 2 contains the constants for energy
+group 1, column 3 contains the constants for energy group 2, etc. The set of
+tables used in this example were generated with NEWT, part of the SCALE code
+system. Serpent, OpenMC, or any other macroscopic cross section generator may
+be used to create these simple input tables.</li>
+  <li><code class="highlighter-rouge">interp_type</code>: The type of fitting/interpolation to be carried out on the
+temperature grid. Options are:
+    <ul>
+      <li><code class="highlighter-rouge">bicubic_spline</code>: Done when macroscopic constants are a function of the
+temperature of the local material as well as the average temperature of
+the other material</li>
+      <li><code class="highlighter-rouge">spline</code>: Most common option used for monovariate interpolation between
+temperature knots</li>
+      <li><code class="highlighter-rouge">least_squares</code>: Constructs a linear fit function of macroscopic constants
+as a function of temperature. Useful when group constant interpolation
+table is not monotonic</li>
+      <li><code class="highlighter-rouge">none</code>: Only should be used when single values for constants are supplied
+at a single temperature</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">prop_names, prop_values</code>: name-value pairs used to define material property
+values from the input file. In this example, both the thermal conductivity
+<script type="math/tex">k</script> and the specific heat capacity <script type="math/tex">c_p</script> are defined from the input file
+for both fuel and moderator subdomains.</li>
+</ul>
+
+<p><code class="highlighter-rouge">DerivativeParsedMaterial</code> is a material inherited from the Phase Field module
+of the MOOSE framework. Its useful for creating material properties that are
+functions of solution variables and for coupling the dependency of the property
+on the variable back into the Jacobian used for Newton-Raphson. A more in-depth
+description of the material along with its relatives is given
+<a href="http://mooseframework.org/wiki/PhysicsModules/PhaseField/DevelopingModels/FunctionMaterials/">here</a>.</p>
+
+<p>Users can exert their greatest influence on the calculations through the
+<code class="highlighter-rouge">Materials</code> block. Increasing values of <code class="highlighter-rouge">rho</code> or <code class="highlighter-rouge">cp</code> will increase materials
+ability to store heat, enabling a greater reactor power. Because of application
+of an insulating boundary condition at the outer reactor wall in this example,
+modifying the thermal conductivity <code class="highlighter-rouge">k</code> has only a small impact on the
+simulation. However, if the conductivity is lowered by several orders of
+magnitude, the user will observe increases in radial gradients between the fuel
+channels and graphite as well as a decrease in reactor power. Use of different
+macroscopic group constant tables or direct modification of the current set
+would also influence simulation results.</p>
+
+<h4 id="executioner-and-preconditioning-blocks"><code class="highlighter-rouge">Executioner</code> and <code class="highlighter-rouge">Preconditioning</code> Blocks</h4>
+
+<p>The <code class="highlighter-rouge">Executioner</code> and <code class="highlighter-rouge">Preconditioning</code> blocks are essential to determining the
+method used to solve the system of non-linear equations created by finite
+element discretization of our molten salt reactor governing
+equations. <code class="highlighter-rouge">Executioner</code> and <code class="highlighter-rouge">Preconditioning</code> documentation can be found
+<a href="http://mooseframework.org/wiki/MooseSystems/Executioners/">here</a> and
+<a href="http://mooseframework.org/wiki/MooseSystems/Preconditioners/">here</a>
+respectively.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Executioner]
+  type = Transient
+  end_time = 10000
+
+  nl_rel_tol = 1e-6
+  nl_abs_tol = 1e-6
+
+  solve_type = 'NEWTON'
+  petsc_options = '-snes_converged_reason -ksp_converged_reason -snes_linesearch_monitor'
+  petsc_options_iname = '-pc_type -pc_factor_shift_type -pc_factor_shift_amount -ksp_type -snes_linesearch_minlambda'
+  petsc_options_value = 'lu       NONZERO               1e-10                   preonly   1e-3'
+  line_search = 'none'
+   # petsc_options_iname = '-snes_type'
+  # petsc_options_value = 'test'
+
+  nl_max_its = 30
+  l_max_its = 100
+
+  dtmin = 1e-5
+  # dtmax = 1
+  # dt = 1e-3
+  [./TimeStepper]
+    type = IterationAdaptiveDT
+    dt = 1e-3
+    cutback_factor = 0.4
+    growth_factor = 1.2
+    optimal_iterations = 20
+  [../]
+[]
+
+[Preconditioning]
+  [./SMP]
+    type = SMP
+    full = true
+	ksp_norm = none
+  [../]
+[]
+</code></pre></div></div>
+
+<h4 id="postprocessors-block"><code class="highlighter-rouge">Postprocessors</code> Block</h4>
+
+<p>General postprocessor documentation can be found
+<a href="http://mooseframework.org/wiki/MooseSystems/Postprocessors/">here</a>. In this
+example, the first three postprocessors <code class="highlighter-rouge">group1_current, group1_old</code> and
+<code class="highlighter-rouge">multiplication</code> are used to calculate the neutron multiplication between
+current and old timesteps. The <code class="highlighter-rouge">IntegralNewVariablePostprocessor</code> integrates the
+supplied variable’s value over the entire domain at the current time step. The
+<code class="highlighter-rouge">IntegralOldVariablePostprocessor</code> does the same thing but for the previous
+time-step. The <code class="highlighter-rouge">DivisionPostprocessor</code> then divides <code class="highlighter-rouge">value1</code> by <code class="highlighter-rouge">value2</code>. The
+<code class="highlighter-rouge">ElementAverageValue</code> postprocessor simply calculates the average value of a
+variable over an optionally restricted domain. <code class="highlighter-rouge">AverageFissionHeat</code>, commented
+out in this example, determines the average volumetric fission heating rate over
+a domain. This has been used to implement gamma radiation heating in the
+moderator as some fraction of the average fission heat produced in the fuel.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Postprocessors]
+  [./group1_current]
+    type = IntegralNewVariablePostprocessor
+    variable = group1
+    outputs = 'console exodus'
+  [../]
+  [./group1_old]
+    type = IntegralOldVariablePostprocessor
+    variable = group1
+    outputs = 'console exodus'
+  [../]
+  [./multiplication]
+    type = DivisionPostprocessor
+    value1 = group1_current
+    value2 = group1_old
+    outputs = 'console exodus'
+  [../]
+  [./temp_fuel]
+    type = ElementAverageValue
+    variable = temp
+    block = 'fuel'
+    outputs = 'exodus console'
+  [../]
+  [./temp_moder]
+    type = ElementAverageValue
+    variable = temp
+    block = 'moder'
+    outputs = 'exodus console'
+  [../]
+  # [./average_fission_heat]
+  #   type = AverageFissionHeat
+  #   nt_scale = ${nt_scale}
+  #   execute_on = 'linear nonlinear'
+  #   outputs = 'console'
+  #   block = 'fuel'
+  # [../]
+[]
+</code></pre></div></div>
+
+<h4 id="outputs-block"><code class="highlighter-rouge">Outputs</code> Block</h4>
+
+<p><code class="highlighter-rouge">Outputs</code> documentation is
+<a href="http://mooseframework.org/wiki/MooseSystems/Outputs/">here</a>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Outputs]
+  print_perf_log = true
+  print_linear_residuals = true
+  [./exodus]
+    type = Exodus
+    file_base = 'auto_diff_rho'
+    execute_on = 'final'
+  [../]
+[]
+</code></pre></div></div>
+
+<h4 id="debug-block"><code class="highlighter-rouge">Debug</code> Block</h4>
+
+<p>This simply tells our executable to print the variable residual norms during the
+non-linear solve.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Debug]
+  show_var_residual_norms = true
+[]
+</code></pre></div></div>
+
+<h4 id="ics-block"><code class="highlighter-rouge">ICs</code> Block</h4>
+
+<p>The <code class="highlighter-rouge">ICs</code> block can be used to construct variable initial
+conditions. Documentation is
+<a href="http://mooseframework.org/wiki/MooseSystems/ICs/">here</a>. The commented out
+<code class="highlighter-rouge">ICs</code> in this particular file are sometimes used to test the Jacobians of new
+kernels and boundary conditions introduced into Moltres.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># [ICs]
+#   [./temp_ic]
+#     type = RandomIC
+#     variable = temp
+#     min = 922
+#     max = 1022
+#   [../]
+#   [./group1_ic]
+#     type = RandomIC
+#     variable = group1
+#     min = .5
+#     max = 1.5
+#   [../]
+#   [./group2_ic]
+#     type = RandomIC
+#     variable = group2
+#     min = .5
+#     max = 1.5
+#   [../]
+# []
+</code></pre></div></div>
+:ET

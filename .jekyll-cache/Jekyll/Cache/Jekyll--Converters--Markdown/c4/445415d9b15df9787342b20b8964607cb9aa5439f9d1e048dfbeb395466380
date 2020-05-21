@@ -1,0 +1,120 @@
+I"°<p>This page is an index of the growing set of guides behind the operations of the 
+research group. It is intended to be a living document capturing the overviews 
+and checklists for mastering the practical, administrative, and computational 
+infrastructure that ARFC relies on for various common tasks. All research group 
+members should contribute to this section early and often. If possible, link to 
+github repositories, gists, or Jupyter notebooks when there is a guide item 
+that can be captured in one.</p>
+
+<h1 id="getting-started"><a name="gettingstarted"></a>Getting Started</h1>
+
+<p>Youâ€™re new to the research group. There are a lot of tasks to get done before 
+you can really fly.</p>
+
+<ul>
+  <li>Handle HR stuff.</li>
+  <li>Get a <a href="https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration">GitHub</a> account</li>
+  <li>Add yourself to the <a href="/manual/guides/communication">communication channels</a>.</li>
+  <li>If you have an office, work with Katy and the NPRE Department office to get a key.</li>
+  <li>If you have an ARFC computer, work with Katy to get a login name.</li>
+  <li>Get a <a href="https://www.zotero.org/user/register/">Zotero account</a>.</li>
+  <li>Join the <a href="https://www.zotero.org/groups/498713/arfc">ARFC Zotero group</a>.</li>
+  <li><a href="https://rsicc.ornl.gov">Request licenses</a> for export controlled software. (Ask Katy if any are needed for your project.)</li>
+  <li>Read the <a href="/manual/coc">Code of Conduct</a>.</li>
+  <li>Download the <a href="http://proquest.safaribooksonline.com/9781491901564">book</a>. Browse it now and use it as a reference when you are lost.</li>
+  <li>Install a text editor of your choosing. (e.g. <a href="http://www.vim.org/">vim</a>, <a href="https://www.gnu.org/software/emacs/">emacs</a>, <a href="https://atom.io/">atom</a>, or <a href="https://github.com/scopatz/xo">xo</a>).</li>
+  <li>Install <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">git</a>.</li>
+  <li><a href="http://swcarpentry.github.io/git-novice/02-setup/">Configure</a> git.</li>
+  <li>Install the <a href="https://www.zotero.org/download/">Zotero desktop application</a>.</li>
+  <li><a href="/manual/guides/zotero">Learn how to use Zotero</a>.</li>
+  <li><a href="http://www.library.illinois.edu/library-technology/proxy-bookmarklet/">Learn how to access articles through the university library</a>.</li>
+  <li>Add yourself to <a href="/manual/guides/website">this website.</a></li>
+  <li>Email Katy your:
+    <ul>
+      <li>GitHub username (Katy will add you to the <a href="https://github.com/arfc">ARFC github organization.</a>)</li>
+      <li>Email address(es) to invite to the group:
+        <ul>
+          <li>Google Drive directory.</li>
+          <li>Box Directory</li>
+          <li>Email List</li>
+          <li>Slack</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Register for <a href="/manual/guides/classes">classes</a>.</li>
+  <li>Explore <a href="https://localwiki.org/cu/">Chambana</a>.</li>
+</ul>
+
+<h1 id="dealing-with-katy">Dealing with Katy</h1>
+
+<p>Here are some ways to interact with me that will make my life (and sometimes 
+yours) easier.</p>
+
+<ul>
+  <li><a href="/manual/guides/katy/meeting">Scheduling to meet with Katy</a></li>
+  <li><a href="/manual/guides/katy/recreq">Requesting a recommendation letter</a></li>
+  <li><a href="/manual/guides/katy/revreq">Requesting comments on a document</a></li>
+  <li><a href="/manual/guides/katy/codereq">Requesting help with software</a></li>
+  <li><a href="/manual/guides/katy/commreq">Asking Katy to be on your PhD committee</a></li>
+</ul>
+
+<h1 id="communication">Communication</h1>
+
+<p>We communicate through many channels. Use the 
+<a href="/manual/guides/communication">communication</a> guide to understand and be 
+prepared to make use of the various meetings, listhosts, chat media, calendars, 
+twitter accounts, and whatnot that tie us together.</p>
+
+<h1 id="writing">Writing</h1>
+
+<ul>
+  <li><a href="/manual/guides/writing/">how to write</a></li>
+</ul>
+
+<h1 id="administrative">Administrative</h1>
+
+<ul>
+  <li><a href="/manual/guides/travel">travel</a></li>
+  <li>purchasing</li>
+  <li>printing</li>
+  <li>internet</li>
+  <li>courses</li>
+  <li>qualifying exam</li>
+  <li>thesis proposal</li>
+  <li>editing this website</li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+
+<ul>
+  <li>install git</li>
+  <li>install python</li>
+  <li>install pyne</li>
+  <li>install moose</li>
+  <li><a href="/manual/guides/cyclus">install cyclus</a></li>
+</ul>
+
+<h1 id="software">Software</h1>
+
+<ul>
+  <li>prototyping</li>
+  <li>collaborating</li>
+  <li>pull requests</li>
+  <li>issues</li>
+  <li>releases</li>
+  <li>data management</li>
+  <li>cloud computing</li>
+  <li><a href="/manual/guides/bluewaters">using Blue Waters</a></li>
+  <li><a href="/manual/guides/git-lfs">using Git Large File Storage</a></li>
+</ul>
+
+<h1 id="presenting-work">Presenting Work</h1>
+
+<ul>
+  <li>how to present</li>
+  <li>what to present</li>
+  <li>where to present</li>
+</ul>
+
+:ET
