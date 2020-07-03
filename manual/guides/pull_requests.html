@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blue Waters</title>
+  <title>Pull Requests</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/manual/guides/bluewaters">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/pull_requests">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -264,12 +264,12 @@
     <div class="page-content">
       <div class="wrapper">
         <!-- Manual -->
-    <section id="title" class="bg-light-gray">
+    <section id="title" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Blue Waters</h2>
-                    <h3 class="section-subheading text-muted">Blue Waters - From Access to Utilization</h3>
+                    <h2 class="section-heading">Pull Requests</h2>
+                    <h3 class="section-subheading text-muted">The #1 Collaboration Tool</h3>
                 </div>
             </div>
         </div>
@@ -279,148 +279,101 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8">
-    <p><a href="https://bluewaters.ncsa.illinois.edu/getting-started">Read this page first</a></p>
+    <h1 id="making-a-pull-request">Making a Pull Request</h1>
 
-<h2 id="step-0-get-a-license-for-serpent">Step 0. Get a license for Serpent</h2>
-<p>Register for Serpent through RSICC and deposit your license documentation in 
-the Google Drive software licenses directory.</p>
+<p>A Pull Request (PR) merges the changes in a branch of a repository
+to the main branch. This means the main branch has all of the updates
+that need to get approved before they’re implemented.
+For the basics on how to create a PR, GitHub has a guide available
+<a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">here</a>.</p>
 
-<h2 id="step-1-communication">Step 1. Communication</h2>
-<p>Have Prof Huff get you approved for Blue Waters!</p>
+<p>Most of the pull requests done in the ARFC group are from a feature branch 
+(not the main branch)
+in a personal fork to the main branch in the ARFC fork of a repository. 
+PRs made in the ARFC organization should:</p>
 
-<h2 id="step-2-apply-for-blue-waters">Step 2. Apply for Blue Waters</h2>
-<p>Follow the link and fill out the application
-        You can either receive a virtual token or a physical token
-        A Virutal token is done through your mobile device,
-        and a physical token looks like this:</p>
+<ul>
+  <li>Have GitHub Labels (Difficulty:1-Beginner, Status:1-New, etc.)</li>
+  <li>Have a GitHub Project (Meta, Fuel Cycles, etc.)</li>
+  <li>Have a description in GitHub</li>
+  <li>List requested reviews (usually one or two, consider if more than
+two is really necessary for your request)</li>
+  <li>Link to an issue</li>
+  <li>Be small (achieve one thing; “atomic”)</li>
+</ul>
 
-<p><img src="/img/manual/guides/bw-token.jpg" alt="alt text" /></p>
+<h1 id="reviewing-a-pull-request">Reviewing a Pull Request</h1>
 
-<p>Or, if you chose a soft token, install the RSA SecurID app and 
-follow the instruction sent to you by email.</p>
+<p><a href="https://fuelcycle.org/kernel/pr_review.html">Cyclus PR Review Recommendations</a></p>
 
-<h2 id="step-3-wait">Step 3. Wait</h2>
-<p>Wait patiently for the token to arrive.</p>
+<p><a href="https://blog.scottnonnenberg.com/top-ten-pull-request-review-mistakes/">Common mistakes and errors</a></p>
 
-<h2 id="step-4-activating-token">Step 4. Activating Token</h2>
-<p>With your token, open the email ‘Blue Waters Instructions’
-Click the <a href="https://otp.ncsa.illinois.edu">link</a>
-and follow its directions, and activate your token.</p>
+<p>Below is a checklist the PR reviewer should
+consider before approving a pull request. As a reminder, the
+<a href="http://arfc.github.io/manual/coc">ARFC Code of Conduct</a> still applies
+in pull request reviews. Reviews should be both thorough and
+respectful.</p>
 
-<p>** tip) the pin must be 8 digits, letters and numbers, something that you’ll never forget!</p>
+<p>If you are about to review a PR, consider copying and pasting
+this checklist into your review comment and checking the boxes
+as you go along.</p>
 
-<h2 id="step-5-loggin-in">Step 5. Loggin In</h2>
-<p>Open terminal, type</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [username]@h2ologin.ncsa.illinois.edu
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] Read the PR description
+<span class="p">-</span> [ ] Read through all the changes, considering the following questions.
+<span class="p">  -</span> [ ] Is there anything you can praise about this PR? Start with
+        praise.
+<span class="p">  -</span> [ ] Are variable names brief but descriptive?
+<span class="p">  -</span> [ ] Are new/changed functions no longer than a paragraph?
+<span class="p">  -</span> [ ] Do all function parameters have default values where appropriate?
+<span class="p">  -</span> [ ] Is the code clear and clean? (see Robert C. Martin's
+        <span class="p">[</span><span class="nv">Clean Code</span><span class="p">](</span><span class="sx">https://i-share-uiu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma99944155312205899&amp;context=L&amp;vid=01CARLI_UIU:CARLI_UIU&amp;tab=LibraryCatalog&amp;lang=en</span><span class="p">)</span>)
+<span class="p">  -</span> [ ] Is there enough documentation?
+<span class="p">  -</span> [ ] Does the programming style meet the requirements of the
+        repository (<span class="p">[</span><span class="nv">PEP8</span><span class="p">](</span><span class="sx">https://www.python.org/dev/peps/pep-0008/</span><span class="p">)</span> for python,
+        <span class="p">[</span><span class="nv">google C++ style guide</span><span class="p">](</span><span class="sx">https://google.github.io/styleguide/cppguide.html</span><span class="p">)</span>, etc.)
+<span class="p">  -</span> [ ] If a new feature has been added, or a bug fixed, has a test been
+        added to confirm good behavior?
+<span class="p">  -</span> [ ] Does the test actually test the new/changed functionality?
+<span class="p">  -</span> [ ] Does the test successfully test edge cases?
+<span class="p">  -</span> [ ] Does the test successfully test corner cases?
+<span class="p">  -</span> [ ] If the repository has continuous integration: does the PR pass
+        the tests?
+<span class="p">  -</span> [ ] If there is no continuous integration, check out the branch
+        locally, build, and run the tests.
+<span class="p">  -</span> [ ] Do the tests pass on your machine?
+<span class="p">  -</span> [ ] Is the PR free of random cruft (built files, <span class="sb">`.swp`</span> files,
+        etc.)?
+<span class="p">  -</span> [ ] Do all files in the PR belong in the repository?
+<span class="p">  -</span> [ ] If the PR deletes files, is this appropriate?
+<span class="p">  -</span> [ ] If the PR adds files or data, are these new files compatible
+        with the repository license?
+<span class="p">  -</span> [ ] Make a review, leaving kind comments and suggesting changes
+        where needed (to resolve the above).
+<span class="p">  -</span> [ ] Has the author resolved all of the comments and suggestions
+        in your review?
+<span class="p">-</span> [ ] When you approve of the PR, merge and close it.
+<span class="p">-</span> [ ] Does this PR close an issue? If so, be sure to descriptively
+      close this issue when the PR is merged
+<span class="p">-</span> [ ] Thank the author for their contribution.
 </code></pre></div></div>
 
-<p>type in PIN+Token#</p>
+<h1 id="responding-to-pull-requests-reviews">Responding to Pull Requests Reviews</h1>
 
-<h4 id="tip-you-can-shortname-your-ssh-command">tip) you can shortname your ssh command:</h4>
-<p>Open the terminal</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$cd
-$cd .ssh
-$vim config
-</code></pre></div></div>
-
-<p>write:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        Host [desired_name]
-        HostName h2ologin.ncsa.illinois.edu
-        User [Blue_Waters_User_Name] 
-</code></pre></div></div>
-
-<p>Then you’d just have to type in</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [desired_name]
-</code></pre></div></div>
-
-<p>For example, you might have named Blue Waters “bw”.
-In that case, you simply type</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh bw
-</code></pre></div></div>
-
-<h2 id="step-6-congratz">Step 6. Congratz!</h2>
-<p>You’re in! :)</p>
-
-<p><img src="/img/manual/guides/bw-welcome.png" alt="alt text" /></p>
-
-<h2 id="step-7-module-loading">Step 7. Module Loading</h2>
-<p>Various modules can be loaded and the available modules can be listed using the following commands:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Command</th>
-      <th style="text-align: left">Suffix</th>
-      <th style="text-align: right">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module avail </code></td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: right">List all available modules</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module avail </code></td>
-      <td style="text-align: left"><code class="highlighter-rouge"> |grep -r [keyword] </code></td>
-      <td style="text-align: right">Search module with keywords</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module load </code></td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: right">Load module onto environment</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module swap </code></td>
-      <td style="text-align: left"><code class="highlighter-rouge"> [original] [new] </code></td>
-      <td style="text-align: right">replace [orignal] with [new]</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="tip-bashrc">tip) ~/.bashrc</h4>
-<p>If you don’t want to load your modules every time, edit ~/.bashrc 
-and have all your ‘module load/swap’ commands.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$vim ~/.bashrc
-</code></pre></div></div>
-<p>after editing the bashrc, you must source it:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$source ~/.bashrc
-</code></pre></div></div>
-
-<h2 id="the-group-directory">The Group Directory</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/sciteam/bahg
-</code></pre></div></div>
-
-<h2 id="how-to-download-source-code">How to Download Source Code</h2>
-<p>Because Blue Waters is an HPC machine, it does
-not have a package manager (like Ubuntu’s apt-get).
-This is the reason why one has to build from source.</p>
-
-<p>Also, one does not have sudo, which means that
-the packages should be built either in your
-home directory(~) or in the group directory (bahg)</p>
-
-<p>Get source codes by:</p>
-
-<ol>
-  <li>
-    <p>Github</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone [clone_link]
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>wget</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget [link to source code tar.xz or zip file]
-</code></pre></div>    </div>
-
-    <p>Expand the archive with the tar or the unzip command.</p>
-  </li>
-</ol>
-
+<p>Reviews on pull requests include comments, approvals, and
+suggestions for changes. Comments can include general comments on the
+technical substance, documentation, performance, clarity, reproducibility, 
+coding style, and even the formatting of the submission. Changes can be
+requested for a specific line or lines, where the reviewer can even write
+their own code to improve the committed files. These changes can
+either be discussed in the comment box or committed directly from the
+review with the <code class="highlighter-rouge">commit suggestion</code> button. With this button, the
+suggested changes are committed and pushed immediately
+to the PR branch, which makes
+incorporating suggested changes faster. Do not leave comments un-handled.
+All reviewer comments should be incorporated, responded to, handled, or 
+discussed further. Once the PR has been approved
+by at least one reviewer, a reviewer will merge the changes and the PR will
+be closed.</p>
 
                 </div>
                 <div class="col-md-2">
