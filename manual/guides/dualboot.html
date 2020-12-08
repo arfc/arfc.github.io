@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Guides</title>
+  <title>Dual Booting Windows and Ubuntu</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/manual/guides/">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/dualboot">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -274,8 +274,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Guides</h2>
-                    <h3 class="section-subheading text-muted">Instructions and Checklists for practical, common tasks.</h3>
+                    <h2 class="section-heading">Dual Booting Windows and Ubuntu</h2>
+                    <h3 class="section-subheading text-muted">A Helpful List of Resources</h3>
                 </div>
             </div>
         </div>
@@ -285,139 +285,99 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8">
-    <p>This page is an index of the growing set of guides behind the operations of the
-research group. It is intended to be a living document capturing the overviews
-and checklists for mastering the practical, administrative, and computational
-infrastructure that ARFC relies on for various common tasks. All research group
-members should contribute to this section early and often. If possible, link to
-GitHub repositories, gists, or Jupyter notebooks when there is a guide item
-that can be captured in one.</p>
+    <h2 id="why-dual-boot">Why Dual Boot</h2>
 
-<h1 id="getting-started"><a name="gettingstarted"></a>Getting Started</h1>
+<p>Dual booting simply means installing two operating systems on one hard drive.</p>
 
-<p>You’re new to the research group. There are a lot of tasks to get done before
-you can really fly.</p>
+<p>In your career as a computational scientist, you will
+quickly outgrow the limited capabilities of Windows command prompt.
+Why Linux is better for programming:</p>
 
+<ol>
+  <li>Compiling code like C++ or FORTRAN is difficult in Windows.</li>
+  <li>The Linux terminal is much more powerful than the Windows command prompt</li>
+  <li>Native support for SSH and bash</li>
+  <li>Linux is “light-weight” and therefore faster than Windows.</li>
+</ol>
+
+<h2 id="why-not-dual-boot">Why Not Dual Boot</h2>
+
+<p>If your preferred device is UNIX-based, like an apple macbook, there is often no need
+to dual boot, since everything that can be done on a Linux machine is usually also
+possible on a mac. Such an approach has the benefit of also supporting the 
+Microsoft Office Suite (which works on a mac too).</p>
+
+<p>If you don’t think you’ll ever need the Microsoft Office Suite, or the small number
+of other commercial software applications which are a challenge to install on a Linux 
+machine, you can certainly abandon Windows entirely and install Linux alone.</p>
+<h2 id="how-to-dual-boot">How to Dual Boot</h2>
+
+<p>You will need:</p>
 <ul>
-  <li>Handle HR stuff.</li>
-  <li>Get a <a href="https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration">GitHub</a> account</li>
-  <li>Add yourself to the <a href="/manual/guides/communication">communication channels</a>.</li>
-  <li>If you have an office, work with Katy and the NPRE Department office to get a key.</li>
-  <li>If you have an ARFC computer, work with Katy to get a login name.</li>
-  <li>Get a <a href="https://www.zotero.org/user/register/">Zotero account</a>.</li>
-  <li>Join the <a href="https://www.zotero.org/groups/498713/arfc">ARFC Zotero group</a>.</li>
-  <li><a href="https://rsicc.ornl.gov">Request licenses</a> for export controlled software. (Ask Katy if any are needed for your project.)</li>
-  <li>Read the <a href="/manual/coc">Code of Conduct</a>.</li>
-  <li>Download the <a href="http://proquest.safaribooksonline.com/9781491901564">book</a>. Browse it now and use it as a reference when you are lost.</li>
-  <li>Install a text editor of your choosing. (e.g. <a href="http://www.vim.org/">vim</a>, <a href="https://www.gnu.org/software/emacs/">emacs</a>, <a href="https://atom.io/">atom</a>, or <a href="https://github.com/scopatz/xo">xo</a>).</li>
-  <li>Install <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">git</a>.</li>
-  <li><a href="http://swcarpentry.github.io/git-novice/02-setup/">Configure</a> git.</li>
-  <li>Install the <a href="https://www.zotero.org/download/">Zotero desktop application</a>.</li>
-  <li><a href="/manual/guides/zotero">Learn how to use Zotero</a>.</li>
-  <li><a href="http://www.library.illinois.edu/library-technology/proxy-bookmarklet/">Learn how to access articles through the university library</a>.</li>
-  <li>Add yourself to <a href="/manual/guides/website">this website.</a></li>
-  <li>Email Katy your:
-    <ul>
-      <li>GitHub username (Katy will add you to the <a href="https://github.com/arfc">ARFC github organization.</a>)</li>
-      <li>Email address(es) to invite to the group:
-        <ul>
-          <li>Google Drive directory.</li>
-          <li>Box Directory</li>
-          <li>Email List</li>
-          <li>Slack</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Register for <a href="/manual/guides/courses">classes</a>.</li>
-  <li>Explore <a href="https://localwiki.org/cu/">Chambana</a>.</li>
+  <li>An empty flash drive with at least 5 GB of storage</li>
+  <li>At least 25 GB of available hard drive space on the computer you wish to dual
+boot (recommended: 50 GB)</li>
+  <li>Some patience</li>
 </ul>
 
-<h1 id="dealing-with-katy">Dealing with Katy</h1>
+<p>Once you have those things, you will be able to dual boot. This 
+<a href="https://www.youtube.com/watch?v=Z-Hv9hOaKso">dual booting video tutorial</a> is
+very clear and will walk you through each step.</p>
 
-<p>Here are some ways to interact with me that will make my life (and sometimes
-yours) easier.</p>
+<p>A key step is downloading a recent version of the Ubuntu Linux distribution. 
+You can find that download page <a href="https://ubuntu.com/download/desktop">here</a>.</p>
 
-<ul>
-  <li><a href="/manual/guides/katy/meeting">Scheduling to meet with Katy</a></li>
-  <li><a href="/manual/guides/katy/recreq">Requesting a recommendation letter</a></li>
-  <li><a href="/manual/guides/katy/revreq">Requesting comments on a document</a></li>
-  <li><a href="/manual/guides/katy/codereq">Requesting help with software</a></li>
-  <li><a href="/manual/guides/katy/commreq">Asking Katy to be on your PhD committee</a></li>
-</ul>
+<h2 id="after-youve-installed-linux">After You’ve Installed Linux</h2>
 
-<h1 id="communication">Communication</h1>
+<p>When you boot up Linux for the first time you will have very few applications
+available. A graduate student, Sam Dotson, wrote a bash script that quickly installs some essential
+applications, as well as some helpful productivity tools. 
+The script is available on GitHub, <a href="https://github.com/samgdotson/ubuntu-post-installer">here</a>. 
+All you need to do
+in order to execute this script is the following</p>
 
-<p>We communicate through many channels. Use the
-<a href="/manual/guides/communication">communication</a> guide to understand and be
-prepared to make use of the various meetings, listhosts, chat media, calendars,
-twitter accounts, and whatnot that tie us together.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/samgdotson/ubuntu-post-installer/master/ubuntu-post-installer.sh
 
-<h1 id="writing">Writing</h1>
+bash ubuntu-post-installer.sh
+</code></pre></div></div>
 
-<ul>
-  <li><a href="/manual/guides/writing/">How to Write</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/conf-abs/">Conference Abstract</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/conf-paper/">Conference Paper</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/poster/">Poster</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/presentation">Presentation</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/report">Report</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/white-paper">White Paper</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/pre-print">Pre-Printing</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/journal-article">Journal Article</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/ms-thesis">Masters Thesis</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/prelim">Preliminary Exam</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/dissertation">PhD Dissertation</a></li>
-  <li><a href="http://arfc.github.io/manual/guides/writing/proposal">Research Proposal</a></li>
-</ul>
+<h3 id="alternatives-to-dual-booting">Alternatives to Dual Booting</h3>
 
-<h1 id="administrative">Administrative</h1>
+<h4 id="windows-linux-subsystem">Windows Linux Subsystem</h4>
+<p>If you don’t want to dual boot and just want to use the Linux terminal, Windows
+offers an application called “Windows Linux Subsystem.” It works, but you will
+probably be frustrated because the Linux subsystem doesn’t interface well with
+the Windows graphical user interface.</p>
 
-<ul>
-  <li><a href="/manual/guides/travel">Travel</a></li>
-  <li>Purchasing &amp; Refunding</li>
-  <li>Printing from a <a href="https://www.library.illinois.edu/library-technology/print-from-a-laptop/">Laptop</a> or a <a href="https://www.library.illinois.edu/library-technology/print-from-a-library-computer/">Library Computer</a></li>
-  <li><a href="https://techservices.illinois.edu/services/virtual-private-networking-vpn/download-and-set-up-the-vpn-client">VPN Client</a></li>
-  <li><a href="/manual/guides/courses">Course Planning &amp; Registration</a></li>
-  <li><a href="https://npre.illinois.edu/academics/graduate/qualifying-examination">Qualifying Exam</a></li>
-  <li>Thesis Proposal</li>
-  <li><a href="/manual/guides/website">Editing this Website</a></li>
-</ul>
+<p>For example, it is challenging and beyond the scope of this tutorial to 
+open a graphical user interface from within the Windows Linux subsystem.
+However, if that is the path you would like to take you can follow this
+<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">tutorial</a>.</p>
 
-<h1 id="installation">Installation</h1>
+<h4 id="virtual-box">Virtual Box</h4>
 
-<ul>
-  <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a></li>
-  <li><a href="https://realpython.com/installing-python/">Python</a></li>
-  <li><a href="/manual/guides/pyne">PyNE</a></li>
-  <li><a href="https://moose.inl.gov/SitePages/Home.aspx">MOOSE</a></li>
-  <li><a href="/manual/guides/cyclus">Cyclus</a></li>
-</ul>
+<p>A somewhat more robust approach is to create a virtual machine using <a href="https://www.virtualbox.org/">VirtualBox</a>.
+To do this, you’ll need to:</p>
 
-<h1 id="software">Software</h1>
+<ol>
+  <li>Boot up Windows (or any other OS)</li>
+  <li>Download Ubuntu</li>
+  <li>Download and install VirtualBox</li>
+  <li>Open VirtualBox</li>
+  <li>Following the <a href="https://www.virtualbox.org/manual/UserManual.html#gui-createvm">instructions on the VirtualBox site</a> to create a linux virtual machine using the Ubuntu image file you downloaded in step 2.</li>
+  <li>Now you have a fully functional Ubuntu operating system that you can open as an application while booted into your Windows operating system.</li>
+</ol>
 
-<ul>
-  <li>Prototyping</li>
-  <li><a href="/manual/guides/software_templates">Software Templates</a></li>
-  <li>Collaborating</li>
-  <li><a href="/manual/guides/dualboot">Dual Booting Ubuntu</a></li>
-  <li><a href="/manual/guides/pull_requests">Pull Requests (PRs)</a></li>
-  <li>Issues</li>
-  <li>Releases</li>
-  <li><a href="/manual/guides/getting_serpent_license">Serpent</a></li>
-  <li>Data Management</li>
-  <li>Cloud Computing</li>
-  <li><a href="/manual/guides/bluewaters">Using Blue Waters</a></li>
-  <li><a href="/manual/guides/git-lfs">Using Git Large File Storage</a></li>
-</ul>
+<h3 id="obstacles-and-challenges">Obstacles and Challenges</h3>
 
-<h1 id="presenting-work">Presenting Work</h1>
+<p><em>Caution</em>:
+New Windows computers with Intel 9th Generation (or higher) CPUs use “Rapid Storage Technology” which must be disabled before installing
+your chosen Linux distribution.
+This process is non-trivial and users are warned that there is a risk of data loss.
+Consider using alternatives to dual booting. 
+If you are determined to dual boot, there is a <a href="https://www.youtube.com/watch?v=2uXgbF3P2F8&amp;ab_channel=VincentT">video tutorial</a>
+that walks you through the steps.</p>
 
-<ul>
-  <li>How to present</li>
-  <li>What to present</li>
-  <li>Where to present</li>
-</ul>
 
                 </div>
                 <div class="col-md-2">
