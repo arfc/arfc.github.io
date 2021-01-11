@@ -295,8 +295,9 @@ the Google Drive software licenses directory.</p>
 <p>Have Prof Huff get you approved for Blue Waters!</p>
 
 <h2 id="step-2-apply-for-blue-waters">Step 2. Apply for Blue Waters</h2>
-<p>Follow the link and fill out the application
-        You can either receive a virtual token or a physical token
+<p>You should recieve an email with a link to continue your validation process.
+Follow the link and fill out the application.
+        You can either receive a virtual token or a physical token.
         A Virutal token is done through your mobile device,
         and a physical token looks like this:</p>
 
@@ -309,18 +310,16 @@ follow the instruction sent to you by email.</p>
 <p>Wait patiently for the token to arrive.</p>
 
 <h2 id="step-4-activating-token">Step 4. Activating Token</h2>
-<p>With your token, open the email ‘Blue Waters Instructions’
-Click the <a href="https://otp.ncsa.illinois.edu">link</a>
-and follow its directions, and activate your token.</p>
+<p>For activating the token, instructions should be contained within the emails recieved. Extra information can be found <a href="https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA">here</a>.</p>
 
-<p>** tip) the pin must be 8 digits, letters and numbers, something that you’ll never forget!</p>
-
-<h2 id="step-5-loggin-in">Step 5. Loggin In</h2>
+<h2 id="step-5-logging-in">Step 5. Logging In</h2>
 <p>Open terminal, type</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [username]@h2ologin.ncsa.illinois.edu
 </code></pre></div></div>
-
-<p>type in PIN+Token#</p>
+<p>You will then be prompted for your password, followed by an option to select from a list of your 
+registered tokens. After selecting the token you will use (if you only have one token, simply 
+type 1), either enter your pin and token number or approve the login request with Duo, 
+depending on what token type you are using.</p>
 
 <h4 id="tip-you-can-shortname-your-ssh-command">tip) you can shortname your ssh command:</h4>
 <p>Open the terminal</p>
@@ -350,6 +349,15 @@ In that case, you simply type</p>
 <p>You’re in! :)</p>
 
 <p><img src="/img/manual/guides/bw-welcome.png" alt="alt text" /></p>
+
+<h4 id="tip-running-jobs">tip) running jobs</h4>
+<p>To start running jobs on Blue Waters, it is useful to look at what other people use as well as the documentation:</p>
+<ol>
+  <li>Create a [file_name].pbs script (which contains an aprun command).
+ A good way to find example job scripts is to search through the arfc repo for code containing “.pbs”.
+ More information can be found <a href="https://bluewaters.ncsa.illinois.edu/running-your-jobs">here</a> to understand how these job scripts function.</li>
+  <li>Use qsub [file_name].pbs to submit the job.</li>
+</ol>
 
 <h2 id="step-7-module-loading">Step 7. Module Loading</h2>
 <p>Various modules can be loaded and the available modules can be listed using the following commands:</p>
@@ -396,7 +404,7 @@ and have all your ‘module load/swap’ commands.</p>
 </code></pre></div></div>
 
 <h2 id="the-group-directory">The Group Directory</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/sciteam/bahg
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/sciteam/bbcc
 </code></pre></div></div>
 
 <h2 id="how-to-download-source-code">How to Download Source Code</h2>
@@ -427,6 +435,11 @@ home directory(~) or in the group directory (bahg)</p>
   </li>
 </ol>
 
+<h2 id="using-moltres">Using Moltres</h2>
+<p>Navigate to</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /projects/sciteam/bbcc/projects/
+</code></pre></div></div>
+<p>and read the readme file located there. It provides useful information to properly setup a pbs script and run Moltres.</p>
 
                 </div>
                 <div class="col-md-2">
