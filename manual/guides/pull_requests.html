@@ -318,7 +318,9 @@ two is really necessary for your request)</li>
 consider before approving a pull request. As a reminder, the
 <a href="http://arfc.github.io/manual/coc">ARFC Code of Conduct</a> still applies
 in pull request reviews. Reviews should be both thorough and
-respectful.</p>
+respectful. Comments can be made and changes can be requested for a specific 
+line or lines and the reviewer can even write their own code to improve the 
+committed files using the <code class="highlighter-rouge">+/-</code> button.</p>
 
 <p>If you are about to review a PR, consider copying and pasting
 this checklist into your review comment and checking the boxes
@@ -365,21 +367,28 @@ as you go along.</p>
 
 <h1 id="responding-to-pull-request-reviews">Responding to Pull Request Reviews</h1>
 
-<p>Reviews on pull requests include comments, approvals, and
-suggestions for changes. Comments can include general comments on the
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Read the review comments.  These can include general comments on the 
 technical substance, documentation, performance, clarity, reproducibility, 
-coding style, and even the formatting of the submission. Changes can be
-requested for a specific line or lines, where the reviewer can even write
-their own code to improve the committed files. These changes can
-either be discussed in the comment box or committed directly from the
-review with the <code class="highlighter-rouge">commit suggestion</code> button. With this button, the
-suggested changes are committed and pushed immediately
-to the PR branch, which makes
-incorporating suggested changes faster. Do not leave comments un-handled.
-All reviewer comments should be incorporated, responded to, handled, or 
-discussed further. Once the PR has been approved
-by at least one reviewer, a reviewer will merge the changes and the PR will
-be closed.</p>
+coding style, and even the formatting of the submission.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Some comments contain commit suggestions. These comments can either be 
+discussed in the comment box or committed directly from the review with the 
+<code class="highlighter-rouge">commit suggestion</code> button. With this button, the suggested changes are 
+committed and pushed immediately to the PR branch, which makes incorporating 
+suggested changes faster.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For other comments, discuss the suggestion in the comment box and either 
+make commits that directly satisfy it or eventually resolve it in some other 
+way.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />As you make commits, push them to your pull request branch.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />All reviewer comments should be incorporated, responded to, handled, and/or 
+discussed further.  Do not leave comments un-handled.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Once you have handled all comments, it’s wise to alert the reviewers that 
+the PR is ready to be re-reviewed. It’s best practice to make a comment in 
+the PR and to re-request a review. To request a fresh review from a reviewer, 
+in the sidebar of the Conversation tab, click the refresh icon.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Once the PR has been approved by at least one reviewer, a reviewer will 
+merge the changes and the PR will be closed.</li>
+</ul>
 
                 </div>
                 <div class="col-md-2">
