@@ -286,101 +286,101 @@
                 </div>
                 <div class="col-md-8">
     <p>This page shows the mathematical forms of the governing equation pieces that
-each kernel class represents. Note that <script type="math/tex">u</script> is used in some places to denote a
-generic variable. Elsewhere typical literature symbols are used, e.g. <script type="math/tex">\phi</script>
-denotes the neutron flux, <script type="math/tex">T</script> denotes the temperature, and <script type="math/tex">C</script> denotes
+each kernel class represents. Note that \(u\) is used in some places to denote a
+generic variable. Elsewhere typical literature symbols are used, e.g. \(\phi\)
+denotes the neutron flux, \(T\) denotes the temperature, and \(C\) denotes
 precursor concentrations.</p>
 
 <p><strong>CoupledFissionEigenKernel</strong></p>
 
-<script type="math/tex; mode=display">-\frac{\chi_g^p}{k} \sum_{g' = 1}^G (1 -
-        \beta) \nu \Sigma_{g'}^f \phi_{g'}</script>
+\[-\frac{\chi_g^p}{k} \sum_{g' = 1}^G (1 -
+        \beta) \nu \Sigma_{g'}^f \phi_{g'}\]
 
 <p><strong>CoupledFissionKernel</strong></p>
 
-<script type="math/tex; mode=display">-\chi_g^p \sum_{g' = 1}^G (1 -
-        \beta) \nu \Sigma_{g'}^f \phi_{g'}</script>
+\[-\chi_g^p \sum_{g' = 1}^G (1 -
+        \beta) \nu \Sigma_{g'}^f \phi_{g'}\]
 
 <p><strong>CoupledScalarAdvection</strong></p>
 
-<script type="math/tex; mode=display">\nabla \cdot \vec{a} u</script>
+\[\nabla \cdot \vec{a} u\]
 
 <p><strong>DelayedNeutronSource</strong></p>
 
-<script type="math/tex; mode=display">-\chi_g^d \sum_i^I \lambda_i C_i</script>
+\[-\chi_g^d \sum_i^I \lambda_i C_i\]
 
 <p><strong>DivFreeCoupledScalarAdvection</strong></p>
 
-<script type="math/tex; mode=display">\vec{a} \cdot \nabla u</script>
+\[\vec{a} \cdot \nabla u\]
 
 <p><strong>FissionHeatSource</strong></p>
 
-<script type="math/tex; mode=display">-\frac{P}{\int_{\partial V} \sum_{g' = 1}^G \nu \Sigma_{g'}^f \phi_{g'} dV}
-\sum_{g' = 1}^G \nu \Sigma_{g'}^f \phi_{g'}</script>
+\[-\frac{P}{\int_{\partial V} \sum_{g' = 1}^G \nu \Sigma_{g'}^f \phi_{g'} dV}
+\sum_{g' = 1}^G \nu \Sigma_{g'}^f \phi_{g'}\]
 
-<p>where <script type="math/tex">P</script> is a representation of the total power of the reactor.</p>
+<p>where \(P\) is a representation of the total power of the reactor.</p>
 
 <p><strong>GammaHeatSource</strong></p>
 
-<script type="math/tex; mode=display">-\gamma Q_f</script>
+\[-\gamma Q_f\]
 
-<p>where <script type="math/tex">\gamma</script> is a factor
+<p>where \(\gamma\) is a factor
 representing heat dissipation by gamma and neutron irradiation in the moderator
-and <script type="math/tex">Q_f</script> is given by:</p>
+and \(Q_f\) is given by:</p>
 
-<script type="math/tex; mode=display">\sum_{g=1}^G \epsilon_{f,g}\Sigma_{f,g}\phi_g</script>
+\[\sum_{g=1}^G \epsilon_{f,g}\Sigma_{f,g}\phi_g\]
 
-<p>with <script type="math/tex">\epsilon_{f,g}</script> the amount of heat given off per fission event.</p>
+<p>with \(\epsilon_{f,g}\) the amount of heat given off per fission event.</p>
 
 <p><strong>GroupDiffusion</strong></p>
 
-<script type="math/tex; mode=display">- \nabla \cdot D_g
-        \nabla \phi_g</script>
+\[- \nabla \cdot D_g
+        \nabla \phi_g\]
 
 <p><strong>InScatter</strong></p>
 
-<script type="math/tex; mode=display">-\sum_{g \ne g'}^G
-        \Sigma_{g'\rightarrow g}^s \phi_{g'}</script>
+\[-\sum_{g \ne g'}^G
+        \Sigma_{g'\rightarrow g}^s \phi_{g'}\]
 
 <p><strong>NtTimeDerivative</strong></p>
 
-<script type="math/tex; mode=display">\frac{1}{v_g}\frac{\partial \phi_g}{\partial t}</script>
+\[\frac{1}{v_g}\frac{\partial \phi_g}{\partial t}\]
 
 <p><strong>PrecursorDecay</strong></p>
 
-<script type="math/tex; mode=display">\lambda_i C_i</script>
+\[\lambda_i C_i\]
 
 <p><strong>PrecursorSource</strong></p>
 
-<script type="math/tex; mode=display">-\sum_{g'= 1}^G \beta_i \nu
-        \Sigma_{g'}^f \phi_{g'}</script>
+\[-\sum_{g'= 1}^G \beta_i \nu
+        \Sigma_{g'}^f \phi_{g'}\]
 
 <p><strong>ScalarAdvectionArtDiff</strong></p>
 
-<script type="math/tex; mode=display">\nabla \cdot -\delta \nabla u</script>
+\[\nabla \cdot -\delta \nabla u\]
 
-<p>where <script type="math/tex">\delta</script> is an artificial diffusion coefficient determined by:</p>
+<p>where \(\delta\) is an artificial diffusion coefficient determined by:</p>
 
-<script type="math/tex; mode=display">\delta = \frac{|\vec{a}| h_{max}}{2}</script>
+\[\delta = \frac{|\vec{a}| h_{max}}{2}\]
 
-<p>with <script type="math/tex">\vec{a}</script> the advection velocity and <script type="math/tex">h_{max}</script> the maximum element
+<p>with \(\vec{a}\) the advection velocity and \(h_{max}\) the maximum element
 length dimension.</p>
 
 <p><strong>ScalarTransportTimeDerivative</strong></p>
 
-<script type="math/tex; mode=display">\frac{\partial u}{\partial t}</script>
+\[\frac{\partial u}{\partial t}\]
 
 <p><strong>SelfFissionEigenKernel</strong></p>
 
-<script type="math/tex; mode=display">\frac{-\nu_f \Sigma_f \phi}{k}</script>
+\[\frac{-\nu_f \Sigma_f \phi}{k}\]
 
 <p><strong>SigmaR</strong></p>
 
-<script type="math/tex; mode=display">\Sigma_g^r \phi_g</script>
+\[\Sigma_g^r \phi_g\]
 
 <p><strong>TransientFissionHeatSource</strong></p>
 
-<script type="math/tex; mode=display">-\sum_{g=1}^G \epsilon_{f,g}\Sigma_{f,g}\phi_g</script>
+\[-\sum_{g=1}^G \epsilon_{f,g}\Sigma_{f,g}\phi_g\]
 
                 </div>
                 <div class="col-md-2">
