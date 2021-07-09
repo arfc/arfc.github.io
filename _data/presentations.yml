@@ -1,3 +1,38 @@
+
+- title: "Modeling material requirements of the transition to HALEU fueled reactors" 
+  presenter: Amanda M. Bachmann
+  event: TWOFCS 2021
+  type: Technical Presentation
+  place: Online Virtual Meeting
+  month: June
+  day: 28
+  year: 2021
+  time: 4:30 pm
+  pic: '/img/pres/2021-06-28-bachmann-twofcs.png'
+  slides: '/pres/2021-bachmann-twofcs.pdf'
+  description: "Some of the designs for advanced reactors will require 
+  High-Assay Low Enriched Uranium (HALEU), which is uranium at a higher enrichment 
+  level than the fuel for current Light Water Reactors. This presentation 
+  explores resource requirements for different transition scenarios to advanced reactors 
+  fueled by HALEU. This work is funded through an NEUP Fellowship."
+
+- title: "Comparing HALEU Demand Among Advanced Reactor Fuel Cycle Transitions" 
+  presenter: Amanda M. Bachmann
+  event: American Nuclear Society Annual Meeting 2021
+  type: Technical Presentation
+  place: Online Virtual Meeting
+  month: June
+  day: 16
+  year: 2021
+  time: 1:15 pm
+  pic: '/img/pres/2021-06-16-bachmann-annual.png'
+  slides: '/pres/2021-bachmann-annual.pdf'
+  description: "Some of the designs for advanced reactors will require 
+  High-Assay Low Enriched Uranium (HALEU), which is uranium at a higher enrichment 
+  level than the fuel for current Light Water Reactors. This presentation 
+  explores resource requirements for different transition scenarios to advanced reactors 
+  fueled by HALEU. This work is funded through an NEUP Fellowship."
+
 - title: "Enriched Uranium Supply Requirements for the Transition to Advanced Reactors"
   presenter: Amanda M. Bachmann
   event: American Nuclear Society Student Conference
