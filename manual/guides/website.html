@@ -49,7 +49,7 @@
                 </button>
                 <a class="logo" href="https://illinois.edu"><img 
                         class="img-responsive pull-left" 
-                        src="http://identitystandards.illinois.edu/assets/images/i_mark_bold.png"></a>
+                        src="https://marketing.illinois.edu/images/brand/design/logo/block-i-primary.png"></a>
                 <a class="navbar-brand page-scroll" href="http://arfc.github.io">ARFC</a>
             </div>
 
@@ -172,13 +172,21 @@
         
           <a class="page-link" href="/manual/guides/writing/poster/">Creating a Poster</a>
         
+          <a class="page-link" href="/manual/guides/courses">Course Planning & Registration</a>
+        
           <a class="page-link" href="/manual/guides/cyclus">Cyclus</a>
         
           <a class="page-link" href="/manual/guides/writing/dissertation">Dissertation</a>
         
+          <a class="page-link" href="/manual/guides/dualboot">Dual Booting Windows and Ubuntu</a>
+        
           <a class="page-link" href="/manual/expectations">Expectations</a>
         
           
+        
+          <a class="page-link" href="/manual/guides/getting_serpent_license">Acquiring a Serpent License</a>
+        
+          <a class="page-link" href="/manual/guides/git-lfs">Git Large File Storage</a>
         
           <a class="page-link" href="/positions/grad/">Graduate Openings</a>
         
@@ -214,13 +222,19 @@
         
           <a class="page-link" href="/manual/guides/writing/prelim">Preliminary Exam</a>
         
-          <a class="page-link" href="/manual/guides/writing/pres">Presentation</a>
+          <a class="page-link" href="/manual/guides/writing/presentation">Presentation</a>
         
           <a class="page-link" href="/research/presentations/">Presentations</a>
         
           <a class="page-link" href="/manual/guides/writing/proposal">Research Proposal</a>
         
           <a class="page-link" href="/research/publications/">Publications</a>
+        
+          <a class="page-link" href="/manual/guides/pull_requests">Pull Requests</a>
+        
+          <a class="page-link" href="/manual/guides/pyne">PyNE</a>
+        
+          <a class="page-link" href="/software/moltres/wiki/recommended_settings/">Recommended Executioner and Preconditioning Settings</a>
         
           <a class="page-link" href="/manual/guides/katy/recreq">How to ask for a letter of recommendation from Katy</a>
         
@@ -233,6 +247,8 @@
           <a class="page-link" href="/manual/guides/katy/revreq">Requesting a Review of Something</a>
         
           <a class="page-link" href="/software/">Software</a>
+        
+          <a class="page-link" href="/manual/guides/software_templates">Software Templates</a>
         
           
         
@@ -282,9 +298,9 @@ the website, including blog posts and comments.</p>
 and jekyll-scholar. Get started <a href="https://jekyllrb.com/docs/installation/">here.</a>.</li>
   <li><a href="https://github.com/arfc/arfc.github.io#fork-destination-box">Fork</a> the website repository.</li>
   <li>Clone your fork. If you have <a href="https://help.github.com/articles/generating-an-ssh-key/">your ssh keys set up</a> 
-and your username is USERNAME, the command is <code class="highlighter-rouge">git clone 
+and your username is USERNAME, the command is <code class="language-plaintext highlighter-rouge">git clone 
 git@github.com:USERNAME/arfc.github.io</code></li>
-  <li>Add the group fork as a remote. <code class="highlighter-rouge">cd arfc.github.io &amp;&amp; git remote add 
+  <li>Add the group fork as a remote. <code class="language-plaintext highlighter-rouge">cd arfc.github.io &amp;&amp; git remote add 
 upstream git@github.com:arfc/arfc.github.io</code></li>
 </ol>
 
@@ -302,40 +318,40 @@ changes that are common:</p>
 <h2 id="add-yourself">Add Yourself</h2>
 
 <ol>
-  <li>Once you have done the set up steps, enter the source branch of the repository. <code class="highlighter-rouge">git checkout source</code></li>
-  <li>Add your photo to the repository (in img/people). If your name is Jane Doe, call it <code class="highlighter-rouge">doej.png</code>.</li>
-  <li>Don’t forget to git add and git commit the photo <code class="highlighter-rouge">git add img/people/doej.png</code> and <code class="highlighter-rouge">git commit -am "adds a photo of Jane Doe"</code></li>
-  <li>Open the file <code class="highlighter-rouge">_data/people.yml</code> and add your details.</li>
-  <li>Close the file and commit your changes (<code class="highlighter-rouge">git commit -am "added Jane Doe details to people data"</code>)</li>
-  <li>Check whether your changes succeeded by typing <code class="highlighter-rouge">jekyll serve</code> from the top 
+  <li>Once you have done the set up steps, enter the source branch of the repository. <code class="language-plaintext highlighter-rouge">git checkout source</code></li>
+  <li>Add your photo to the repository (in img/people). If your name is Jane Doe, call it <code class="language-plaintext highlighter-rouge">doej.png</code>.</li>
+  <li>Don’t forget to git add and git commit the photo <code class="language-plaintext highlighter-rouge">git add img/people/doej.png</code> and <code class="language-plaintext highlighter-rouge">git commit -am "adds a photo of Jane Doe"</code></li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">_data/people.yml</code> and add your details.</li>
+  <li>Close the file and commit your changes (<code class="language-plaintext highlighter-rouge">git commit -am "added Jane Doe details to people data"</code>)</li>
+  <li>Check whether your changes succeeded by typing <code class="language-plaintext highlighter-rouge">jekyll serve</code> from the top 
 level directory of the website repository. Then, open a browser to 
-<code class="highlighter-rouge">localhost:4000</code>.</li>
+<code class="language-plaintext highlighter-rouge">localhost:4000</code>.</li>
   <li>When you’re satisfied, push your changes to your own fork.</li>
   <li>Finally make a pull request from your source branch to the arfc source 
 branch.</li>
 </ol>
 
 <p>If you’re feeling confident, you can skip the pull request. Instead, you can 
-just push changes to the website directly with the command <code class="highlighter-rouge">rake publish</code>. Only 
+just push changes to the website directly with the command <code class="language-plaintext highlighter-rouge">rake publish</code>. Only 
 do this if you don’t need anyone to double check your work.</p>
 
 <h2 id="creating-a-blog-post">Creating a Blog Post</h2>
 
 <ol>
-  <li>Once you have done the set up steps, enter the source branch of the repository. <code class="highlighter-rouge">git checkout source</code></li>
-  <li>Create a blog post file in <code class="highlighter-rouge">_posts</code>. Use the proper naming convention. (e.g. 
+  <li>Once you have done the set up steps, enter the source branch of the repository. <code class="language-plaintext highlighter-rouge">git checkout source</code></li>
+  <li>Create a blog post file in <code class="language-plaintext highlighter-rouge">_posts</code>. Use the proper naming convention. (e.g. 
 2100-12-31-century-end.md`</li>
-  <li>Don’t forget to git add and git commit the post <code class="highlighter-rouge">git add _posts/2100-12-31-century-end.md</code> and <code class="highlighter-rouge">git commit -am "adds a photo of Jane Doe"</code></li>
-  <li>Close the file and commit your changes (<code class="highlighter-rouge">git commit -am "added Jane Doe details to people data"</code>)</li>
-  <li>Check whether your changes succeeded by typing <code class="highlighter-rouge">jekyll serve</code> from the top 
+  <li>Don’t forget to git add and git commit the post <code class="language-plaintext highlighter-rouge">git add _posts/2100-12-31-century-end.md</code> and <code class="language-plaintext highlighter-rouge">git commit -am "adds a photo of Jane Doe"</code></li>
+  <li>Close the file and commit your changes (<code class="language-plaintext highlighter-rouge">git commit -am "added Jane Doe details to people data"</code>)</li>
+  <li>Check whether your changes succeeded by typing <code class="language-plaintext highlighter-rouge">jekyll serve</code> from the top 
 level directory of the website repository. Then, open a browser to 
-<code class="highlighter-rouge">localhost:4000</code>.</li>
+<code class="language-plaintext highlighter-rouge">localhost:4000</code>.</li>
   <li>When you’re satisfied, push your changes to your own fork.</li>
   <li>Finally make a pull request from your source directory to mine.</li>
 </ol>
 
 <p>If you’re feeling confident, you can skip the pull request. Instead, you can 
-just push changes to the website directly with the command <code class="highlighter-rouge">rake publish</code>. Only 
+just push changes to the website directly with the command <code class="language-plaintext highlighter-rouge">rake publish</code>. Only 
 do this if you don’t need anyone to double check your work.</p>
 
 <h2 id="edits-to-the-text">Edits to the text</h2>
@@ -345,7 +361,7 @@ do this if you don’t need anyone to double check your work.</p>
 <ul>
   <li>enter the source branch of the repository</li>
   <li>make changes to either yml or md files</li>
-  <li>check your work with <code class="highlighter-rouge">jekyll serve</code></li>
+  <li>check your work with <code class="language-plaintext highlighter-rouge">jekyll serve</code></li>
   <li>and git commit, git push</li>
   <li>finally, you’ll make a pull request to the arfc branch.</li>
 </ul>

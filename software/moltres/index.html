@@ -49,7 +49,7 @@
                 </button>
                 <a class="logo" href="https://illinois.edu"><img 
                         class="img-responsive pull-left" 
-                        src="http://identitystandards.illinois.edu/assets/images/i_mark_bold.png"></a>
+                        src="https://marketing.illinois.edu/images/brand/design/logo/block-i-primary.png"></a>
                 <a class="navbar-brand page-scroll" href="http://arfc.github.io">ARFC</a>
             </div>
 
@@ -172,13 +172,21 @@
         
           <a class="page-link" href="/manual/guides/writing/poster/">Creating a Poster</a>
         
+          <a class="page-link" href="/manual/guides/courses">Course Planning & Registration</a>
+        
           <a class="page-link" href="/manual/guides/cyclus">Cyclus</a>
         
           <a class="page-link" href="/manual/guides/writing/dissertation">Dissertation</a>
         
+          <a class="page-link" href="/manual/guides/dualboot">Dual Booting Windows and Ubuntu</a>
+        
           <a class="page-link" href="/manual/expectations">Expectations</a>
         
           
+        
+          <a class="page-link" href="/manual/guides/getting_serpent_license">Acquiring a Serpent License</a>
+        
+          <a class="page-link" href="/manual/guides/git-lfs">Git Large File Storage</a>
         
           <a class="page-link" href="/positions/grad/">Graduate Openings</a>
         
@@ -214,13 +222,19 @@
         
           <a class="page-link" href="/manual/guides/writing/prelim">Preliminary Exam</a>
         
-          <a class="page-link" href="/manual/guides/writing/pres">Presentation</a>
+          <a class="page-link" href="/manual/guides/writing/presentation">Presentation</a>
         
           <a class="page-link" href="/research/presentations/">Presentations</a>
         
           <a class="page-link" href="/manual/guides/writing/proposal">Research Proposal</a>
         
           <a class="page-link" href="/research/publications/">Publications</a>
+        
+          <a class="page-link" href="/manual/guides/pull_requests">Pull Requests</a>
+        
+          <a class="page-link" href="/manual/guides/pyne">PyNE</a>
+        
+          <a class="page-link" href="/software/moltres/wiki/recommended_settings/">Recommended Executioner and Preconditioning Settings</a>
         
           <a class="page-link" href="/manual/guides/katy/recreq">How to ask for a letter of recommendation from Katy</a>
         
@@ -233,6 +247,8 @@
           <a class="page-link" href="/manual/guides/katy/revreq">Requesting a Review of Something</a>
         
           <a class="page-link" href="/software/">Software</a>
+        
+          <a class="page-link" href="/manual/guides/software_templates">Software Templates</a>
         
           
         
@@ -278,21 +294,21 @@ reactors.</p>
 
 <p>Outlines of the kernels and boundary
 conditions used to construct the Moltres governing equations can be found on the
-<a href="http://arfc.github.io/software/moltres/wiki/">Moltres wiki</a>. Breakdown of a
+<a href="./wiki/">Moltres wiki</a>. Breakdown of a
 full-fledged Moltres input file can be found
-<a href="http://arfc.github.io/software/moltres/wiki/input_example/">here</a>. New Moltres
+<a href="./wiki/input_example/">here</a>. New Moltres
 users who have never used MOOSE before are encouraged to check-out its
-<a href="http://mooseframework.org/wiki/">wiki</a>,
-<a href="http://mooseframework.org/wiki/MooseTutorials/">tutorials</a>, and
-<a href="http://mooseframework.org/wiki/MooseExamples/">examples</a> to help understand the
+<a href="http://mooseframework.org/documentation.menu.html">wiki</a>,
+<a href="http://mooseframework.org/workshop/#/">tutorials</a>, and
+<a href="http://mooseframework.org/examples/index.html">examples</a> to help understand the
 underlying Moltres components.</p>
 
 <h2 id="install">Install</h2>
 
 <p>Moltres relies on the MOOSE framework. To install MOOSE please follow the
-instructions at http://mooseframework.org/getting-started/. After installing
+instructions at <a href="http://mooseframework.org/getting_started/index.html">this guide</a>. After installing
 MOOSE, you can install Moltres by running the following commands in a shell
-after changing into the directory holding your MOOSE directory (perhaps <code class="highlighter-rouge">~/projects</code>):</p>
+after changing into the directory holding your MOOSE directory (perhaps <code class="language-plaintext highlighter-rouge">~/projects</code>):</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/arfc/moltres
 <span class="nb">cd </span>moltres
@@ -301,13 +317,13 @@ git submodule update
 make <span class="nt">-j8</span>
 </code></pre></div></div>
 
-<p>You may also compile a debug version of Moltres by running <code class="highlighter-rouge">METHOD=dbg make
--j8</code>. Note that you should replace <code class="highlighter-rouge">8</code> with the number of processors available
+<p>You may also compile a debug version of Moltres by running <code class="language-plaintext highlighter-rouge">METHOD=dbg make
+-j8</code>. Note that you should replace <code class="language-plaintext highlighter-rouge">8</code> with the number of processors available
 on your machine.</p>
 
 <h2 id="testing">Testing</h2>
 
-<p>To ensure that Moltres is functioning properly, run <code class="highlighter-rouge">./run_tests -j8</code> from the
+<p>To ensure that Moltres is functioning properly, run <code class="language-plaintext highlighter-rouge">./run_tests -j8</code> from the
 root of the Moltres directory.</p>
 
 <h2 id="development">Development</h2>
@@ -315,9 +331,9 @@ root of the Moltres directory.</p>
 <p>API documentation for those interested in understanding or developing Moltres
 can be found <a href="https://arfc.github.io/moltres/">here</a>. If you ever want to
 contribute changes to the Moltres repository, make sure you run
-<code class="highlighter-rouge">scripts/install-format-hook.sh</code> before making any commits. This will ensure
+<code class="language-plaintext highlighter-rouge">scripts/install-format-hook.sh</code> before making any commits. This will ensure
 that any commits you make adhere to the MOOSE/Moltres C++ style. Pull requests
-should be submitted to the <code class="highlighter-rouge">devel</code> branch of the <code class="highlighter-rouge">arfc/moltres</code> repository. Each
+should be submitted to the <code class="language-plaintext highlighter-rouge">devel</code> branch of the <code class="language-plaintext highlighter-rouge">arfc/moltres</code> repository. Each
 pull request is automatically tested for style and for whether it breaks any of
 the core Moltres physics capabilities.</p>
 

@@ -1,0 +1,450 @@
+I"�4<h2 id="before-writing">Before Writing</h2>
+
+<ul>
+  <li>Discuss your MS topic with your advisor.</li>
+  <li>Iterate on the topic until your advisor approves of the topic, scope, and 
+plan.</li>
+  <li>Identify review and submission deadlines with your advisor.</li>
+  <li>In collaboration with your advisor, identify a second reader.</li>
+  <li>Send a polite email to the second reader asking if they would be willing and 
+proposing a review timeline.</li>
+  <li>Create a GitHub repository where you will keep your thesis document.</li>
+  <li>A UIUC MS thesis LaTeX template can be found at: 
+<a href="https://github.com/arfc/ms-thesis-template">https://github.com/arfc/ms-thesis-template</a></li>
+  <li>Create a Zotero folder in paper-dev to hold your references 
+(YYYY-lastname-ms).</li>
+  <li>Review the <a href="http://www.grad.illinois.edu/thesis/thesishandbook/chapterIII.asp">graduate college format guidelines</a></li>
+  <li>Be aware of various resources like the <a href="https://grad.illinois.edu/thesis/deposit-checklist">thesis deposit checklist</a>.</li>
+</ul>
+
+<h2 id="rules-of-the-ms-thesis">Rules of the MS Thesis</h2>
+
+<p>There are many rules. From the grad handbook:</p>
+
+<blockquote>
+  <p>The thesis should be a creative work of potential use to the nuclear, plasma,
+and radiological engineering community. The scope should permit completion
+within a reasonable time frame. The thesis must be deposited with the Graduate
+College Thesis Office. Publication is encouraged.</p>
+</blockquote>
+
+<h2 id="review-process">Review Process</h2>
+<p>The review process includes a series of major approvals:</p>
+
+<ol>
+  <li>Basic grammatical review &amp; approval (e.g. by undergrad)</li>
+  <li>Approval by your advisor</li>
+  <li>Approval by the second reader</li>
+  <li>Approval by the department head</li>
+  <li>Approval by the graduate college</li>
+</ol>
+
+<h3 id="review-deadlines">Review Deadlines</h3>
+<p>It is best to work backward from the final deadline aiming to give at least two 
+weeks to your second reader and to the department head.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Stage</th>
+      <th> </th>
+      <th style="text-align: right"> </th>
+      <th> </th>
+      <th>Days Before Deposit</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Iterative Edits with Huff</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>varies</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>varies</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit final full draft to Huff</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>56</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Handle Final Huff Comments</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>42</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>4 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit to 2nd Reader</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>38</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Handle 2nd Reader Comments</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>24</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>4 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit to Department Head</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>20</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Final Edits</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>6</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Graduate College Review</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deposit Deadline</td>
+      <td> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fall-example">Fall Example</h4>
+
+<p>An ideal fall, with a deposit deadline of December 11 might (ideally) look like this.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Stage</th>
+      <th style="text-align: right"> </th>
+      <th style="text-align: right"> </th>
+      <th> </th>
+      <th>Start Date</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>End Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Iterative Edits with Huff</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>09/15</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>10/16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit final full draft to Huff</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>10/16</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>10/30</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Handle Final Huff Comments</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>10/30</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>11/03</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit to 2nd Reader</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>11/03</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>11/17</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Handle 2nd Reader Comments</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>11/17</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>11/21</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit to Department Head</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>11/21</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>12/05</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Final Edits</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>12/05</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>12/09</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Graduate College Review</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>12/09</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>12/11</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deposit Deadline</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>12/11</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>12/11</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="spring-example">Spring Example</h4>
+
+<p>An ideal spring, with a deposit deadline of April 26 might (ideally) look like this.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Stage</th>
+      <th style="text-align: right"> </th>
+      <th style="text-align: right"> </th>
+      <th> </th>
+      <th>Start Date</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>End Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Iterative Edits with Huff</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>varies</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>varies</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit final full draft to Huff</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>2/28</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Handle Final Huff Comments</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>3/03</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>4 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit to 2nd Reader</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>3/17</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Handle 2nd Reader Comments</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>3/31</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>4 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Submit to Department Head</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>4/04</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Final Edits</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>4/20</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Graduate College Review</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>4/24</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>2 days</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deposit Deadline</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td>4/26</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>4/26</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="writing-and-advisor-review">Writing and Advisor Review</h3>
+
+<p>The process can be either whole or piecemeal.
+In Prof. Huff’s experience, it is best to enable chapter-by-chapter review of your thesis by your advisor.
+A great way to do this with Prof. Huff is the following workflow:</p>
+
+<ul>
+  <li>Note the <a href="https://github.com/arfc/ms-thesis-template">ms-thesis-template</a> in the arfc github org.</li>
+  <li>Create a GitHub respository in your own GitHub user space (ideally, usetemplate).</li>
+  <li>Work on this document in your repository. Feel free to use feature branches 
+and merge into master, or just commit directly to master as you go.</li>
+  <li>You need to give Prof. Huff collaborator permission on this repository to allow issue assignment.</li>
+  <li>At some point, you decide that a part of your masters thesis is ready for 
+Prof. Huff’s review (e.g. the literature review chapter)</li>
+  <li>(optional) Tag the repository at that state. (e.g. ch1-draft-1)</li>
+  <li>Create an <em>issue</em> like “Huff Review Chapter 1” and assign Prof. Huff to that issue. 
+Note the repository tag in the issue description and <em>include a built <code class="language-plaintext highlighter-rouge">pdf</code> in 
+the issue.</em></li>
+  <li>Prof. Huff will, within a week or two, conduct a review on the <code class="language-plaintext highlighter-rouge">pdf</code>.</li>
+  <li>When Prof. Huff has completed the review, she will close the issue you 
+assigned to her and will open one or more NEW issues, assigned to you, 
+detailing the changes which must be made.</li>
+  <li>Respond to the review issues via discussion on the github issue and ideally 
+submit a PR that handles those issues. Prof. Huff can review your solutions to those issues by reviewing 
+pull requests, and/or by evaluating your progress in later stages of review.
+But, all PRs and issues should have a built pdf linked in their description.</li>
+</ul>
+
+<p>When Prof. Huff approves of the thesis, you should email the thesis to your second reader with Prof. Huff CC’d.</p>
+
+<h3 id="review-by-the-second-reader">Review by the second reader</h3>
+<p>Both the thesis advisor and the second reader should be given at least two weeks, or up to a month with the document.</p>
+
+<h2 id="after-writing">After Writing</h2>
+
+<ul>
+  <li>Add yourself to the degree list.</li>
+  <li>Get the TDA form from Kristie.</li>
+  <li>Get Prof. Huff, the 2nd reader, and the NPRE department head to sign the 
+TDA form.</li>
+  <li>File your thesis with the graduate school.</li>
+  <li>Complete any other degree-related beurocracy.</li>
+  <li>Add the thesis to ideals.</li>
+  <li>Add the thesis to Zotero</li>
+</ul>
+:ET

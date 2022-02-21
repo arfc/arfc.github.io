@@ -49,7 +49,7 @@
                 </button>
                 <a class="logo" href="https://illinois.edu"><img 
                         class="img-responsive pull-left" 
-                        src="http://identitystandards.illinois.edu/assets/images/i_mark_bold.png"></a>
+                        src="https://marketing.illinois.edu/images/brand/design/logo/block-i-primary.png"></a>
                 <a class="navbar-brand page-scroll" href="http://arfc.github.io">ARFC</a>
             </div>
 
@@ -172,13 +172,21 @@
         
           <a class="page-link" href="/manual/guides/writing/poster/">Creating a Poster</a>
         
+          <a class="page-link" href="/manual/guides/courses">Course Planning & Registration</a>
+        
           <a class="page-link" href="/manual/guides/cyclus">Cyclus</a>
         
           <a class="page-link" href="/manual/guides/writing/dissertation">Dissertation</a>
         
+          <a class="page-link" href="/manual/guides/dualboot">Dual Booting Windows and Ubuntu</a>
+        
           <a class="page-link" href="/manual/expectations">Expectations</a>
         
           
+        
+          <a class="page-link" href="/manual/guides/getting_serpent_license">Acquiring a Serpent License</a>
+        
+          <a class="page-link" href="/manual/guides/git-lfs">Git Large File Storage</a>
         
           <a class="page-link" href="/positions/grad/">Graduate Openings</a>
         
@@ -214,13 +222,19 @@
         
           <a class="page-link" href="/manual/guides/writing/prelim">Preliminary Exam</a>
         
-          <a class="page-link" href="/manual/guides/writing/pres">Presentation</a>
+          <a class="page-link" href="/manual/guides/writing/presentation">Presentation</a>
         
           <a class="page-link" href="/research/presentations/">Presentations</a>
         
           <a class="page-link" href="/manual/guides/writing/proposal">Research Proposal</a>
         
           <a class="page-link" href="/research/publications/">Publications</a>
+        
+          <a class="page-link" href="/manual/guides/pull_requests">Pull Requests</a>
+        
+          <a class="page-link" href="/manual/guides/pyne">PyNE</a>
+        
+          <a class="page-link" href="/software/moltres/wiki/recommended_settings/">Recommended Executioner and Preconditioning Settings</a>
         
           <a class="page-link" href="/manual/guides/katy/recreq">How to ask for a letter of recommendation from Katy</a>
         
@@ -233,6 +247,8 @@
           <a class="page-link" href="/manual/guides/katy/revreq">Requesting a Review of Something</a>
         
           <a class="page-link" href="/software/">Software</a>
+        
+          <a class="page-link" href="/manual/guides/software_templates">Software Templates</a>
         
           
         
@@ -256,7 +272,7 @@
     <div class="page-content">
       <div class="wrapper">
         <!-- Manual -->
-    <section id="title" class="">
+    <section id="title" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -281,8 +297,9 @@ the Google Drive software licenses directory.</p>
 <p>Have Prof Huff get you approved for Blue Waters!</p>
 
 <h2 id="step-2-apply-for-blue-waters">Step 2. Apply for Blue Waters</h2>
-<p>Follow the link and fill out the application
-        You can either receive a virtual token or a physical token
+<p>You should recieve an email with a link to continue your validation process.
+Follow the link and fill out the application.
+        You can either receive a virtual token or a physical token.
         A Virutal token is done through your mobile device,
         and a physical token looks like this:</p>
 
@@ -295,47 +312,54 @@ follow the instruction sent to you by email.</p>
 <p>Wait patiently for the token to arrive.</p>
 
 <h2 id="step-4-activating-token">Step 4. Activating Token</h2>
-<p>With your token, open the email ‘Blue Waters Instructions’
-Click the <a href="https://otp.ncsa.illinois.edu">link</a>
-and follow its directions, and activate your token.</p>
+<p>For activating the token, instructions should be contained within the emails recieved. Extra information can be found <a href="https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA">here</a>.</p>
 
-<p>** tip) the pin must be 8 digits, letters and numbers, something that you’ll never forget!</p>
-
-<h2 id="step-5-loggin-in">Step 5. Loggin In</h2>
+<h2 id="step-5-logging-in">Step 5. Logging In</h2>
 <p>Open terminal, type</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [username]@h2ologin.ncsa.illinois.edu
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [username]@h2ologin.ncsa.illinois.edu
 </code></pre></div></div>
-
-<p>type in PIN+Token#</p>
+<p>You will then be prompted for your password, followed by an option to select from a list of your 
+registered tokens. After selecting the token you will use (if you only have one token, simply 
+type 1), either enter your pin and token number or approve the login request with Duo, 
+depending on what token type you are using.</p>
 
 <h4 id="tip-you-can-shortname-your-ssh-command">tip) you can shortname your ssh command:</h4>
 <p>Open the terminal</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$cd
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$cd
 $cd .ssh
 $vim config
 </code></pre></div></div>
 
 <p>write:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        Host [desired_name]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        Host [desired_name]
         HostName h2ologin.ncsa.illinois.edu
         User [Blue_Waters_User_Name] 
 </code></pre></div></div>
 
 <p>Then you’d just have to type in</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [desired_name]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh [desired_name]
 </code></pre></div></div>
 
 <p>For example, you might have named Blue Waters “bw”.
 In that case, you simply type</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh bw
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ssh bw
 </code></pre></div></div>
 
 <h2 id="step-6-congratz">Step 6. Congratz!</h2>
 <p>You’re in! :)</p>
 
 <p><img src="/img/manual/guides/bw-welcome.png" alt="alt text" /></p>
+
+<h4 id="tip-running-jobs">tip) running jobs</h4>
+<p>To start running jobs on Blue Waters, it is useful to look at what other people use as well as the documentation:</p>
+<ol>
+  <li>Create a [file_name].pbs script (which contains an aprun command).
+ A good way to find example job scripts is to search through the arfc repo for code containing “.pbs”.
+ More information can be found <a href="https://bluewaters.ncsa.illinois.edu/running-your-jobs">here</a> to understand how these job scripts function.</li>
+  <li>Use qsub [file_name].pbs to submit the job.</li>
+</ol>
 
 <h2 id="step-7-module-loading">Step 7. Module Loading</h2>
 <p>Various modules can be loaded and the available modules can be listed using the following commands:</p>
@@ -350,23 +374,23 @@ In that case, you simply type</p>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module avail </code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">module avail </code></td>
       <td style="text-align: left"> </td>
       <td style="text-align: right">List all available modules</td>
     </tr>
     <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module avail </code></td>
-      <td style="text-align: left"><code class="highlighter-rouge"> |grep -r [keyword] </code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">module avail </code></td>
+      <td style="text-align: left">` |grep -r [keyword] `</td>
       <td style="text-align: right">Search module with keywords</td>
     </tr>
     <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module load </code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">module load </code></td>
       <td style="text-align: left"> </td>
       <td style="text-align: right">Load module onto environment</td>
     </tr>
     <tr>
-      <td style="text-align: left"><code class="highlighter-rouge">module swap </code></td>
-      <td style="text-align: left"><code class="highlighter-rouge"> [original] [new] </code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">module swap </code></td>
+      <td style="text-align: left">` [original] [new] `</td>
       <td style="text-align: right">replace [orignal] with [new]</td>
     </tr>
   </tbody>
@@ -375,14 +399,14 @@ In that case, you simply type</p>
 <h4 id="tip-bashrc">tip) ~/.bashrc</h4>
 <p>If you don’t want to load your modules every time, edit ~/.bashrc 
 and have all your ‘module load/swap’ commands.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$vim ~/.bashrc
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$vim ~/.bashrc
 </code></pre></div></div>
 <p>after editing the bashrc, you must source it:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$source ~/.bashrc
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$source ~/.bashrc
 </code></pre></div></div>
 
 <h2 id="the-group-directory">The Group Directory</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/sciteam/bahg
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/sciteam/bbcc
 </code></pre></div></div>
 
 <h2 id="how-to-download-source-code">How to Download Source Code</h2>
@@ -400,19 +424,63 @@ home directory(~) or in the group directory (bahg)</p>
   <li>
     <p>Github</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone [clone_link]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone [clone_link]
 </code></pre></div>    </div>
   </li>
   <li>
     <p>wget</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget [link to source code tar.xz or zip file]
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget [link to source code tar.xz or zip file]
 </code></pre></div>    </div>
 
     <p>Expand the archive with the tar or the unzip command.</p>
   </li>
 </ol>
 
+<h2 id="using-moltres">Using Moltres</h2>
+<p>Navigate to</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /projects/sciteam/bbcc/projects/
+</code></pre></div></div>
+<p>and read the readme file located there. It provides useful information to properly setup a pbs script and run Moltres.</p>
+
+<h2 id="using-serpent">Using Serpent</h2>
+<p>To use Serpent, one can use the command</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> qsub serpent_pbs_script.pbs
+</code></pre></div></div>
+
+<p>where an example of a pbs script for using Serpent can be seen below.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #!/bin/bash
+ #PBS -l nodes=4:ppn=32:xe
+ #PBS -l walltime=08:00:00
+ #PBS -N name_of_Serpent_run
+ #PBS -j oe
+ #PBS -q normal
+
+ module swap PrgEnv-cray PrgEnv-gnu
+
+ export OMP_NUM_THREADS=32
+
+ cd $PBS_O_WORKDIR
+ aprun -n 4 -d 32 /projects/sciteam/bbcc/serpent/src2.1.32/sss2 -omp 32 ./serpent_file &gt; output_file
+</code></pre></div></div>
+
+<p>Step 6 contains a link for more information on pbs scripts. The “module swap” is required in order to run Serpent since it uses the gnu compiler. The “export” line is used to set the thread count which has a default value of 1.</p>
+
+<h4 id="tip-cross-sections">Tip) Cross Sections</h4>
+<p>When making your Serpent input deck, you can use the following for your cross section data</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set acelib "/projects/sciteam/bbcc/serpent/xsdata/jeff312/sss_jeff312.xsdata"
+set declib "/projects/sciteam/bbcc/serpent/xsdata/jeff312/sss_jeff33.dec"
+set nfylib "/projects/sciteam/bbcc/serpent/xsdata/jeff312/sss_jeff33.nfy"
+</code></pre></div></div>
+
+<h4 id="tip-viewing-progress">Tip) Viewing Progress</h4>
+
+<p>While you wait for your script to complete, you can run the command</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> qstat | grep "name_of_Serpent_run"
+</code></pre></div></div>
+
+<p>which will display how long your script has been running. Once your script is done running, it should return nothing (unless someone else is running a script with the same name as yours).</p>
 
                 </div>
                 <div class="col-md-2">

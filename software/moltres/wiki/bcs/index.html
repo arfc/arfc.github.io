@@ -49,7 +49,7 @@
                 </button>
                 <a class="logo" href="https://illinois.edu"><img 
                         class="img-responsive pull-left" 
-                        src="http://identitystandards.illinois.edu/assets/images/i_mark_bold.png"></a>
+                        src="https://marketing.illinois.edu/images/brand/design/logo/block-i-primary.png"></a>
                 <a class="navbar-brand page-scroll" href="http://arfc.github.io">ARFC</a>
             </div>
 
@@ -172,13 +172,21 @@
         
           <a class="page-link" href="/manual/guides/writing/poster/">Creating a Poster</a>
         
+          <a class="page-link" href="/manual/guides/courses">Course Planning & Registration</a>
+        
           <a class="page-link" href="/manual/guides/cyclus">Cyclus</a>
         
           <a class="page-link" href="/manual/guides/writing/dissertation">Dissertation</a>
         
+          <a class="page-link" href="/manual/guides/dualboot">Dual Booting Windows and Ubuntu</a>
+        
           <a class="page-link" href="/manual/expectations">Expectations</a>
         
           
+        
+          <a class="page-link" href="/manual/guides/getting_serpent_license">Acquiring a Serpent License</a>
+        
+          <a class="page-link" href="/manual/guides/git-lfs">Git Large File Storage</a>
         
           <a class="page-link" href="/positions/grad/">Graduate Openings</a>
         
@@ -214,13 +222,19 @@
         
           <a class="page-link" href="/manual/guides/writing/prelim">Preliminary Exam</a>
         
-          <a class="page-link" href="/manual/guides/writing/pres">Presentation</a>
+          <a class="page-link" href="/manual/guides/writing/presentation">Presentation</a>
         
           <a class="page-link" href="/research/presentations/">Presentations</a>
         
           <a class="page-link" href="/manual/guides/writing/proposal">Research Proposal</a>
         
           <a class="page-link" href="/research/publications/">Publications</a>
+        
+          <a class="page-link" href="/manual/guides/pull_requests">Pull Requests</a>
+        
+          <a class="page-link" href="/manual/guides/pyne">PyNE</a>
+        
+          <a class="page-link" href="/software/moltres/wiki/recommended_settings/">Recommended Executioner and Preconditioning Settings</a>
         
           <a class="page-link" href="/manual/guides/katy/recreq">How to ask for a letter of recommendation from Katy</a>
         
@@ -233,6 +247,8 @@
           <a class="page-link" href="/manual/guides/katy/revreq">Requesting a Review of Something</a>
         
           <a class="page-link" href="/software/">Software</a>
+        
+          <a class="page-link" href="/manual/guides/software_templates">Software Templates</a>
         
           
         
@@ -272,40 +288,40 @@
                 </div>
                 <div class="col-md-8">
     <p>This page shows the mathematical forms of the auxiliary equation pieces that
-each boundary condition class represents. Note that <script type="math/tex">u</script> is used in some places to denote a
-generic variable. Elsewhere typical literature symbols are used, e.g. <script type="math/tex">\phi</script>
-denotes the neutron flux, <script type="math/tex">T</script> denotes the temperature, and <script type="math/tex">C</script> denotes
+each boundary condition class represents. Note that \(u\) is used in some places to denote a
+generic variable. Elsewhere typical literature symbols are used, e.g. \(\phi\)
+denotes the neutron flux, \(T\) denotes the temperature, and \(C\) denotes
 precursor concentrations.</p>
 
 <h2 id="moltres-bcs">Moltres BCs</h2>
 
 <p><strong>VacuumBC</strong></p>
 
-<script type="math/tex; mode=display">\vec{n} \cdot -D_g \nabla \phi_g = \frac{\phi_g}{2}</script>
+\[\vec{n} \cdot -D_g \nabla \phi_g = \frac{\phi_g}{2}\]
 
 <h2 id="squirrel-bcs">Squirrel BCs</h2>
 
 <p><strong>OutflowBC</strong></p>
 
 <p>\begin{align}
-\vec{n} \cdot \vec{\Gamma} &amp;= \vec{n} \cdot \vec{a} u \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} &gt; 0\\
-&amp;= 0 \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} \le 0\\
+\vec{n} \cdot \vec{\Gamma} &amp;= \vec{n} \cdot \vec{a} u \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} &gt; 0\<br />
+&amp;= 0 \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} \le 0\<br />
 \end{align}</p>
 
 <p><strong>InflowBC</strong></p>
 
-<script type="math/tex; mode=display">\vec{n} \cdot \vec{\Gamma} = \vec{n} \cdot \vec{a} u_{in}</script>
+\[\vec{n} \cdot \vec{\Gamma} = \vec{n} \cdot \vec{a} u_{in}\]
 
 <p><strong>TemperatureOutflowBC</strong></p>
 
 <p>\begin{align}
-\vec{n} \cdot \vec{\Gamma} &amp;= \rho c_p \vec{n} \cdot \vec{a} T \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} &gt; 0\\
+\vec{n} \cdot \vec{\Gamma} &amp;= \rho c_p \vec{n} \cdot \vec{a} T \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} &gt; 0\<br />
 &amp;= 0 \ \ \mathsf{if} \ \ \vec{n} \cdot \vec{a} \le 0
 \end{align}</p>
 
 <p><strong>TemperatureInflowBC</strong></p>
 
-<script type="math/tex; mode=display">\vec{n} \cdot \vec{\Gamma} = \rho c_p \vec{n} \cdot \vec{a} T_{in}</script>
+\[\vec{n} \cdot \vec{\Gamma} = \rho c_p \vec{n} \cdot \vec{a} T_{in}\]
 
                 </div>
                 <div class="col-md-2">
