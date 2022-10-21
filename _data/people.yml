@@ -5,7 +5,7 @@
   role: Assistant Professor
   src: http://kdhuff.web.engr.illinois.edu
   url: http://kdhuff.web.engr.illinois.edu
-  description: 'Katy is the director of the Advanced Reactors and Fuel Cycles group at Illinois.'
+  description: 'Katy is the director of the Advanced Reactors and Fuel Cycles group at Illinois and is currently on a leave of absence to serve in the Department of Energy.'
   social:
     - url: http://katyhuff.youcanbook.me
       icon: calendar
@@ -17,6 +17,25 @@
       icon: graduation-cap
       name: Google Scholar
     - url: https://twitter.com/katyhuff
+      icon: twitter
+      name: Twitter
+
+- name: Madicken Munk
+  pic: /img/people/munkm.jpg
+  dates: 2021-present
+  status: PI
+  role: Research Scientist
+  src: https://munkm.github.io
+  url: https://munkm.github.io
+  description: 'Madicken is acting the director of the Advanced Reactors and Fuel Cycles group at Illinois.'
+  social:
+    - url: https://github.com/munkm
+      icon: github-alt
+      name: Github
+    - url: https://scholar.google.com/citations?user=V1Cqd5cAAAAJ
+      icon: graduation-cap
+      name: Google Scholar
+    - url: https://twitter.com/munkium
       icon: twitter
       name: Twitter
 
@@ -112,6 +131,10 @@
       - url: mailto:oyardas2@illinois.edu
         icon: envelope-o
         name: email
+      - url: https://github.com/yardasol
+        icon: github-alt
+        name: Github
+
 
 - name: Amanda Bachmann
   pic: /img/people/bachmanna.png
@@ -142,11 +165,26 @@
         icon: github-alt
         name: Github
 
+- name: Lu Kissinger
+  pic: /img/people/kissingerl.jpg
+  dates: 2017-present
+  role: Graduate Research Assistant
+  description: "Lu  is a Masters student using Monte Carlo codes to investigate the feasibility of Lunar Surface Fission Power. They also worked on reactor modeling projects with ARFC as an undergraduate and at Argonne post-bachelor's"
+  social:
+      - url: mailto:lkissin2@illinois.edu
+        icon: envelope-o
+        name: email
+      - url: https://github.com/lkissin2
+        icon: github-alt
+        name: Github
+
 - name: Nathan Ryan
   pic: /img/people/ryann.png
-  dates: 2020-present
-  role: Undergraduate Research Assistant
-  description: 'Nathan is an undergraduate student in the Physics department at UIUC interested in the simulation of new regimes in nuclear reactors.'
+  dates: 2022-present
+  role: Graduate Research Assistant
+  src: https://nsryan2.github.io/
+  url: http://nsryan2.github.io/
+  description: 'Nathan is a graduate student interested in the simulation of new regimes in nuclear reactors, energy system modeling, and machine learning.'
   social:
     - url: mailto:nsryan2@illinois.edu
       icon: envelope-o
@@ -187,6 +225,19 @@
       icon: github-alt
       name: GitHub
 
+- name: Gabriele Paciocco
+  pic: /img/people/pacioccog.png
+  dates: 2021-present
+  role: Undergraduate Research Assistant 
+  description: 'Gabriele is an NPRE undergraduate at UIUC. His interests in Math and Science motivate him to study the future of nuclear reactor devlopement.'
+  social:
+    - url: mailto:Agp9@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://www.linkedin.com/in/gabriele-paciocco-b311b41a1/
+      icon: linkedin
+      name: Linkedin
+
 - name: You
   pic: /img/people/you.png
   dates: now
@@ -195,7 +246,7 @@
   url: /positions
   description: 'Ideal ARFC group members seek to advance nuclear energy challenges through advanced computing, physics-informed modeling, and sophisticated simulation'
   social:
-    - url: mailto:katyhuff@gmail.com
+    - url: mailto:mmunk2@illinois.edu
       icon: envelope-o
       name: Email
     - url: https://www.google.com/maps/d/edit?mid=zwJ5Sc8HIDN4.k3fYHsg-biWE&usp=sharing

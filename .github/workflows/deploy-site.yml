@@ -1,0 +1,35 @@
+# Preamble
+name: Deploy arfc.github.io to GitHub Pages
+
+on:
+  push:
+    branches:
+      - 'source'
+  # enable workflow to be run manually
+  workflow_dispatch:
+
+jobs:
+  deploy-site:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.0
+          bundler-cache: true
+            
+      - name: Build the website source
+        run: bundle exec rake generate
+
+      - name: Deploy website to master branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./_site
+          commit_message: "Update website at commit: ${{ github.event.head_commit.id }}"

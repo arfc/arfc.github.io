@@ -33,7 +33,7 @@
     - url: https://www.linkedin.com/in/arykhlevskii
       icon: linkedin
       name: Linkedin
-      
+
 - name: Gavin Ridley
   pic: /img/people/ridleyg.png
   dates: Summer 2017
@@ -218,20 +218,6 @@
       icon: github-alt
       name: Github
 
-
-- name: Louis Kissinger
-  pic: /img/people/kissingerl.png
-  dates: 2017-present
-  role: Undergraduate Research Assistant
-  description: 'Louis Kissinger was an undergraduate student interested in fuel cycles and repository simulation. He is currently a post-baccelaureate researcher at Argonne.'
-  social:
-    - url: mailto:lkissin2@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/lkissin2
-      icon: github-alt
-      name: Github
-
 - name: Tyler Kennelly
   pic: /img/people/kennellyt.jpg
   dates: 2018-2019
@@ -409,7 +395,7 @@
   pic: /img/people/kleimenhagenk.jpg
   dates: 2019-2021
   role: Undergraduate Research Assistant
-  description: 'Kip was an undergraduate student in the NPRE department at UIUC, he's currently pursuing his master’s degree in nuclear engineering.'
+  description: "Kip was an undergraduate student in the NPRE department at UIUC, he's currently pursuing his master’s degree in nuclear engineering."
   social:
     - url: mailto:kiplk2@illinois.edu
       icon: envelope-o

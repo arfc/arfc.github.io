@@ -1,3 +1,52 @@
+- title: "Useful practices in open-source software development for nuclear science and engineering"
+  presenter: Oleksandr R. Yardas
+  event: American Nuclear Society Student Conference
+  type: Technical Presenation
+  place: Urbana, IL
+  month: April
+  day: 14-16
+  year: 2022
+  time: 3:00 pm
+  pic: '/img/pres/2022-04-16-yardas-ans.png'
+  slides: '/pres/2022-yardas-ans-student.pdf'
+  description: "Historically, software used in licensing, R&D, and E&T efforts
+  in the nuclear field have been closed source and proprietary. For R&D and 
+  E&T efforts in particular, this can bring collaborative efforts to a grinding
+  halt until regulatory bodies grant software licences. Using closed codes in
+  scientific publications and research presents ethical issues with regards to
+  ease of reproducibility and the ability of external verification of results.
+  Regulatory bodies will require new software features (and in some cases
+  entirely new software tools) in order to effectively and efficiently perform
+  licensing activities for the next generation of advanced reactor designs.
+  Many of the open source tools emerging in the past decade have the advantage
+  over their legacy closed code ancestors of using best-practices for software
+  development. It follows that these features and tools are more readily
+  implementable in these new open source projects than in the legacy closed
+  codes. This presentation discusses three tools developers new and old can
+  use in ther development workflow."
+
+- title: "Impacts of HALEU on the Nuclear Fuel Cycle"
+  presenter: Amanda M. Bachmann
+  event: NC State University Building Future Faculty Program
+  type: Invited Seminar 
+  place: Raleigh, NC
+  month: May
+  day: 31
+  year: 2022
+  pic: '/img/pres/2022-03-31-bachmann-bff.png'
+  slides: '/pres/2022-03-31-bachmann-bff.pdf'
+  description: "Many new advanced reactor designs will require High-Assay Low 
+  Enriched Uranium (HALEU) for fuel, which will allow for longer cycle times 
+  and higher burnups. However, there is no commercial supplier of HALEU in the 
+  US right now, and there is an expected need for HALEU by the end of the decade. 
+  The need for HALEU will depend on a number of variables: the type of advanced 
+  reactor(s) deployed, the timeline on which they are deployed, the energy demand 
+  of the advanced reactor(s), and the fuel cycle option used. This work looks 
+  at the transition from the current fleet of Light Water Reactors to HALEU-fueled 
+  advanced reactors to understand the material requirements of the transition. The 
+  material requirements of interest include the number of reactors that are deployed, 
+  the mass of uranium supplied to reactors for fuel, and the Separative Work Units 
+  required to enrich the uranium."
 
 - title: "Modeling material requirements of the transition to HALEU fueled reactors" 
   presenter: Amanda M. Bachmann

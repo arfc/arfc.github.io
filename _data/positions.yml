@@ -37,7 +37,7 @@
   description: 'Graduate research assistants in ARFC are PhD or masters students enrolled at UofI, typically in the NPRE department. These students can be supported to conduct research that advances a dissertation or thesis project that is in synergy with the mission of the research group as a whole.'
   available:
     - title: "Graduate Research Assistant - General"
-      description: 'Even if funding is not available, applications from exceptional graduate applicants are welcome. Prof. Huff would be happy to guide you in fellowship applications to support your research.'
+      description: 'Even if funding is not available, applications from exceptional graduate applicants are welcome. ARFC would be happy to guide you in fellowship applications to support your research.'
       required: "python, git, acceptance to the NPRE PhD probram"
       desired: "python, git"
       pic: /img/positions/you.png
@@ -75,13 +75,13 @@
       pic: /img/positions/il-pow.jpg
       start: "Rolling"
     - title: "Undergraduate Researcher: Nuclear Fuel Cycle Simulation"
-      description: 'The candidate will address open issues in the Cyclus ecosystem as they arise. This will include quality assurance efforts, assessment of documentation clarity, and development of software tests. The student will be expected to work well both independently and with mentorship. A strong interest in scientific computing combined with interest in nuclear energy will be required. Apply by sending an up-to-date resume by email to Prof. Huff.'
+      description: 'The candidate will address open issues in the Cyclus ecosystem as they arise. This will include quality assurance efforts, assessment of documentation clarity, and development of software tests. The student will be expected to work well both independently and with mentorship. A strong interest in scientific computing combined with interest in nuclear energy will be required. Apply by sending an up-to-date resume by email to Dr. Munk.'
       required: "python, linux"
       desired: "git, C++, bash, Doxygen, Sphinx, pytest"
       pic: /img/research/cyclus.gif
       start: "Rolling"
     - title: "Undergraduate Researcher: Python for Nuclear Engineering"
-      description: 'The candidate will address open issues in the PyNE toolkit as they arise. This will include quality assurance efforts, assessment of documentation clarity, and development of software tests. The student will be expected to work well both independently and with mentorship. A strong interest in scientific computing combined with interest in nuclear energy will be required. Apply by sending an up-to-date resume by email to Prof. Huff.'
+      description: 'The candidate will address open issues in the PyNE toolkit as they arise. This will include quality assurance efforts, assessment of documentation clarity, and development of software tests. The student will be expected to work well both independently and with mentorship. A strong interest in scientific computing combined with interest in nuclear energy will be required. Apply by sending an up-to-date resume by email to Dr. Munk.'
       required: "python, linux"
       desired: "git, C++, bash, Doxygen, Sphinx, pytest"
       pic: /img/research/zen.png
