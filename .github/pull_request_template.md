@@ -30,5 +30,5 @@
 
 ## Checklist for Reviewers
 
-Reviewers should use [this link](/manual/guides/pull_requests) to get to the 
+Reviewers should use [this link](/manual/guides/pull_requests.md) to get to the 
 Review Checklist before they begin their review.
