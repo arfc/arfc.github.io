@@ -23,6 +23,10 @@
       suburl: "https://pyne.io"
     - subtitle: "pyrk"
       suburl: "https://pyrk.github.io"
+    - subtitle: "ROLLO"
+      suburl: "https://gwenchee.github.io/rollo/"
+    - subtitle: "SaltProc"
+      suburl: "https://github.com/arfc/saltproc"
 
 - title: "People"
   url: "/people/"
