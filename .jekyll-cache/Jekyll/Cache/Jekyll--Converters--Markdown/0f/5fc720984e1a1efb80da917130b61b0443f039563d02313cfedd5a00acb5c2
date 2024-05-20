@@ -1,0 +1,59 @@
+I"ø<h2 id="what-is-a-presentation">What is a Presentation</h2>
+
+<p>An oral presentation is typically prepared to 
+summarize or disseminate work. They can serve as a 
+an accountability checkpoint for an organization funding research, or as a means
+to share discovery with a variety of technical and non-technical audiences.</p>
+
+<h2 id="rules-of-the-presentation">Rules of the Presentation</h2>
+
+<ul>
+  <li>After you have been invited/accepted to give an oral presentation, outline and prepare your presentation.</li>
+  <li>Know your audience and determine the style of presentation that suits them best</li>
+  <li>Remember, this presentation is an advert for your work</li>
+  <li>Try to spend around two minutes per slide</li>
+  <li>Present the body of your talk with slides titled as summaries or guiding questions</li>
+  <li>People will remember your figures, not your bullets (a generalization, but well founded)</li>
+  <li>Never put something on a slide you do not thoroughly and consistently, understand</li>
+</ul>
+
+<h2 id="writing-the-presentation">Writing the Presentation</h2>
+
+<ul>
+  <li>All grammatical and technical errors must be eliminated per the writing checklist</li>
+  <li>Do not leave a bulleted list hanging (i.e. without a title or lead-in sentence)</li>
+  <li>Stick to simple backgrounds, one to two fonts, and use color as a secondary delimiter not a primary one</li>
+  <li>Use a sans serif font for all text</li>
+  <li>Use equations as a last resort (or sparingly if you are presenting a method), a plot/figure is much better at telling the whole story qualitatively</li>
+  <li>Do not be afraid to put enlarged boxes over small text in images</li>
+</ul>
+
+<h2 id="presentation-review">Presentation Review</h2>
+
+<ul>
+  <li>Make sure you allot adequate time for run-throughs (plural!), and revisions from the group</li>
+  <li>When the document has been thoroughly checked, request a review from Prof. Huff and the group</li>
+</ul>
+
+<h2 id="using-the-presentation-template">Using the Presentation Template</h2>
+
+<p>In the ARFC Github organization, there are several template repositories designed to aid the 
+writing/creating process by giving you a starting place for formatting. To use the 
+<a href="https://github.com/arfc/presentation-template">report template</a>, select the <code class="language-plaintext highlighter-rouge">Use this Template</code> 
+option next to <code class="language-plaintext highlighter-rouge">Code</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Use this Template</code> will generate a repository on your GitHub account with copies of all the 
+files in the original, including the Readme file. The Readme will serve as your point of 
+reference for how to initialize the documents and some common errors that occur upon initial 
+startup. Keep in mind that this template has a 
+<a href="https://creativecommons.org/licenses/by/4.0/deed.ast">CC-BY-4.0 License</a>. This license is 
+the standard for written works and reports; however, there are cases where the use of material 
+containing viral or copyleft licenses (such as GPL) can affect the type of license you can 
+use in your report.</p>
+
+<h3 id="useful-links">Useful Links</h3>
+<ul>
+  <li><a href="https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Overlay_Specifications">Overlay Specifications</a></li>
+  <li><a href="https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_(Part_3)%E2%80%94Blocks%2C_Code%2C_Hyperlinks_and_Buttons">Hyperlinks and Buttons</a></li>
+</ul>
+:ET
