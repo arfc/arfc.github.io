@@ -5,9 +5,44 @@
     <description>Website for the Advanced Reactors and Fuel Cycles group</description>
     <link>http://arfc.github.io/</link>
     <atom:link href="http://arfc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 May 2024 23:10:11 +0000</pubDate>
-    <lastBuildDate>Tue, 21 May 2024 23:10:11 +0000</lastBuildDate>
+    <pubDate>Wed, 22 May 2024 19:58:54 +0000</pubDate>
+    <lastBuildDate>Wed, 22 May 2024 19:58:54 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>A Return to NPRE</title>
+        <description>&lt;p&gt;I (Katy) am pleased to share that, as of May 13th, I’ve returned to Illinois, NPRE, and 
+ARFC. After 3 years serving the U.S. Department of Energy, I am ready to get 
+back to the important (and fun!) research and educational work here in 
+Illinois. I am grateful to Dr. Madicken Munk for her work as Acting Director of 
+ARFC during that time. We are extremely lucky to have had her expertise, 
+leadership, and support.&lt;/p&gt;
+
+&lt;p&gt;Of course I’m especially grateful to the students, colleagues, and friends of 
+ARFC who kept putting in such exceptional work in my absense. I’m lucky to be 
+rejoining you. There’s nowhere I would rather be.&lt;/p&gt;
+
+&lt;p&gt;While I intend for this 2024 summer to be a time of reflection and 
+rejuvenation, I also intend to leverage this time to review the work that’s 
+been done in ARFC these last 3 years and to brainstorm new directions. Please 
+bear with me as I revive the portions of my brain that may have atrophied 
+during my time in Washington.&lt;/p&gt;
+
+&lt;p&gt;As we look to the future, please note that we’ll soon be recruiting new PhD 
+students and at least one postdoctoral scholar.  Folks interested in joining 
+the group should reach out directly to me by email at 
+&lt;a href=&quot;mailto:kdhuff@illinois.edu&quot;&gt;kdhuff@illinois.edu&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 May 2024 20:00:00 +0000</pubDate>
+        <link>http://arfc.github.io/jekyll/update/2024/05/13/huff-returns/</link>
+        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2024/05/13/huff-returns/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Two ARFC Graduate Students Recognized with ANS Scholarships</title>
@@ -318,33 +353,6 @@ including others involving faculty from NPRE.&lt;/p&gt;
         <pubDate>Wed, 15 Jun 2016 02:00:00 +0000</pubDate>
         <link>http://arfc.github.io/jekyll/update/2016/06/15/neup-demand-driven/</link>
         <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2016/06/15/neup-demand-driven/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Huff Plans to Join NPRE</title>
-        <description>&lt;p&gt;I am thrilled to be joining the University of Illinois at Urbana-Champaign as 
-an Assistant Professor in the Department of Nuclear, Plasma and Radiological 
-Engineering. I was honored to have been awarded a Blue Waters Assistant 
-Professorship as well as an affiliate faculty appointment with the National 
-Center for Supercomputing Applications. The support of NCSA is very meaningful 
-to me and I hope to make important use of the high performance computing 
-resources on campus when I arrive.&lt;/p&gt;
-
-&lt;p&gt;I will begin my appointment on August 16, 2016. Until then, I’ll be wrapping up 
-my work at the University of California, Berkeley. In addition, I’ll be 
-preparing my first NPRE course, seeking graduate students and postdocs for a 
-research group, finding a home in the Urbana-Champaign area, and setting up 
-this website.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Feb 2016 02:03:54 +0000</pubDate>
-        <link>http://arfc.github.io/jekyll/update/2016/02/07/huff-joins-npre/</link>
-        <guid isPermaLink="true">http://arfc.github.io/jekyll/update/2016/02/07/huff-joins-npre/</guid>
         
         
         <category>jekyll</category>
