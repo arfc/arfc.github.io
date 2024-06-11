@@ -18,7 +18,7 @@
     - subtitle: "cyder"
       suburl: "https://github.com/arfc/cyder#readme"
     - subtitle: "moltres"
-      suburl: "/software/moltres"
+      suburl: "https://arfc.github.io/moltres/"
     - subtitle: "pyne"
       suburl: "https://pyne.io"
     - subtitle: "pyrk"

@@ -4,8 +4,8 @@
   dates: 2016-present
   role: Alexander Lindsay, creator.
   src: https://github.com/arfc/moltres
-  url: https://arfc.github.io/software/moltres
-  description: 'A Moltres is a MOOSE-application code designed for simulation of molten salt reactors.'
+  url: https://arfc.github.io/moltres
+  description: 'Moltres is a MOOSE-application code designed for simulation of molten salt reactors.'
 
 - name: cyclus
   pic: research/cyclus.gif

@@ -2,15 +2,24 @@
   title: Postdoctoral Researchers
   pic: /img/positions/postdoc.png
   url: '/positions/postdoc'
-  description: 'Postdoctoral scholars are exceptional early career researchers who join the research group to pursue one or more ambitious projects suited to a future in a research-focused career. They should have received a Ph.D. in their area of research within the last 3 years and may be seated in either NCSA or NPRE, depending on the topic of their work.'
+  description: 'Postdoctoral scholars are exceptional early career researchers who join the research group to pursue one or more ambitious projects suited to a future in a research-focused career. They should have received a Ph.D. in their area of research recently and may be seated in either NCSA or NPRE, depending on the topic of their work.'
   available:
+    - title: "Postdoctoral Research Associate"
+      url: /img/positions/2024-huff-postdoc-ad-official.pdf
+      start: August 16, 2024
+      description: 'The Advanced Reactors and Fuel Cycles research group (ARFC), led by Prof. Katy Huff, seeks exceptional candidates for a Postdoctoral Research Associate position.  
+The ARFC group pursues novel insights into nuclear energy challenges through advanced computational methods and simulations at many scales. Our work involves the development and use of computational tools to advance the safety and sustainability of nuclear energy production through improved reactor designs, fuel cycle strategies, and waste management techniques. The group specializes in the development of multiscale multiphysics methods for advanced reactor modeling and simulation. The successful candidate will assist in the continuation of these research efforts, take leadership in scholarly work, contribute to mentoring undergraduate and graduate students, support research administration activities, and participate in the development of funding proposals. The postdoctoral research associate will interact and collaborate with all members of the group to identify relevant work, design research, develop  software, analyze data, and publish results.'
+      required: "PhD in nuclear engineering, physics, computer science, or similar"
+      desired: "Experience in open-source software development, high performance computing, and reproducible scientific computing; familiarity with modern tools and methods for neutronics of advanced reactor systems; familiarity with best practices in open-source scientific computing; interest in AI/ML and the use of GPU-accelerated architectures."
+      pic: /img/positions/2024-huff-postdoc-ad.png
+      start: "August 16, 2024 (negotiable)"
+  closed:
     - title: "Postdoctoral Researcher - General"
       description: 'Even if direct funding for a new postdoctoral opening is not available in the ARFC group, applications from exceptional postdoctoral researchers, especially those with their own source of funding, will always be considered. The ideal postdoctoral researcher for ARFC would be interested in spending 1-3 years at UofI. A background in nuclear engineering, fuel cycles, reactor physics, and computing will be essential. Such researchers should be interested in conducting research that is in synergy with the mission of the research group as a whole.'
       required: "PhD in nuclear engineering, physics, computer science, or similar"
       desired: "extensive modeling and simulation experience"
       pic: /img/positions/you.png
       start: "TBD"
-  closed:
     - title: "Postdoctoral Researcher - Experiments in Molten Salt Chemistry"
       description: 'The NPRE department is seeking a postdoctoral research associate who will work on a molten salt experiment designed to investigate fission gas behavior in FLiNaK for MSR designs. The ideal candidate will bring superior experimental capability with molten salts, knowledge of molten salt chemistry, and knowledge of MSR designs. It is expected the PDRA will be a nuclear engineer with a strong experimental background, but candidates in related fields will be considered.
               
@@ -37,7 +46,7 @@
   description: 'Graduate research assistants in ARFC are PhD or masters students enrolled at UofI, typically in the NPRE department. These students can be supported to conduct research that advances a dissertation or thesis project that is in synergy with the mission of the research group as a whole.'
   available:
     - title: "Graduate Research Assistant - General"
-      description: 'Even if funding is not available, applications from exceptional graduate applicants are welcome. ARFC would be happy to guide you in fellowship applications to support your research. Both prospective and current NPRE students are welcome to contact Prof. Huff to lear more about graduate research opportunities in the group.'
+      description: 'Even if funding is not available, applications from exceptional graduate applicants are welcome. ARFC would be happy to guide you in fellowship applications to support your research. Both prospective and current NPRE students are welcome to contact Prof. Huff to learn more about graduate research opportunities in the group.'
       required: "python, git, acceptance to the NPRE PhD program"
       desired: "python, git"
       pic: /img/positions/you.png

@@ -19,11 +19,12 @@ following options allow a more streamlined document collaboration:
 - LaTeX in a git repository
 - Markdown in a git repository
 - Any markup language at all in a git repository
-- A shared Google Docs folder
+- A shared Google Docs file or folder
+- A shared Box file or folder
 - Overleaf
 
 If you are working in one of the environments, please just point me to the 
-repository. 
+repository or send me a link, ideally in a GitHub issue. 
 
 If, for whatever reason, you can't work in one of those frameworks, send me a 
 PDF. It's a Portable Document Format after all. Word documents render 
@@ -62,7 +63,7 @@ suggest.
 
 I will typically acknowledge reciept of one of these review requests. At that 
 point, I'll usually say how long I expect my response to take. I try very hard 
-tohonor these commitments, but sometimes things get lost. If I've gone past the 
+to honor these commitments, but sometimes things get lost. If I've gone past the 
 deadline, please remind me. 
 
 # Reading my comments
