@@ -27,6 +27,8 @@
       suburl: "https://gwenchee.github.io/rollo/"
     - subtitle: "SaltProc"
       suburl: "https://arfc.github.io/saltproc/"
+    - subtitle: "OpenMCyclus"
+      suburl: "https://github.com/arfc/openmcyclus/"
 
 - title: "People"
   url: "/people/"
