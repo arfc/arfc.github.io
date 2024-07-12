@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js  ie lt-ie9 lt-ie8 lt-ie7 gray-background fg-item-page"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js  ie lt-ie9 lt-ie8 gray-background fg-item-page"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js  ie lt-ie9 gray-background fg-item-page"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js  ie ie9 gray-background fg-item-page"> <![endif]-->
+<!--[if IE  ]>         <html class="no-js  ie gray-background fg-item-page"> <![endif]-->
+<!--[if IE]><!--> <html class="no-js  gray-background fg-item-page" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      The Journal of Open Source Software
+    </title>
+    <meta name="referrer" content="origin"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="csrf_token" content="ece3fd52-cd90-46d3-b03d-f66611c8d3cc" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/favicon/mstile-310x310.png" />
+    
+  
+    <meta name="citation_title" content="The Journal of Open Source Software" />
+    <meta name="citation_publication_date" content="2017/02/24" />
+    
+      <meta name="citation_author" content="Smith, Arfon" />
+    
+      <meta name="citation_author" content="Barba, Lorena A." />
+    
+      <meta name="citation_author" content="Githinji, George" />
+    
+      <meta name="citation_author" content="Gymrek, Melissa" />
+    
+      <meta name="citation_author" content="Huff, Kathryn" />
+    
+      <meta name="citation_author" content="Katz, Daniel S." />
+    
+      <meta name="citation_author" content="Madan, Christopher" />
+    
+      <meta name="citation_author" content="Mayes, Abigail Cabunoc" />
+    
+      <meta name="citation_author" content="Moerman, Kevin M" />
+    
+      <meta name="citation_author" content="Niemeyer, Kyle" />
+    
+      <meta name="citation_author" content="Prins, Pjotr" />
+    
+      <meta name="citation_author" content="Ram, Karthik" />
+    
+      <meta name="citation_author" content="Rokem, Ariel" />
+    
+      <meta name="citation_author" content="Teal, Tracy" />
+    
+      <meta name="citation_author" content="Vanderplas, Jake" />
+    
+    
+      <meta name="DC.identifier" content="doi:10.6084/m9.figshare.4688911.v1" />
+    
+  
+  <meta property="og:title" content="The Journal of Open Source Software">
+  <meta name="twitter:title" content="The Journal of Open Source Software">
+  <meta itemprop="name" content="The Journal of Open Source Software">
+
+
+  <meta name="citation_pdf_url" content="https://figshare.com/articles/The_Journal_of_Open_Source_Software/4688911/files/7660192.pdf" />
+
+  <meta name="description" content="The Journal of Open Source Software" />
+  <meta name="abstract" content="Poster presented at SIAM CSE17 PP108 Minisymposterium: Software Productivity and Sustainability for CSE and Data ScienceAbstract:This poster describes the motivation and progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately extremely short, and are required to include a short abstract describing the purpose and functionality of the software, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of both the abstract and software itself, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance---unlike other journals, papers requiring major revision are not rejected. Since its public release in May 2016, JOSS has published 26 accepted papers as of September 2016, with an additional 20 submitted and under review." />
+  <meta property="og:description" content="Poster presented at SIAM CSE17 PP108 Minisymposterium: Software Productivity and Sustainability for CSE and Data ScienceAbstract:This poster describes the motivation and progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately extremely short, and are required to include a short abstract describing the purpose and functionality of the software, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of both the abstract and software itself, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance---unlike other journals, papers requiring major revision are not rejected. Since its public release in May 2016, JOSS has published 26 accepted papers as of September 2016, with an additional 20 submitted and under review.">
+  <meta name="twitter:description" content="Poster presented at SIAM CSE17 PP108 Minisymposterium: Software Productivity and Sustainability for CSE and Data ScienceAbstract:This poster describes the motivation and progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately extremely short, and are required to include a short abstract describing the purpose and functionality of the software, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of both the abstract and software itself, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance---unlike other journals, papers requiring major revision are not rejected. Since its public release in May 2016, JOSS has published 26 accepted papers as of September 2016, with an additional 20 submitted and under review.">
+  <meta itemprop="description" content="Poster presented at SIAM CSE17 PP108 Minisymposterium: Software Productivity and Sustainability for CSE and Data ScienceAbstract:This poster describes the motivation and progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately extremely short, and are required to include a short abstract describing the purpose and functionality of the software, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of both the abstract and software itself, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance---unlike other journals, papers requiring major revision are not rejected. Since its public release in May 2016, JOSS has published 26 accepted papers as of September 2016, with an additional 20 submitted and under review.">
+  <meta name="google" content="notranslate" />
+  <meta property="og:url" content="https://figshare.com/articles/The_Journal_of_Open_Source_Software/4688911">
+  <meta name="twitter:url" content="https://figshare.com/articles/The_Journal_of_Open_Source_Software/4688911">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="figshare">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@figshare">
+  <link href="//plus.google.com/107997370406416536977" rel="publisher">
+
+  <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews/7660192/thumb.png">
+  <meta name="twitter:image" content="https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews/7660192/thumb.png">
+  <meta itemprop="image" content="https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews/7660192/thumb.png">
+
+
+    
+      <link rel="stylesheet" type="text/css" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/styles/main.css" />
+    
+    <link rel="stylesheet" type="text/css" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public.css" />
+    
+      <link rel="stylesheet" type="text/css" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/account.css" />
+      <link rel="stylesheet" type="text/css" href="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/fonts/figIcon.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+  </head>
+  <body>
+    <div id="global-messenger"></div>
+    <div id="ck-banner"></div>
+    <div id="main-container">
+    
+        
+          
+<header role="banner" class="main-header">
+  <div class="center-layout clearfix">
+    
+      
+        <a class="figshare-logo" href="https://figshare.com/">
+    <img width="167" height="52" src="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/global/images/full-logo.png" alt="https://figshare.com/" />
+  </a>
+      
+    
+    
+    <div class="h-search showMyData ">
+      <a class="normal-link underline my-data" href="https://figshare.com/account/home">My data</a>
+      <form action="https://figshare.com/search" method="get">
+        <div class="mimic-input search-input-wrap">
+          <input type="search" name="q" placeholder="search on figshare" />
+        </div>
+        <input type="hidden" name="quick" value="1">
+        <button type="submit" class="hs-button">go</button>
+      </form>
+      <a class="normal-link underline" href="https://figshare.com/browse">Browse</a>
+      
+        <a class="normal-link underline" href="https://figshare.com/account/home?_f=%2Fupload">Upload</a>
+      
+    </div>
+    
+    
+    <div class="h-options">
+        
+          <div id="ummenu"></div>
+        
+    </div>
+    
+  </div>
+</header>
+        
+    
+
+    
+      <div id="impersonate-ribbon"></div>
+    
+
+    
+
+
+  
+
+<div id="app-root" data-app="item">
+  <div class="item-page">
+    <div class="loader show-content">
+      <div class="item-page">
+        <div class="global-message-queue"></div>
+        <div class="item-preview expanded">
+          <div class="figshare-viewer">
+            <div class="display"></div>
+            <div class="controls-wrapper"></div>
+          </div>
+          <div class="actions-bar-wrap">
+            <div class="actions-bar">
+              <div class="items">
+                <a class="simple-pink-button citation-button">Cite</a>
+                
+                  <a class="normal-link download-button shallow-button" href="https://ndownloader.figshare.com/files/7660192">Download</a>
+                
+                <a class="normal-link">Share</a>
+                <a class="normal-link">Embed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="center-layout cf">
+            <div class="item-left">
+              <h2 class="title">The Journal of Open Source Software</h2>
+              <div class="details section">
+                <span>2017-02-24T20:53:57Z</span> (GMT)
+                <span>
+                  by
+                  <span class="authors-holder">
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Arfon_Smith/455618">
+  Arfon Smith
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Lorena_A_Barba/97553">
+  Lorena A. Barba
+</a>
+                    
+                      
+  
+<a class="normal-link author" href="">
+  George Githinji
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Melissa_Gymrek/819692">
+  Melissa Gymrek
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Kathryn_Huff/417852">
+  Kathryn Huff
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Daniel_S._Katz/98406">
+  Daniel S. Katz
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Christopher_Madan/667833">
+  Christopher Madan
+</a>
+                    
+                      
+  
+<a class="normal-link author" href="">
+  Abigail Cabunoc Mayes
+</a>
+                    
+                      
+  
+<a class="normal-link author" href="">
+  Kevin M Moerman
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Kyle_Niemeyer/459510">
+  Kyle Niemeyer
+</a>
+                    
+                      
+  
+<a class="normal-link author" href="">
+  Pjotr Prins
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Karthik_Ram/97306">
+  Karthik Ram
+</a>
+                    
+                      
+  
+    
+  
+<a class="normal-link author" href="https://figshare.com/authors/Ariel_Rokem/101055">
+  Ariel Rokem
+</a>
+                    
+                      
+  
+<a class="normal-link author" href="">
+  Tracy Teal
+</a>
+                    
+                      
+  
+<a class="normal-link author" href="">
+  Jake Vanderplas
+</a>
+                    </span>
+                </span>
+              </div>
+              <div class="description section">&lt;div&gt;Poster presented at SIAM CSE17 PP108 Minisymposterium: Software Productivity and Sustainability for CSE and Data Science&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Abstract:&lt;/b&gt;&lt;/div&gt;This poster describes the motivation and progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately extremely short, and are required to include a short abstract describing the purpose and functionality of the software, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of both the abstract and software itself, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance---unlike other journals, papers requiring major revision are not rejected. Since its public release in May 2016, JOSS has published 26 accepted papers as of September 2016, with an additional 20 submitted and under review.</div>
+            </div>
+            <div class="item-right">
+            
+            
+              <div class="categories section">
+                <h4>Categories</h4>
+                <ul class="normal-list">
+                  
+                  <li><a class="normal-link" href="/search?q=:category: \"Computer Software\"">Computer Software</a></li>
+                  
+                  <li><a class="normal-link" href="/search?q=:category: \"Open Software\"">Open Software</a></li>
+                  
+                  <li><a class="normal-link" href="/search?q=:category: \"Software Engineering\"">Software Engineering</a></li>
+                  
+                </ul>
+              </div>
+            
+            
+              <div class="tags section">
+                <h4>Keyword(s)</h4>
+                <div>
+                 
+                  <a class="tag-wrap" href="/search?q=:keyword: SIAM-CSE17-PP108"><span class="inner-wrap">SIAM-CSE17-PP108</span></a>
+                
+                  <a class="tag-wrap" href="/search?q=:keyword: Software citation"><span class="inner-wrap">Software citation</span></a>
+                
+                  <a class="tag-wrap" href="/search?q=:keyword: Open software"><span class="inner-wrap">Open software</span></a>
+                
+                  <a class="tag-wrap" href="/search?q=:keyword: Open research software"><span class="inner-wrap">Open research software</span></a>
+                
+                  <a class="tag-wrap" href="/search?q=:keyword: JOSS"><span class="inner-wrap">JOSS</span></a>
+                
+                </div>
+              </div>
+            
+            
+              <div class="license section">
+                <h4>License</h4>
+                <div>CC BY 4.0</div>
+              </div>
+            
+              <div class="exports-wrap section">
+                <h4>Export</h4>
+                  <div>
+                    <a class="normal-link" href="/articles/4688911/1/citations/refworks" target="_blank">RefWorks</a>
+                  </div>
+                  <div>
+                    <a class="normal-link" href="/articles/4688911/1/citations/bibtex" target="_blank">BibTeX</a></div>
+                  <div>
+                    <a class="normal-link" href="/articles/4688911/1/citations/reference_manager" target="_blank">Ref. manager</a></div><div><a class="normal-link" href="/articles/4688911/1/citations/mendeley" target="_blank">Mendeley</a>
+                  </div>
+                  <div>
+                    <a class="normal-link" href="/articles/4688911/1/citations/endnote" target="_blank">Endnote</a></div><div><a class="normal-link" href="/articles/4688911/1/citations/datacite" target="_blank">DataCite</a></div><div><a class="normal-link" href="/articles/4688911/1/citations/nlm" target="_blank">NLM</a>
+                  </div>
+                  <div>
+                    <a class="normal-link" href="/articles/4688911/1/citations/dc" target="_blank">DC</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  <footer role="contentinfo">
+    <div class="f-sitemap">
+      <div class="center-layout">
+        <ul class="fs-links">
+          <li><a href="https://figshare.com/about">About</a></li>
+          <li><a href="https://figshare.com/features">Features</a></li>
+          <li><a href="https://figshare.com/tools">Tools</a></li>
+          <li><a href="https://figshare.com/blog">Blog</a></li>
+          <li><a href="https://figshare.com/ambassadors">Ambassadors</a></li>
+          <li><a href="https://figshare.com/contact">Contact</a></li>
+          <li><a target="_blank" href="https://knowledge.figshare.com/">FAQs</a></li>
+          <li><a href="https://figshare.com/privacy">Privacy Policy</a></li>
+          <li><a href="https://figshare.com/cookie-policy">Cookie Policy</a></li>
+          <li><a href="https://figshare.com/terms">T&amp;Cs</a></li>
+          <li class="last">
+            <a href="/sitemap/siteindex.xml">Sitemap</a>
+          </li>
+        </ul>
+
+        <ul class="fs-social">
+          <li><a class="fss-facebook hide-text" target="_blank" href="//facebook.com/FigShare">facebook page</a></li>
+          <li><a class="fss-twitter hide-text" target="_blank" href="//twitter.com/figshare">twitter page</a></li>
+          <li><a class="fss-google hide-text" target="_blank" href="//plus.google.com/107997370406416536977">google plus page</a></li>
+          <li><a class="fss-vimeo hide-text" target="_blank" href="//vimeo.com/figshare">vimeo page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-informations">
+      <div class="center-layout">
+        <div class="fi-figshare">
+          <a href="https://figshare.com/">fig<strong>share</strong></a>. credit for <strong>all</strong> your research.
+        </div>
+        <ul class="fi-partners">
+          <li><a class="fip-digital hide-text" target="_blank"  href="//www.digital-science.com/">digital science page</a></li>
+          <li><a class="fip-dpn hide-text" target="_blank"  href="http://www.dpn.org/">dpn page</a></li>
+          <li><a class="fip-datacite hide-text" target="_blank"  href="//www.datacite.org/">datacite page</a></li>
+          <li><a class="fip-cope hide-text" target="_blank" href="http://publicationethics.org/">publication ethics page</a></li>
+          <li><a class="fip-dataciteindex hide-text" target="_blank" href="http://wokinfo.com/products_tools/multidisciplinary/dci/">data citation index</a></li>
+            <li><a class="fip-open hide-text" target="_blank" href="//creativecommons.org/licenses/by/3.0/">creative commons page</a></li>
+          </ul>
+        </div>
+    </div>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-20427479-1', 'figshare.com');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    
+  </script>
+  
+   <script id="menu-data" type="text/json">
+      {
+          "accountSwitch": {
+              "name": "Switch account",
+              "url": "https://figshare.com/account/switch"
+          },
+          "myProfile": {
+              "name": "Edit profile",
+              "url": "https://figshare.com/account/profile"
+          },
+          "applications": {
+              "name": "Applications",
+              "url": "https://figshare.com/account/applications"
+          },
+          "accountSettings": {
+              "name": "Account settings",
+              "url": "https://figshare.com/account/settings"
+          },
+          "institutionSettings": {
+              "name": "Institution settings",
+              "url": "https://figshare.com/institution/settings"
+          },
+          "institutionCuration": {
+            "name": "Review requests",
+            "url": "https://figshare.com/institution/curation"
+          },
+          "stats": {
+              "name": "Statistics",
+              "url": "https://figshare.com/institution/reporting"
+          },
+          "emailNofitifications": {
+              "name": "Email notifications",
+              "url": "https://figshare.com/account/notifications"
+          },
+          
+          "logout": {
+              "name": "Logout",
+              "url": "https://figshare.com/account/logout"
+          }
+      }
+  </script>
+  <script id="account-data" type="text/json">
+    {"usedQuota": 192133, "profile": {"name": "Kathryn Huff", "firstName": "Kathryn", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/417852/photo.png", "lastName": "Huff", "isPublic": true, "privateUrl": "https://figshare.com/authors/Kathryn_Huff/417852", "title": "", "location": "", "jobTitle": "", "urlName": "Kathryn_Huff", "id": 417852, "isActive": true, "publicUrl": "https://figshare.com/authors/Kathryn_Huff/417852"}, "isInstitutional": false, "institutionId": null, "totalQuota": 21474836480, "usedQuotaPublic": 1693104, "projectsCount": 1, "quota": {"total": 21474836480, "used": 1885237}, "canViewStructure": false, "isImpersonated": false, "isGroupAdmin": false, "hasMultipleAccounts": false, "availableQuota": 21474644347, "active": 1, "isCurator": null, "institution": null, "canViewStats": false, "cookiesEnabled": false, "isDataSteward": false, "followCounters": {"notificationCounter": 0, "followLimit": 50, "followCounter": 0, "notificationLimit": 10}, "canImpersonateUsers": false, "maximumFileSize": 5368709120, "id": 417852, "isPremium": null, "isInstitutionAdmin": false, "canEditStructure": false, "user": {"name": "Kathryn Huff", "firstName": "Kathryn", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/417852/photo.png", "lastName": "Huff", "isPublic": true, "privateUrl": "https://figshare.com/authors/Kathryn_Huff/417852", "title": "", "location": "", "jobTitle": "", "urlName": "Kathryn_Huff", "id": 417852, "isActive": true, "publicUrl": "https://figshare.com/authors/Kathryn_Huff/417852"}}
+  </script>
+  
+
+  
+  <script id="app-data" type="text/json">{"article": {"isLastVersion": true, "linkbackCollection": null, "filesCount": 1, "supplementaryFields": [], "citation": {"text": "Smith, Arfon; Barba, Lorena A.; Githinji, George; Gymrek, Melissa; Huff, Kathryn; Katz, Daniel S.; Madan, Christopher; Mayes, Abigail Cabunoc; Moerman, Kevin M; Niemeyer, Kyle; Prins, Pjotr; Ram, Karthik; Rokem, Ariel; Teal, Tracy; Vanderplas, Jake (2017): The Journal of Open Source Software. figshare. Poster.", "doi": "10.6084/m9.figshare.4688911.v1"}, "confidentialReason": "", "actions": [], "virusScanInfo": {"message": "File not scanned yet", "error": false, "virus_found": false, "scan_done": false}, "embargoType": 2, "curationStatus": null, "resourceTitle": null, "id": 4688911, "size": 1735837, "funding": "", "thumb": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews/7660192/thumb.png", "citationPublishedDate": "2017/02/24", "curationReviewDate": null, "publishedDate": "2017-02-24T20:53:57Z", "definedType": 5, "version": 1, "isActive": true, "branding": null, "customFields": [], "accountId": 459510, "isMetadataRecord": false, "metadataReason": "", "publicUrl": "https://figshare.com/articles/The_Journal_of_Open_Source_Software/4688911", "files": [{"status": "available", "previewMeta": {"totalPages": 1, "version": "1.0.0", "baseUrl": "https://ndownloader.figshare.com/files/7660192/preview", "key": "7660192/preview.pdf"}, "isLinkOnly": false, "thumb": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews/7660192/thumb.png", "previewState": "preview_available", "size": 1735837, "downloadUrl": "https://ndownloader.figshare.com/files/7660192", "virusScanInfo": {"message": "File not scanned yet", "error": false, "virus_found": false, "scan_done": false}, "suppliedMd5": "218a1f3c9344f13a69c7d8bcd008356a", "viewerType": "document_canvas", "md5": "218a1f3c9344f13a69c7d8bcd008356a", "id": 7660192, "previewLocation": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews", "name": "CSE17-JOSS-poster.pdf"}], "description": "<div>Poster presented at SIAM CSE17 PP108 Minisymposterium: Software Productivity and Sustainability for CSE and Data Science<br></div><div><br></div><div><b>Abstract:</b></div>This poster describes the motivation and progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately extremely short, and are required to include a short abstract describing the purpose and functionality of the software, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of both the abstract and software itself, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance---unlike other journals, papers requiring major revision are not rejected. Since its public release in May 2016, JOSS has published 26 accepted papers as of September 2016, with an additional 20 submitted and under review.", "tags": ["SIAM-CSE17-PP108", "Software citation", "Open software", "Open research software", "JOSS"], "embargoDate": null, "isPublic": true, "authorId": null, "modifiedDate": "2017-05-09T15:40:22Z", "isEmbargoed": false, "authors": [{"name": "Arfon Smith", "firstName": "Arfon", "photoUrl": "https://secure.gravatar.com/avatar/03e2e7de45b193cac192ae7ea071e5ff?s=250&d=https%3A%2F%2Fweb-static.figshare.com%2Fassets%2Fd99f1b23d653eb11bd18305a683449638651c766%2Fpublic%2Fprofile%2Favatar.jpg", "lastName": "Smith", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "Arfon_Smith", "id": 455618, "isActive": true, "publicUrl": "https://figshare.com/authors/Arfon_Smith/455618"}, {"name": "Lorena A. Barba", "firstName": "Lorena A.", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/97553/photo.png", "lastName": "Barba", "isPublic": true, "title": "", "location": "Washington, DC", "jobTitle": "Associate Professor", "urlName": "Lorena_A_Barba", "id": 97553, "isActive": true, "publicUrl": "https://figshare.com/authors/Lorena_A_Barba/97553"}, {"name": "George Githinji", "firstName": "George", "photoUrl": null, "lastName": "Githinji", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "_", "id": 3776689, "isActive": false}, {"name": "Melissa Gymrek", "firstName": "Melissa", "photoUrl": "https://secure.gravatar.com/avatar/a26ac3179f0131a2820505192506ff33?s=250&d=https%3A%2F%2Fweb-static.figshare.com%2Fassets%2Fd99f1b23d653eb11bd18305a683449638651c766%2Fpublic%2Fprofile%2Favatar.jpg", "lastName": "Gymrek", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "Melissa_Gymrek", "id": 819692, "isActive": true, "publicUrl": "https://figshare.com/authors/Melissa_Gymrek/819692"}, {"name": "Kathryn Huff", "firstName": "Kathryn", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/417852/photo.png", "lastName": "Huff", "isPublic": true, "privateUrl": "https://figshare.com/authors/Kathryn_Huff/417852", "title": "", "location": "", "jobTitle": "", "urlName": "Kathryn_Huff", "id": 417852, "isActive": true, "publicUrl": "https://figshare.com/authors/Kathryn_Huff/417852"}, {"name": "Daniel S. Katz", "firstName": "Daniel S.", "photoUrl": "https://secure.gravatar.com/avatar/3f59e90625547fce79de3e9c0d46867d?s=250&d=https%3A%2F%2Fweb-static.figshare.com%2Fassets%2Fd99f1b23d653eb11bd18305a683449638651c766%2Fpublic%2Fprofile%2Favatar.jpg", "lastName": "Katz", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "Daniel_S._Katz", "id": 98406, "isActive": true, "publicUrl": "https://figshare.com/authors/Daniel_S._Katz/98406"}, {"name": "Christopher Madan", "firstName": "Christopher", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/667833/photo.png", "lastName": "Madan", "isPublic": true, "title": "", "location": "Boston, MA", "jobTitle": "Postdoctoral Research Fellow", "urlName": "Christopher_Madan", "id": 667833, "isActive": true, "publicUrl": "https://figshare.com/authors/Christopher_Madan/667833"}, {"name": "Abigail Cabunoc Mayes", "firstName": "Abigail Cabunoc", "photoUrl": null, "lastName": "Mayes", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "_", "id": 3776698, "isActive": false}, {"name": "Kevin M Moerman", "firstName": "Kevin M", "photoUrl": null, "lastName": "Moerman", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "_", "id": 3776692, "isActive": false}, {"name": "Kyle Niemeyer", "firstName": "Kyle", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/459510/photo.jpg", "lastName": "Niemeyer", "isPublic": true, "title": "", "location": "Corvallis, OR", "jobTitle": "Assistant Professor", "urlName": "Kyle_Niemeyer", "id": 459510, "isActive": true, "publicUrl": "https://figshare.com/authors/Kyle_Niemeyer/459510"}, {"name": "Pjotr Prins", "firstName": "Pjotr", "photoUrl": null, "lastName": "Prins", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "_", "id": 274085, "isActive": false}, {"name": "Karthik Ram", "firstName": "Karthik", "photoUrl": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-profiles/97306/photo.png", "lastName": "Ram", "isPublic": true, "title": "", "location": "Berkeley, CA", "jobTitle": "Research Assistant Professor", "urlName": "Karthik_Ram", "id": 97306, "isActive": true, "publicUrl": "https://figshare.com/authors/Karthik_Ram/97306"}, {"name": "Ariel Rokem", "firstName": "Ariel", "photoUrl": "https://secure.gravatar.com/avatar/005984539a2affe10d5af3aa55665636?s=250&d=https%3A%2F%2Fweb-static.figshare.com%2Fassets%2Fd99f1b23d653eb11bd18305a683449638651c766%2Fpublic%2Fprofile%2Favatar.jpg", "lastName": "Rokem", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "Ariel_Rokem", "id": 101055, "isActive": true, "publicUrl": "https://figshare.com/authors/Ariel_Rokem/101055"}, {"name": "Tracy Teal", "firstName": "Tracy", "photoUrl": null, "lastName": "Teal", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "_", "id": 2792575, "isActive": false}, {"name": "Jake Vanderplas", "firstName": "Jake", "photoUrl": null, "lastName": "Vanderplas", "isPublic": true, "title": "", "location": "", "jobTitle": "", "urlName": "_", "id": 3776695, "isActive": false}], "hasLinkedFile": false, "categories": [{"urlName": "Computer_Software", "parentId": 52, "id": 181, "name": "Computer Software"}, {"urlName": "Open_Software", "parentId": 52, "id": 965, "name": "Open Software"}, {"urlName": "Software_Engineering", "parentId": 5, "id": 23, "name": "Software Engineering"}], "createdDate": "2017-02-24T20:53:57Z", "doi": "10.6084/m9.figshare.4688911.v1", "license": {"url": "https://creativecommons.org/licenses/by/4.0/", "logo": "https://s3-eu-west-1.amazonaws.com/staticfigassets/images/CC-BY.png", "name": "CC BY 4.0", "value": 1}, "isEmbargoedPublished": false, "versions": [{"date": "2017-02-24T20:53:57Z", "downloadUrl": "https://ndownloader.figshare.com/articles/4688911/versions/1", "id": 1}], "isConfidential": false, "title": "The Journal of Open Source Software", "embargoReason": "", "resourceDOI": null, "downloadUrl": "https://ndownloader.figshare.com/articles/4688911", "status": "public", "references": ["http://joss.theoj.org"]}, "institution": {"stringId": null, "name": null, "googleTrackingCode": null}}</script>
+  <script type="text/javascript" src="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/public/index.js"></script>
+  <script type="text/javascript" src="//web-static.figshare.com/assets/d99f1b23d653eb11bd18305a683449638651c766/vendor/altmetric/altmetric.js"></script>
+
+
+  </body>
+</html>
