@@ -51,6 +51,7 @@
   src: https://github.com/arfc/saltproc
   url: https://arfc.github.io/saltproc
   description: 'SaltProc is a fuel reprocessing simulation tool for liquid fueled nuclear reactors.'
+
 - name: ROLLO
   pic: research/rollo-logo.png
   network: github
@@ -59,3 +60,12 @@
   src: https://github.com/arfc/rollo
   url: https://gwenchee.github.io/rollo/
   description: 'ROLLO uses evolutionary algorithms to optimize reactor design parameters and can be coupled with neutronics codes such as OpenMC.'
+
+- name: openmcyclus
+  pic: research/openmcyclus_generic.png
+  network: github
+  dates: 2023-present
+  role: Amanda M. Bachmann, original creator and continued contributor.
+  src: https://github.com/arfc/openmcyclus/
+  url: https://github.com/arfc/openmcyclus/
+  description: 'OpenMCyclus is a set of Cyclus archetypes to couple Cyclus with OpenMC.'
