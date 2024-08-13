@@ -77,36 +77,40 @@ hotel where the conference is at. Airbnb can be unreliable.
 - **If you're going to make the purchases yourself** go right ahead, and keep 
   the receipts.
 
-## 8. Go on the trip. Be safe!
+## 8. Go on the trip. Be safe! Have fun!
 
 Please note that even while on travel, students, staff, and faculty are 
 representatives of the university and our ARFC research group.
 
 
-## 9. Acquire the Paper Travel Form 
+## 9. Acquire the Travel Form 
 
-1. Go to the NPRE main office (Talbot 212) to pick up the Travel Itinerary 
-   Reimbursement Form. It will have an envelope attached to it.
+1. Click [here](/img/manual/guides/travel-reimbursement-form-editable.pdf) to
+   download the Travel Itinerary Reimbursement Form.
 2. You have 60 days to complete  your Reimbursement Expense Report or it 
    becomes taxable income.
 
-## 10. Fill out the Paper Travel Form
+## 10. Fill out the Travel Form
 
-You mus be very very detailed, consider using the following strategy:
+You must be very, very detailed. Consider using the following strategy:
 
-1. Write down your basic information (name, contact, account number etc)
-2. Print out a separate sheet for the descriptions
-and writing 'SEE ATTACHED' in the actual form [example](/img/manual/guides/tra-example.pdf)
-3. Print out all the receipts from the travel (airfare, registration, lodging are major ones)
-4. The table is PER DAY, which means that each row is a day
+1. Enter your basic information (name, contact, account number etc)
+2. Create a separate document sheet for the descriptions
+   and include 'SEE ATTACHED' in the actual form [example](/img/manual/guides/tra-example.pdf)
+3. Scan any paper receipts and keep copies of digital receipts from the travel
+   (airfare, registration, lodging are major ones) and compress them into an
+   archive.
+4. The table is PER DAY, which means that each row is a day. If your travel is
+   for more days than are in the table, you must fill out another form with the
+   remaining days.
 5. For the first and last day, you must state the day of departure and arrival of your mode of transportation
-6. `Per Diem - Circle meals requested` is where you circle meals that were NOT PROVIDED BY THE CONFERENCE, and the ones you had to pay for. The reimbursements are set as $6.50 for breakfast and lunch, and $19 for dinner, total up to $32 per day.
+6. `Per Diem - Check meals requested` is where you circle meals that were NOT PROVIDED BY THE CONFERENCE, and the ones you had to pay for. The reimbursements are set as $6.50 for breakfast and lunch, and $19 for dinner, total up to $32 per day.
 7. Explain EVERYTHING at `Other details or further explanation`, and why it was of benefit to the University. 
 
 **Recommendations and Tips:**
 
 1. If you presented a paper (or a poster presentation), it is beneficial to 
-   attach a copy of your paper.
+   include a copy of your paper in the archive.
 2. Always try to include Who, What, When, Where, Why.
 3. Be EXTREMELY detailed (if you think 'do I really need this?' - just attach 
    it and write it)
@@ -115,30 +119,35 @@ and writing 'SEE ATTACHED' in the actual form [example](/img/manual/guides/tra-e
 
 If Prof. Huff was the sponsor of the trip, she will need to sign the form.
 
-## 13. Submit Paper Travel Form
+## 13. Submit Travel Form
 
-1. Organize receipts and everything
-2. Put it in the manilla envelope 
-3. Give the form and the envelope to Barbara Russell
+1. Organize receipts and supplementary documents in an archive (use descriptive
+   file names)
+2. Attatch the archive and the filled and signed Travel Reimbursement Form(s) in
+   an email to the email address in the top right of the Travel Reimbursement
+   Form
+3. Send the email. 
 
-**If you followed this guide, your submission will be pleasing to her eyes.**
+**If you followed this guide, your submission will be pleasing to the business
+office's eyes.**
 
 ## 18. Wait
 
 In a few days, you will get an email from a staff member from EBSC who will 
 fill out an online form for you.
 
-1. The EBSC staff will complete your TEM form for you, and let you know when it is 
+1. The EBSC staff will complete your Expense Report for you, and let you know when it is 
    ready for review and submission. If there is any error in your paper form, 
    or if your submission needs revision, they will let you know. 
-2. Go to [Travel Expense Management (TEM) 
-   Services](https://www.obfs.uillinois.edu/tem-resources/).
-3. Click on the LOG IN button. 
-4. Note: If you are not authorized to log in, you might have to contact Tessa M 
-   Hile (tmhile@illinois.edu) for authorization (She is our department USC).
-5. The first time, you may need to add the EBSC person as a 'proxy' by logging 
-   into TEM -> My info -> Creator Proxy .
-6. Click on the pencil to the left of the listing to view the form they have 
-   prepared.
+2. Go to [Chrome River](https://app.ca1.chromeriver.com/login/sso/saml?CompanyID=illinois.edu)
+3. Enter your NetID and password and click the LOG IN button
+4. Note: If you are not authorized to log in, you will need to fill out the
+   [Security Compliance Form](https://go.uillinois.edu/InfoSecCompForm), then
+   contact Nicloe M Elliot (elliottn@illinois.edu) with your UIN noting you've
+   completed the form. You should have accessin 1-3 days
+5. The first time, you may need to add EBSC people as a 'proxy' by logging 
+   into Chrome River > Account Settings > Delegate Settings > Add New Delegates
+   and add *tjconner*, *mbelsis2*, and *cmaylmer*
+6. On the dashboard under Expenses will be your Expense Report to review and approve.
 7. Please review the form for accuracy and that all the expenses are listed 
    (print mode makes it easier to see).
