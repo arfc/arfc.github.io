@@ -207,6 +207,22 @@
     - url: https://github.com/osanstrong
       icon: github-alt
       name: Github
+
+- name: Bella Pequette
+  pic: /img/people/pequetteb.jpeg
+  dates: 2024-Present
+  role: Undergraduate Research Assistant
+  description: 'Bella is an undergraduate in NPRE, interested in spent fuel management practices such as fuel reprocessing and simulating the nuclear fuel cycle.'
+  social: 
+    - url: mailto:bellacp2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/bellapequette
+      icon: github-alt
+      name: Github
+    - url: www.linkedin.com/in/bellapequette
+      icon: linkedin
+      name: LinkedIn
       
 - name: You
   pic: /img/people/you.png
