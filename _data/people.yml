@@ -223,6 +223,22 @@
     - url: www.linkedin.com/in/bellapequette
       icon: linkedin
       name: LinkedIn
+
+- name: Matthew Disimone
+  pic: /img/people/disimonem.png
+  dates: 2024-Present
+  role: Undergraduate Research Assistant
+  description: 'Matthew Disimone is an undergraduate in NPRE and is interested in modeling neutron transport in advanced reactors.'
+  social: 
+    - url: mailto:mdisi2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/mdisi2
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/matthew-disimone-a53734290/
+      icon: linkedin
+      name: LinkedIn
       
 - name: You
   pic: /img/people/you.png
