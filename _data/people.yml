@@ -239,6 +239,21 @@
     - url: https://www.linkedin.com/in/matthew-disimone-a53734290/
       icon: linkedin
       name: LinkedIn
+
+- name: Bryan Park
+  pic: /img/people/parkb.png
+  dates: 2025-Present
+  role: Undergraduate Research Assistant
+  description: 'Bryan Park is an undergraduate in NPRE interested in modeling and simulating nuclear systems.'
+  social: 
+    - url: mailto:bryanjp4@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/bryanjp05
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/bryan-park-11a6b32b4/
+      name: LinkedIn
       
 - name: You
   pic: /img/people/you.png
