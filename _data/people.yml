@@ -255,6 +255,19 @@
     - url: https://www.linkedin.com/in/bryan-park-11a6b32b4/
       name: LinkedIn
       
+- name: Thomas Bohnert
+  pic: /img/people/bohnertt.jpg
+  dates: 2025-Present
+  role: Undergraduate Research Assistant
+  description: 'Thomas is an undergraduate in NPRE interested in modeling and simulating power systems in advanced reactors.'
+  social: 
+    - url: mailto:@bohnert3@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/thomasbohnert
+      icon: github-alt
+      name: Github
+
 - name: You
   pic: /img/people/you.png
   dates: now
