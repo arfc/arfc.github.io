@@ -21,7 +21,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.0
-          bundler-cache: false
+          bundler-cache: true
             
       - name: Build the website source
         run: bundle exec rake generate
