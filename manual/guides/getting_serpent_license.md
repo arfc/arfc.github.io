@@ -17,8 +17,7 @@ need this for the next step.
 - Go to RSICC's [software request page](https://rsicc.ornl.gov/Login.aspx?p=po)
 - Log in and fill out steps 1-3.
 - For step 4, select __SERPENT.2.2.1__, and select your operating system.
-- For step 5, select __Yes__ to whether this is a student request.
-- You should now be presented with a reguest form.
+- For step 5, select __Yes__ to whether this is a student request. You should now be presented with a request form.
 
 # The Request Form
 
