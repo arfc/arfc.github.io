@@ -7,17 +7,17 @@ permalink: /manual/guides/getting_serpent_license
 
 # Register at RSICC
 
-- Go to [rsicc.ornl.gov](https://rsicc.ornl.gov/)
-- Click on "Registration"
+- Go to RSICC's [registration page](https://rsicc.ornl.gov/Registration.aspx).
 - Fill out the registration form. Once this is done,
 you should receive an RSICC Pass Number. You will
 need this for the next step.
 
 # Request the Software at RSICC
 
-- Go to [rsicc.ornl.gov](https://rsicc.ornl.gov/)
-- Go to "Requests"
-- Log in and fill out the request form.
+- Go to RSICC's [software request page](https://rsicc.ornl.gov/Login.aspx?p=po).
+- Log in and fill out steps 1-3.
+- For step 4, select __SERPENT.2.2.1__, and select your operating system.
+- For step 5, select __Yes__ to whether this is a student request. You should now be presented with a request form.
 
 # The Request Form
 
