@@ -11,7 +11,7 @@ It should be sufficient to do the following:
 Clone the repo:
 `git clone git@github.com:arfc/arfc.github.io`
 
-Make your way to the top level of the source branch
+Make your way to the top level of the source branch:
 `cd arfc.github.io && git checkout source`
 
 Install the gems:
