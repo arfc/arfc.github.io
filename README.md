@@ -17,7 +17,7 @@ Make your way to the top level of the source branch:
 Install the gems:
 `bundle install`
 
-Build and serve the site locally
+Build and serve the site locally:
 `bundle exec jekyll serve`
 
 The terminal will report that your website is being served at localhost:4000. 
