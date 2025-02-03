@@ -156,19 +156,6 @@
       icon: github-alt
       name: Github
 
-- name: Riley Fisher
-  pic: /img/people/fisherr.jpg
-  dates: 2024-Present
-  role: Undergraduate Research Assistant
-  description: 'Riley is an undergraduate in NPRE at UIUC. He is interested in the interactions between society, policy, and reactor technologies'
-  social:
-    - url: mailto:rileyf2@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/riley2
-      icon: github-alt
-      name: Github
-
 - name: Elijah Capps
   pic: /img/people/cappse.png
   dates: 2024-Present

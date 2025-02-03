@@ -546,7 +546,7 @@
   role: Post-doctoral Researcher
   src: http://arfc.npre.illinois.edu/people/
   url: http://arfc.npre.illinois.edu/people/
-  description: 'Mehmet is doing researches on numerical simulations, Monte Carlo method, optimization, advanced nuclear reactor designs, in-core fuel management and uncertainty quantification in nuclear engineering.'
+  description: 'Mehmet worked with ARFC doing research on numerical simulations, Monte Carlo method, optimization, advanced nuclear reactor designs, in-core fuel management and uncertainty quantification in nuclear engineering.'
   social:
     - url: mailto:mturkmen@illinois.edu
       icon: envelope-o
@@ -575,7 +575,7 @@
   pic: /img/people/pacioccog.png
   dates: 2021-2022
   role: Undergraduate Research Assistant 
-  description: 'Gabriele is an NPRE undergraduate at UIUC. His interests in Math and Science motivate him to study the future of nuclear reactor devlopement.'
+  description: 'Gabriele was an NPRE undergraduate at UIUC. His interests in Math and Science motivate him to study the future of nuclear reactor devlopement.'
   social:
     - url: mailto:Agp9@illinois.edu
       icon: envelope-o
@@ -584,4 +584,16 @@
       icon: linkedin
       name: Linkedin
 
+- name: Riley Fisher
+  pic: /img/people/fisherr.jpg
+  dates: 2024
+  role: Undergraduate Research Assistant
+  description: 'Riley was an undergraduate in NPRE at UIUC. He is interested in the interactions between society, policy, and reactor technologies'
+  social:
+    - url: mailto:rileyf2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/riley2
+      icon: github-alt
+      name: Github
 
