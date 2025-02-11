@@ -55,7 +55,7 @@ her approval.
 
 ## 5. Submit a Travel Request Form
 
-- Go to [my.npre.illinois.edu](my.npre.illinois.edu) -> HR APPS -> Travel
+- Go to [my.npre.illinois.edu](https://my.npre.illinois.edu) -> HR APPS -> Travel
 - Click 'Create Request'
 - List Prof. Huff (kdhuff) as your supervisor.
 - Fill out the form.
