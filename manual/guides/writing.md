@@ -65,3 +65,8 @@ before you can do anything else!
 ### Stanford MOOC on Writing in the Sciences
 
 Prof. Huff's [writing checklist](/manual/guides/writing/checklist) is mostly from advice in this  [massively open online course](https://www.coursera.org/learn/sciwrite/). You can take it yourself, for free, at your own pace.
+
+### Giving Credit
+Consider implementing the
+[Contributor Role Taxonomy (CRediT)](https://credit.niso.org/) in your work to
+standardize acknowledgements and authorship.
