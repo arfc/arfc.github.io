@@ -96,7 +96,7 @@ twitter accounts, and whatnot that tie us together.
 - [Python](https://realpython.com/installing-python/)
 - [PyNE](/manual/guides/pyne)
 - [MOOSE](https://mooseframework.inl.gov/getting_started/installation/)
-- [Cyclus](/manual/guides/cyclus)
+- [Cyclus](https://fuelcycle.org/user/install.html)
 
 # Software
 
