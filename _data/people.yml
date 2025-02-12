@@ -130,6 +130,22 @@
       icon: linkedin
       name: LinkedIn
 
+- name: Samar Abdelkawy
+  pic: /img/people/abdelkawys.png
+  dates: 2025-present
+  role: Graduate Research Assistant
+  description: 'Samar is a PhD student interested in advanced reactors and the nuclear fuel cycle.'
+  social:
+    - url: mailto:selsafy2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/SamarAbdelkawy
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/samar-abdelkawy-862371342
+      icon: linkedin
+      name: LinkedIn
+
 - name: Ceser Zambrano
   pic: /img/people/zambranoc.png
   dates: 2023-present
