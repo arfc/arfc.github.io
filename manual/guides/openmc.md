@@ -8,15 +8,14 @@ permalink: /manual/guides/openmc
 # Step 0. Read the Installation Guide
 OpenMC has an [excellent installation
 guide](https://docs.openmc.org/en/stable/usersguide/install.html#installing-from-source)
-that covers the dependencies. You should read this guide and understand it.
-I have installed OpenMC from source many many times and I have found several
-practices make the whole process easier, cleaner, and more self-contained.
+that covers the dependencies. Several practices, discussed below, may 
+make the whole process easier, cleaner, and more self-contained.
 
 # Step 1. Set up a Conda environment
 When building OpenMC from source, using a conda environment to install
-dependencies rather than `apt` allows different versions of software to exist on
-the same machine. It also allows you to easily install OpenMC's Python API. 
-I like to use the name `openmc-env` for my environment, so I run:
+dependencies allows different versions of various dependencies to co-exist on
+the same machine. It also eases installation of OpenMC's Python API. 
+To create an environment with the  name `openmc-env`, run:
 
 ```
 conda create -n openmc-env
