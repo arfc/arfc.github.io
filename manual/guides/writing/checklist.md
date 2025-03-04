@@ -133,6 +133,6 @@ y&=mx + b
 y&= \mbox{ height of the line, also known as rise [m]}\nonumber\\
 m&= \mbox{ slope [-]}\nonumber\\
 x&=\mbox{ independent parameter, known as run [m]}\nonumber\\
-b&= \mbox{ y intercept [m].}
+b&= \mbox{ y intercept [m].}\nonumber
 \end{align}
 ```
