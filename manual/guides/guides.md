@@ -97,6 +97,7 @@ twitter accounts, and whatnot that tie us together.
 - [PyNE](/manual/guides/pyne)
 - [MOOSE](https://mooseframework.inl.gov/getting_started/installation/)
 - [Cyclus](https://fuelcycle.org/user/install.html)
+- [OpenMC](/manual/guides/openmc) 
 
 # Software
 
