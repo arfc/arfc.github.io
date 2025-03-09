@@ -66,6 +66,7 @@ twitter accounts, and whatnot that tie us together.
 # Writing
 
 - [How to Write](/manual/guides/writing/)
+- [How to Plot](/manual/guides/plots/)
 - [Conference Abstract](http://arfc.github.io/manual/guides/writing/conf-abs/)
 - [Conference Paper](http://arfc.github.io/manual/guides/writing/conf-paper/)
 - [Poster](http://arfc.github.io/manual/guides/writing/poster/)
