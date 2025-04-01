@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Preliminary Exam</title>
+  <title>Making Plots</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/manual/guides/writing/prelim">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/plots/">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -284,8 +284,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Preliminary Exam</h2>
-                    <h3 class="section-subheading text-muted">The difference between screwing around and science is writing it down. -- Adam Savage</h3>
+                    <h2 class="section-heading">Making Plots</h2>
+                    <h3 class="section-subheading text-muted">Tips and tricks for making better plots.</h3>
                 </div>
             </div>
         </div>
@@ -295,39 +295,101 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8">
-    <h2 id="before-writing">Before Writing</h2>
+    <p>This guide provides best practices for ensuring that plots created by ARFC are
+accessible and visually clear. By following these simple recommendations, you
+will make your work more inclusive, readable, and aligned with accessibility
+standards.</p>
 
-<p>Review the graduate handbook.</p>
+<h2 id="1-using-color">1. Using Color</h2>
 
+<p>Color combinations like red, green, brown, orange, and yellow can be difficult
+to distinguish for people. Instead, use distinguishable patterns and contrast;
+different line styles, shapes, and markers can help differentiate elements
+without relying on color.</p>
+
+<p>This does not mean you cannot employ a color pallette, <strong>Sequential palettes</strong>
+should be used for data with a natural order (e.g., temperature), while
+<strong>diverging palettes</strong> are better suited for data with two distinct extremes.
+Popular accessible color palettes include <strong>Cividis</strong>, <strong>Viridis</strong>, and
+<strong>Inferno</strong>, which are perceptually uniform. Avoid the Jet (rainbow)
+colormap, as it is not perceptually uniform. It often causes difficulty in
+interpreting data, as colors that are close to each other can look almost
+identical, while distant colors may appear too different.</p>
+
+<h2 id="2-choosing-font">2. Choosing Font</h2>
+
+<p>Choose sans-serif fonts (like <strong>Arial</strong>, <strong>Helvetica</strong>, <strong>Verdana</strong>), as they
+are generally easier to read compared to serif fonts (e.g., Times New Roman).In
+addition to a good font, your text should also have enough contrast against the
+background for readability.</p>
 <ul>
-  <li>fill ou the PhD Preliminary and Final Exam Proposal form available in the Student Services Office.</li>
-  <li>the students advisor and the department head must approve the thesis committee.</li>
+  <li>For headings, the contrast ratio should be at least 3:1.</li>
+  <li>For body text, the contrast ratio should be at least 4.5:1.</li>
 </ul>
 
-<h2 id="rules-of-the-prelim">Rules of the Prelim</h2>
+<p>Avoid fonts with narrow letter spacing or uneven height (between lowercase and
+uppercase) as they exacerbate all of the above problems. Keep text, whitespace,
+and figures evenly spaced, allowing for easy zooming and reading.</p>
 
-<p>Universities and departments vary. UIUC NPRE has its rules written in the grad 
-school handbook.</p>
+<h2 id="3-use-of-markers-and-line-styles">3. Use of Markers and Line Styles</h2>
 
-<p>The prelim is like a contract between the student and the committee. It
-establishes the scope of the PhD work to be accomplished. Recall that:</p>
+<p>To ensure that your plots will stand the test of time by using non-color-based
+visual cues like:</p>
+<ul>
+  <li>Markers (e.g., circles, squares, triangles) to differentiate data points.</li>
+  <li>Line styles (e.g., dashed, dotted, solid) to distinguish data in a line plot.</li>
+</ul>
 
-<p>The goals and desired level of Ph.D. dissertation research are:</p>
+<p>This will help ensure that even if a user has difficulty distinguishing certain
+colors, they can still interpret the plot accurately.</p>
 
-<p>a. A dissertation should contribute new knowledge.
-b. The results of a dissertation should be definable and sound.
-c. A dissertation should contain material that has applications in nuclear,
-plasma, and radiological engineering.
-d. A dissertation should be an entity in itself and its essential parts should
-be publishable in a refereed journal.
-e. A Ph.D. candidate should have demonstrated the ability to carry out
-independent research work.</p>
+<h2 id="4-plot-size-and-resolution">4. Plot Size and Resolution</h2>
 
-<h2 id="after-writing">After Writing</h2>
+<p>Make sure your plots are high resolution so that details are not lost when
+zooming in. In addition to a high resolution your plots should be high-quality
+formats (e.g., <strong>SVG</strong>, <strong>PDF</strong>).</p>
 
-<p>Prepare to present.
-File the preliminary exam document with the department. Consider adding it to
-Figshare, Zotero, and the ARFC website.</p>
+<h2 id="5-matplotlib-style-file-for-arfc">5. Matplotlib Style File for ARFC</h2>
+
+<p>To standardize the style of your plots, you can use a <strong>Matplotlib style file</strong>
+that reflects ARFC’s standards. This will help ensure that all plots follow the
+same formatting conventions, making them visually consistent and aligned with
+our standards.</p>
+
+<p>You can use this style file to configure:</p>
+<ul>
+  <li>font,</li>
+  <li>color palettes,</li>
+  <li>plot dimensions,</li>
+  <li>and figure size.</li>
+</ul>
+
+<p>A Matplotlib style file is available here:
+https://gist.github.com/nsryan2/456490df118ab3318ec07c7610432e69.
+It uses Paul Tol’s muted qualitative color scheme as the default.</p>
+
+<h3 id="example">Example:</h3>
+
+<p>Here’s a minimal example of how you can apply the style file to Python:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1"># Load the ARFC style file
+</span><span class="n">plt</span><span class="p">.</span><span class="n">style</span><span class="p">.</span><span class="n">use</span><span class="p">(</span><span class="s">'path/to/plotting.mplstyle'</span><span class="p">)</span>
+
+<span class="c1"># Create a sample plot
+</span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">26</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Sample 1'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'-'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Sample 2'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'+'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'X Axis'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Y Axis'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
 
                 </div>
                 <div class="col-md-2">
