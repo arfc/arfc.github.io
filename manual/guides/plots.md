@@ -42,7 +42,6 @@ Avoid fonts with narrow letter spacing or uneven height (between lowercase and
 uppercase) as they exacerbate all of the above problems. Keep text, whitespace,
 and figures evenly spaced, allowing for easy zooming and reading.
 
-
 ## 3. Use of Markers and Line Styles
 
 To ensure that your plots will stand the test of time by using non-color-based
@@ -101,3 +100,38 @@ plt.ylabel('Y Axis')
 plt.legend()
 plt.show()
 ```
+
+## 6. Inkscape
+
+[Inkscape](https://inkscape.org/about/) is a free vector graphics editor. 
+It's most notable feature is allowing for percise dimensions and units 
+for creating shapes, ensuring all figures are to scale. It is especailly
+helpful when you need to create graphics that can't easily be made
+automatically. Graphics are automatically saved as .svg files, but Inkscape 
+can also supports .pdf and .png files. While creating graphics, make sure to 
+follow the accessibility standards in regards to font, linetsyle, and color.
+
+## 7. Tikz
+
+[Tikz](https://tikz.dev/) is a LaTeX package which allows for creation of figures
+direclty within your documents. Tikz is especially useful for creating diagrams 
+and flow-charts. It uses coordinates to plot each shape within the figure, ensuring 
+everything within the figure has precise dimensions. 
+
+A minimal example of how to use tikz in a document:
+````Latx
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+\draw[red, very thick] (0,2) circle (3cm); %% Draws a circle at (0,2) with radius 3cm - using ';' to mark shape as complete
+\end{tikzpicture}
+\end{document}
+````
+
+Tikz tutorials and documentation can be found on both the 
+[website](https://tikz.dev/tutorials-guidelines) and on 
+[overleaf](https://www.overleaf.com/learn/latex/TikZ_package). Further examples of 
+figures made within Tikz can be viewed in the Latex/Tikz [Gallary](https://texample.net/).
+Make sure to follow all the accessibility standards - especially regarding font, linetsyle, color, markers,
+and contrast while creating figures.
