@@ -709,7 +709,7 @@
   pic: /img/people/glasern.png
   dates: 2023-2024
   role: Undergraduate Research Assistant
-  description: 'Nathan was an undergraduate in NPRE at UIUC, interested in fission reactor fuel modeling and simulation. Upon graduation, he joined Oregon State University to pursue a PhD in Nuclear Engineering.'
+  description: 'Nathan was an undergraduate in NPRE conducting computational reactor physics modeling and simulation. Upon graduation, he joined Oregon State University to pursue a PhD in Nuclear Engineering.'
   social:
     - url: mailto:nglaser3@illinois.edu
       icon: envelope-o
