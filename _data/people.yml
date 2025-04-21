@@ -96,19 +96,6 @@
       icon: linkedin
       name: LinkedIn
 
-- name: Nathan Glaser
-  pic: /img/people/glasern.png
-  dates: 2023-Present
-  role: Undergraduate Research Assistant
-  description: 'Nathan is an undergraduate in NPRE at UIUC, interested in fission reactor fuel modeling and simulation.'
-  social:
-    - url: mailto:nglaser3@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/nglaser3
-      icon: github-alt
-      name: Github
-
 - name: Elijah Capps
   pic: /img/people/cappse.png
   dates: 2024-Present
