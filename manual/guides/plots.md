@@ -104,34 +104,36 @@ plt.show()
 ## 6. Inkscape
 
 [Inkscape](https://inkscape.org/about/) is a free vector graphics editor. 
-It's most notable feature is allowing for percise dimensions and units 
-for creating shapes, ensuring all figures are to scale. It is especailly
-helpful when you need to create graphics that can't easily be made
+Its most notable feature is allowing for precise dimensions and units 
+for creating shapes, ensuring all figures are to scale. It is especially
+helpful when creating graphics that aren't easily made
 automatically. Graphics are automatically saved as .svg files, but Inkscape 
-can also supports .pdf and .png files. While creating graphics, make sure to 
-follow the accessibility standards in regards to font, linetsyle, and color.
+also supports .pdf and .png files. While creating graphics, 
+follow all [accessibility standards](https://arfc.github.io/manual/guides/writing/)
+regarding font, lifestyle, and color.
 
 ## 7. Tikz
 
-[Tikz](https://tikz.dev/) is a LaTeX package which allows for creation of figures
-direclty within your documents. Tikz is especially useful for creating diagrams 
-and flow-charts. It uses coordinates to plot each shape within the figure, ensuring 
+[Tikz](https://tikz.dev/) is a LaTeX package that allows for the creation of figures
+directly within your documents. Tikz is especially useful for creating diagrams 
+and flow charts. It uses coordinates to plot each shape within the figure, ensuring 
 everything within the figure has precise dimensions. 
 
 A minimal example of how to use tikz in a document:
-````Latx
+````Latex
 \documentclass{article}
 \usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}
-\draw[red, very thick] (0,2) circle (3cm); %% Draws a circle at (0,2) with radius 3cm - using ';' to mark shape as complete
+\draw[red, very thick] (0,2) circle (3cm); %% Circle at (0,2) w/ radius 3cm
 \end{tikzpicture}
 \end{document}
 ````
 
-Tikz tutorials and documentation can be found on both the 
+Tikz tutorials and documentation can be found both on the 
 [website](https://tikz.dev/tutorials-guidelines) and on 
-[overleaf](https://www.overleaf.com/learn/latex/TikZ_package). Further examples of 
-figures made within Tikz can be viewed in the Latex/Tikz [Gallary](https://texample.net/).
-Make sure to follow all the accessibility standards - especially regarding font, linetsyle, color, markers,
-and contrast while creating figures.
+[overleaf](https://www.overleaf.com/learn/latex/TikZ_package). Further examples
+of figures made within Tikz can be viewed inthe Latex/Tikz
+[Gallary](https://texample.net/). Follow all the
+[accessibility standards](https://arfc.github.io/manual/guides/writing/) 
+regarding font, lifestyle, color, markers,and contrast while creating figures.
