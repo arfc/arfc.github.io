@@ -42,7 +42,6 @@ Avoid fonts with narrow letter spacing or uneven height (between lowercase and
 uppercase) as they exacerbate all of the above problems. Keep text, whitespace,
 and figures evenly spaced, allowing for easy zooming and reading.
 
-
 ## 3. Use of Markers and Line Styles
 
 To ensure that your plots will stand the test of time by using non-color-based
@@ -101,3 +100,40 @@ plt.ylabel('Y Axis')
 plt.legend()
 plt.show()
 ```
+
+## 6. Inkscape
+
+[Inkscape](https://inkscape.org/about/) is a free vector graphics editor. 
+Its most notable feature is allowing for precise dimensions and units 
+for creating shapes, ensuring all figures are to scale. It is especially
+helpful when creating graphics that aren't easily made
+automatically. Graphics are automatically saved as .svg files, but Inkscape 
+also supports .pdf and .png files. While creating graphics, 
+follow all [accessibility standards](https://arfc.github.io/manual/guides/writing/)
+regarding font, lifestyle, and color.
+
+## 7. Tikz
+
+[Tikz](https://tikz.dev/) is a LaTeX package that allows for the creation of figures
+directly within your documents. Tikz is especially useful for creating diagrams 
+and flow charts. It uses coordinates to plot each shape within the figure, ensuring 
+everything within the figure has precise dimensions. 
+
+A minimal example of how to use tikz in a document:
+````Latex
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+\draw[red, very thick] (0,2) circle (3cm); %% Circle at (0,2) w/ radius 3cm
+\end{tikzpicture}
+\end{document}
+````
+
+Tikz tutorials and documentation can be found both on the 
+[website](https://tikz.dev/tutorials-guidelines) and on 
+[overleaf](https://www.overleaf.com/learn/latex/TikZ_package). Further examples
+of figures made within Tikz can be viewed inthe Latex/Tikz
+[Gallary](https://texample.net/). Follow all the
+[accessibility standards](https://arfc.github.io/manual/guides/writing/) 
+regarding font, lifestyle, color, markers,and contrast while creating figures.
