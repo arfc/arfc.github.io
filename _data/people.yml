@@ -20,38 +20,6 @@
       icon: twitter
       name: Twitter
 
-- name: Madicken Munk
-  pic: /img/people/munkm.jpg
-  dates: 2021-present
-  status: PI
-  role: Research Scientist
-  src: https://munkm.github.io
-  url: https://munkm.github.io
-  description: 'Madicken is acting the director of the Advanced Reactors and Fuel Cycles group at Illinois.'
-  social:
-    - url: https://github.com/munkm
-      icon: github-alt
-      name: Github
-    - url: https://scholar.google.com/citations?user=V1Cqd5cAAAAJ
-      icon: graduation-cap
-      name: Google Scholar
-    - url: https://twitter.com/munkium
-      icon: twitter
-      name: Twitter
-
-- name: Sun Myung Park
-  pic: /img/people/smpark.jpg
-  dates: 2017-present
-  role: Graduate Research Assistant
-  description: 'Sun Myung Park is a PhD student embarking on his nuclear engineering journey.'
-  social:
-      - url: mailto:smpark3@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/smpark7
-        icon: github-alt
-        name: Github
-
 - name: Zoe Richter
   pic: /img/people/richterz.png
   dates: 2018-present
@@ -112,24 +80,6 @@
         icon: github-alt
         name: Github
 
-- name: Nathan Ryan
-  pic: /img/people/ryann.png
-  dates: 2022-present
-  role: Graduate Research Assistant
-  src: https://nsryan.github.io/
-  url: http://nsryan.github.io/
-  description: 'Nathan is a graduate student interested in the nuclear fuel cycle, energy system modeling, and machine learning.'
-  social:
-    - url: mailto:nsryan2@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/nsryan2
-      icon: github-alt
-      name: Github
-    - url: https://www.linkedin.com/in/nathan-ryan-5a06b8193
-      icon: linkedin
-      name: LinkedIn
-
 - name: Samar Abdelkawy
   pic: /img/people/abdelkawys.png
   dates: 2025-present
@@ -146,37 +96,11 @@
       icon: linkedin
       name: LinkedIn
 
-- name: Ceser Zambrano
-  pic: /img/people/zambranoc.png
-  dates: 2023-present
-  role: Undergraduate Research Assistant
-  description: 'Ceser is an undergraduate in NPRE at UIUC. He is interested in the usage of simulations for reactor cores. '
-  social:
-    - url: mailto:ceserz2@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/ceserz2
-      icon: github-alt
-      name: Github
-
-- name: Nathan Glaser
-  pic: /img/people/glasern.png
-  dates: 2023-Present
-  role: Undergraduate Research Assistant
-  description: 'Nathan is an undergraduate in NPRE at UIUC, interested in fission reactor fuel modeling and simulation.'
-  social:
-    - url: mailto:nglaser3@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/nglaser3
-      icon: github-alt
-      name: Github
-
 - name: Elijah Capps
   pic: /img/people/cappse.png
   dates: 2024-Present
   role: Undergraduate Research Assistant
-  description: 'Eli is an undergraduate in NPRE interested in modeling nuclear energy systems.'
+  description: 'Eli started as an undergraduate in NPRE and is now a graduate research assistant interested in modeling nuclear energy systems.'
   social:
     - url: mailto:ecapps2@illinois.edu
       icon: envelope-o
@@ -210,22 +134,6 @@
     - url: https://github.com/osanstrong
       icon: github-alt
       name: Github
-
-- name: Bella Pequette
-  pic: /img/people/pequetteb.jpeg
-  dates: 2024-Present
-  role: Undergraduate Research Assistant
-  description: 'Bella is an undergraduate in NPRE. She is interested in spent fuel management practices, such as fuel reprocessing, as well as in simulating the nuclear fuel cycle.'
-  social: 
-    - url: mailto:bellacp2@illinois.edu
-      icon: envelope-o
-      name: Email
-    - url: https://github.com/bellapequette
-      icon: github-alt
-      name: Github
-    - url: www.linkedin.com/in/bellapequette
-      icon: linkedin
-      name: LinkedIn
 
 - name: Matthew Disimone
   pic: /img/people/disimonem.png

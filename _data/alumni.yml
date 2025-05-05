@@ -4,7 +4,7 @@
   role: Postdoctoral Researcher
   src: http://alexlindsay.info
   url: http://alexlindsay.info
-  description: 'Alex was a postdoctoral researcher with ARFC. He is dedicated to a reasonable marriage between openness and nuclear energy research. He is now a staff scientist at INL.'
+  description: 'Alex was a postdoctoral researcher with ARFC. He is dedicated to a reasonable marriage between openness and nuclear energy research. Upon completion at ARFC, he joined INL as a staff scientist.'
   social:
     - url: mailto:lindsayad@diyplasma.org
       icon: envelope-o
@@ -15,6 +15,9 @@
     - url: https://twitter.com/AlexTFXC
       icon: twitter
       name: Twitter
+    - url: https://www.linkedin.com/in/alexander-lindsay/
+      icon: linkedin
+      name: Linkedin
 
 - name: Andrei Rykhlevskii
   pic: /img/people/rykhlevskiia.jpg
@@ -22,7 +25,7 @@
   role: Graduate Research Assistant
   src: https://www.linkedin.com/in/arykhlevskii
   url: https://www.linkedin.com/in/arykhlevskii
-  description: 'Andrei was a Research Assistant with ARFC focusing on fuel depletion calculations for Molten Salt Reactors. He received M.Sc. in 2018 and Ph.D in 2020. He is now a staff scientist at Argonne National Laboratory.'
+  description: 'Andrei was a Research Assistant with ARFC focusing on fuel depletion calculations for Molten Salt Reactors. He received M.Sc. in 2018 and Ph.D in 2020. After graduation, he joined Argonne National Laboratory as a staff scientist.'
   social:
     - url: mailto:andrewryh@gmail.com
       icon: envelope-o
@@ -38,7 +41,7 @@
   pic: /img/people/fairhurstr.jpg
   dates: 2018-2021
   role: Graduate Research Assistant
-  description: 'Roberto is a Masters Student interested in mutiphysics simulations of advanced fission reactors.'
+  description: 'Roberto was a Masters Student interested in mutiphysics simulations of advanced fission reactors. After his MS, he completed his PhD in another NPRE research group and joined Kairos Power.'
   social:
     - url: mailto:ref3@illinois.edu
       icon: envelope-o
@@ -46,12 +49,15 @@
     - url: http://github.com/robfairh
       icon: github-alt
       name: Github
+    - url: https://www.linkedin.com/in/roberto-fairhurst-agosta
+      icon: linkedin
+      name: Linkedin
 
 - name: Anshuman Chaube
   pic: /img/people/chaubea.jpg
   dates: 2017-2021
   role: Graduate Researcher
-  description: 'Ansh is a graduate student interested in mutiphysics simulations of advanced fission reactors.'
+  description: 'Ansh was a graduate student interested in mutiphysics simulations of advanced fission reactors. After his MS, he joined a different research group in NPRE.'
   social:
     - url: mailto:achaube2@illinois.edu
       icon: envelope-o
@@ -64,33 +70,39 @@
   pic: /img/people/bachmanna.png
   dates: 2020-2023
   role: Graduate Research Assistant
-  description: "Amanda was a PhD student working on fuel cycle modeling. She received her PhD in 2023, and is now a postdoc at Argonne National Laboratory."
+  description: "Amanda was a PhD student working on fuel cycle modeling. After she received her PhD in 2023, she joined Argonne National Laboratory."
   social:
-      - url: https://github.com/abachma2
-        icon: github-alt
-        name: Github
-      - url: https://twitter.com/amanda_bachmann
-        icon: twitter
-        name: Twitter
+    - url: https://github.com/abachma2
+      icon: github-alt
+      name: Github
+    - url: https://twitter.com/amanda_bachmann
+      icon: twitter
+      name: Twitter
+    - url: https://www.linkedin.com/in/amanda-bachmann/
+      icon: linkedin
+      name: Linkedin
 
 - name: Lu Kissinger
   pic: /img/people/kissingerl.jpg
   dates: 2017-2022
   role: Graduate Research Assistant
-  description: "Lu  is a Masters student using Monte Carlo codes to investigate the feasibility of Lunar Surface Fission Power. They also worked on reactor modeling projects with ARFC as an undergraduate and at Argonne post-bachelor's"
+  description: "Lu  was a Masters student using Monte Carlo codes to investigate the feasibility of Lunar Surface Fission Power. They also worked on reactor modeling projects with ARFC as an undergraduate. After their time in ARFC, they became a Mathematics instructor with Mathnasium."
   social:
-      - url: mailto:lkissin2@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/lkissin2
-        icon: github-alt
-        name: Github
+    - url: mailto:lkissin2@illinois.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/lkissin2
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/lkissin2/
+      icon: linkedin
+      name: Linkedin
 
 - name: Nataly Panczyk
   pic: /img/people/panczykn.png
   dates: 2020-2023
   role: Undergraduate Research Assistant
-  description: 'Nataly is an undergraduate in NPRE at UIUC. Her interests in nuclear power stem largely from her concern for the environment and her love of physics, math, and computer science.'
+  description: 'Nataly was an undergraduate in NPRE at UIUC. Her interests in nuclear power stem largely from her concern for the environment and her love of physics, math, and computer science. After graduation, she joined the University of Michigan to pursue a PhD in Nuclear Engineering.'
   social:
     - url: mailto:panczyk2@illinois.edu
       icon: envelope-o
@@ -101,12 +113,15 @@
     - url: https://twitter.com/panczyk_nataly
       icon: twitter
       name: Twitter
+    - url: https://www.linkedin.com/in/npanczyk/
+      icon: linkedin
+      name: Linkedin
 
 - name: Yi Nok Yeung (Nicholas)
   pic: /img/people/yeungn.jpg
   dates: 2021-2022
   role: Undergraduate Research Assistant
-  description: 'Nicholas is an undergraduate student currrently majoring in philosophy at UIUC. He is interested in learning more about simulation of reactor designs.'
+  description: 'Nicholas was an undergraduate student majoring in philosophy at UIUC. He is interested in learning more about simulation of reactor designs.'
   social:
     - url: mailto:yinokny2@illinois.edu
       icon: envelope-o
@@ -114,22 +129,28 @@
     - url: https://github.com/hwacc-y
       icon: github-alt
       name: GitHub
+    - url: https://www.linkedin.com/in/nicholas-yeung-a38166252
+      icon: linkedin
+      name: Linkedin
 
 - name: Gavin Ridley
   pic: /img/people/ridleyg.png
   dates: Summer 2017
   role: Undergraduate Research Assistant
-  description: 'Gavin Ridley was an undergraduate researcher with ARFC. He is an undergraduate at UTK looking to help molten salt reactors come to fruition through HPC.'
+  description: 'Gavin Ridley was an undergraduate researcher with ARFC. After working with ARFC, he continued his studies as an undergraduate at UTK looking to help molten salt reactors come to fruition through HPC.'
   social:
-      - url: mailto:gridley@vols.utk.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/gridley
-        icon: github-alt
-        name: Github
-      - url: https://twitter.com/g_kridley
-        icon: twitter
-        name: Twitter
+    - url: mailto:gridley@vols.utk.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/gridley
+      icon: github-alt
+      name: Github
+    - url: https://twitter.com/g_kridley
+      icon: twitter
+      name: Twitter
+    - url: https://www.linkedin.com/in/gavin-ridley-7b9508b1/
+      icon: linkedin
+      name: Linkedin
 
 - name: Snehal Chandan
   pic: /img/people/chandans.jpg
@@ -162,6 +183,9 @@
     - url: https://bitbucket.org/adityapb/
       icon: bitbucket
       name: Bitbucket
+    - url: https://www.linkedin.com/in/adityapb/
+      icon: linkedin
+      name: Linkedin
 
 
 - name: Katie Mummah
@@ -170,7 +194,7 @@
   role: Undergraduate Research Assistant
   src: nuclearkatie.com
   url: nuclearkatie.com
-  description: 'Katie was an undergraduate researcher with ARFC. She is now pursuing her PhD at the University of Wisconsin Madson'
+  description: 'Katie was an undergraduate researcher with ARFC. After graduating, she pursued her PhD at the University of Wisconsin Madison'
   social:
     - url: mailto:mummah2@illinois.edu
       icon: envelope-o
@@ -221,7 +245,7 @@
   pic: /img/people/parkg.jpg
   dates: 2016-2018
   role: Undergraduate Research Assistant
-  description: 'Gyutae Park was an Undergraduate Student at UIUC interested in fuel cycle simulations.'
+  description: 'Gyutae Park was an Undergraduate Student at UIUC interested in fuel cycle simulations. After graduating, he returned to complete his national service with the Republic of Korea.'
   social:
     - url: mailto:gpark29@illinois.edu
       icon: envelope-o
@@ -229,7 +253,6 @@
     - url: https://github.com/gyutaepark
       icon: github-alt
       name: Github
-
 
 - name: Daniel Chiu
   pic: /img/people/chiud.jpg
@@ -261,7 +284,7 @@
   pic: /img/people/ellisb.jpg
   dates: 2018 summer
   role: Undergraduate Research Assistant
-  description: 'Brad was an undergraduate researcher interested in fuel cycle analysis and repository simulation.'
+  description: 'Brad was an undergraduate researcher interested in fuel cycle analysis and repository simulation. After graduation, he joined Enercon as a Mechanical Engineer.'
   social:
     - url: mailto:Ellis6@illinois.edu
       icon: envelope-o
@@ -274,7 +297,7 @@
   pic: /img/people/pandaa.jpg
   dates: 2018 fall
   role: Undergraduate Research Assistant
-  description: 'Akanksha was an undergraduate reseearcher in ARFC interested in nuclear physics computation, nuclear fuel cycles, and cybersecurity.'
+  description: 'Akanksha was an undergraduate researcher in ARFC interested in nuclear physics computation, nuclear fuel cycles, and cybersecurity. She completed her BS in Mathematics and Computer Science.'
   social:
     - url: mailto:panda2@illinois.edu
       icon: envelope-o
@@ -290,7 +313,7 @@
   pic: /img/people/baej.png
   dates: 2016-present
   role: Graduate Research Assistant
-  description: 'Jin Whan Bae received his MS in 2018 and is now a staff member at ORNL'
+  description: 'Jin Whan Bae received his MS in 2018 and joined ORNL as a staff scientist.'
   social:
     - url: mailto:jbae11@illinois.edu
       icon: envelope-o
@@ -303,7 +326,7 @@
   pic: /img/people/kennellyt.jpg
   dates: 2018-2019
   role: Undergraduate Research Assistant
-  description: 'Tyler was an undergraduate research interested in nuclear reactor physics computation. He is now pursuing a graduate degree.'
+  description: 'Tyler was an undergraduate researcher interested in nuclear reactor physics computation. Upon graduation, he joined Purdue University to pursue his PhD.'
   social:
     - url: mailto:kennlly2@illinois.edu
       icon: envelope-o
@@ -311,12 +334,15 @@
     - url: https://github.com/KennellyT
       icon: github-alt
       name: Github
+    - url: https://www.linkedin.com/in/tyler-kennelly-5694a0103/
+      icon: linkedin
+      name: Linkedin
 
 - name: Matthew Koziol
   pic: /img/people/koziolm.jpg
   dates: 2018-2019
   role: Undergraduate Research Assistant
-  description: 'Matthew was an undergraduate research with ARFC, interested in nuclear physics computation and data science.'
+  description: 'Matthew was an undergraduate research with ARFC, interested in nuclear physics computation and data science. Upon graduation, he joined SAIC.'
   social:
     - url: mailto:mkoziol3@illinois.edu
       icon: envelope-o
@@ -324,12 +350,15 @@
     - url: https://github.com/makoziol0
       icon: github-alt
       name: GitHub
+    - url: https://www.linkedin.com/in/matthew-koziol/
+      icon: linkedin
+      name: Linkedin
 
 - name: Julia Roessler
-  pic: /img/people/roesslerj.jpeg
+  pic: /img/people/roesslerj.jmatthew-koziol/g
   dates: 2019
   role: Undergraduate Research Assistant
-  description: 'Julia is an undergraduate student at the University of Illinois who is eager to gain technical experience in the nuclear engineering field.'
+  description: 'Julia was an undergraduate student at the University of Illinois who is eager to gain technical experience in the nuclear engineering field.'
   social:
     - url: mailto:juliakr2@illinois.edu
       icon: envelope-o
@@ -337,7 +366,6 @@
     - url: https://github.com/juliaroessler
       icon: github-alt
       name: GitHub
-
 
 - name: Huan Yan
   pic: /img/people/yhuan.jpg
@@ -562,7 +590,7 @@
   pic: /img/people/cheeg.jpg
   dates: 2017-2022
   role: Graduate Research Assistant
-  description: 'Gwendolyn Chee recieved her MS in Nuclear Engineering in 2018, and graduated from NPRE with her PhD in 2022.'
+  description: 'Gwendolyn Chee graduated from NPRE with her PhD in 2022. After graduation, she joined Meta as a Machine Learning Software Engineer.'
   social:
     - url: mailto:gchee2@illinois.edu
       icon: envelope-o
@@ -588,12 +616,105 @@
   pic: /img/people/fisherr.jpg
   dates: 2024
   role: Undergraduate Research Assistant
-  description: 'Riley was an undergraduate in NPRE at UIUC. He is interested in the interactions between society, policy, and reactor technologies'
+  description: 'Riley was an undergraduate in NPRE at UIUC. He is interested in the interactions between society, policy, and reactor technologies and, upon graduating, joined the University of Michigan to pursue his PhD.'
   social:
     - url: mailto:rileyf2@illinois.edu
       icon: envelope-o
       name: Email
     - url: https://github.com/riley2
+      icon: github-alt
+      name: Github
+
+- name: Madicken Munk
+  pic: /img/people/munkm.jpg
+  dates: 2021-2024
+  status: PI
+  role: Research Scientist
+  src: https://munkm.github.io
+  url: https://munkm.github.io
+  description: 'Dr. Munk served as acting the director of the Advanced Reactors and Fuel Cycles group at Illinois. In 2024 she became an Assistant Professor at Oregon State University. She remains a core collaborator with the ARFC team.'
+  social:
+    - url: https://github.com/munkm
+      icon: github-alt
+      name: Github
+    - url: https://scholar.google.com/citations?user=V1Cqd5cAAAAJ
+      icon: graduation-cap
+      name: Google Scholar
+    - url: https://twitter.com/munkium
+      icon: twitter
+      name: Twitter
+
+- name: Sun Myung Park
+  pic: /img/people/smpark.jpg
+  dates: 2017-2024
+  role: Graduate Research Assistant
+  description: 'Sun Myung Park was a PhD student in the ARFC group. Upon receiving his PhD, he joined the University of Texas at Austin as a Postdoctoral scholar.'
+  social:
+      - url: mailto:smpark3@illinois.edu
+        icon: envelope-o
+        name: email
+      - url: https://github.com/smpark7
+        icon: github-alt
+        name: Github
+
+- name: Nathan Ryan
+  pic: /img/people/ryann.png
+  dates: 2020-2025
+  role: Graduate Research Assistant
+  src: https://nsryan.github.io/
+  url: http://nsryan.github.io/
+  description: 'Nathan started as an undergraduate research assistant and became a graduate student in ARFC, interested in the nuclear fuel cycle, energy system modeling, and machine learning. Upon graduating with his MS in 2025, he joined ORNL.'
+  social:
+    - url: mailto:nsryan2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/nsryan2
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/nathan-ryan-5a06b8193
+      icon: linkedin
+      name: LinkedIn
+
+- name: Bella Pequette
+  pic: /img/people/pequetteb.jpeg
+  dates: 2024-2025
+  role: Undergraduate Research Assistant
+  description: 'Bella was an undergraduate research assistant in NPRE. Upon graduating in 2025, she joined Constellation Energy at the Clinton Nuclear Power Plant.'
+  social:
+    - url: mailto:bellacp2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/bellapequette
+      icon: github-alt
+      name: Github
+    - url: www.linkedin.com/in/bellapequette
+      icon: linkedin
+      name: LinkedIn
+
+
+- name: Ceser Zambrano
+  pic: /img/people/zambranoc.png
+  dates: 2023-2025
+  role: Undergraduate Research Assistant
+  description: 'Ceser was an undergraduate in NPRE at UIUC. Upon graduation in 2025 he joined Colorado School of Mines to pursue a PhD in Advanced Energy Systems.'
+  social:
+    - url: mailto:ceserz2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/ceserz2
+      icon: github-alt
+      name: Github
+
+- name: Nathan Glaser
+  pic: /img/people/glasern.png
+  dates: 2023-2024
+  role: Undergraduate Research Assistant
+  description: 'Nathan was an undergraduate in NPRE conducting computational reactor physics modeling and simulation. Upon graduation, he joined Oregon State University to pursue a PhD in Nuclear Engineering.'
+  social:
+    - url: mailto:nglaser3@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/nglaser3
       icon: github-alt
       name: Github
 
