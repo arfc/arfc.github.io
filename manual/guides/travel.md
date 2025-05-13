@@ -119,7 +119,7 @@ You must be very, very detailed. Consider using the following strategy:
 
 If Prof. Huff was the sponsor of the trip, she will need to sign the form.
 
-## 13. Submit Travel Form
+## 12. Submit Travel Form
 
 1. Organize receipts and supplementary documents in an archive (use descriptive
    file names)
@@ -131,7 +131,7 @@ If Prof. Huff was the sponsor of the trip, she will need to sign the form.
 **If you followed this guide, your submission will be pleasing to the business
 office's eyes.**
 
-## 18. Wait
+## 13. Wait
 
 In a few days, you will get an email from a staff member from EBSC who will 
 fill out an online form for you.
@@ -140,14 +140,14 @@ fill out an online form for you.
    ready for review and submission. If there is any error in your paper form, 
    or if your submission needs revision, they will let you know. 
 2. Go to [Chrome River](https://app.ca1.chromeriver.com/login/sso/saml?CompanyID=illinois.edu)
-3. Enter your NetID and password and click the LOG IN button
+3. Enter your NetID and password and click the LOG IN button.
 4. Note: If you are not authorized to log in, you will need to fill out the
    [Security Compliance Form](https://go.uillinois.edu/InfoSecCompForm), then
    contact Nicloe M Elliot (elliottn@illinois.edu) with your UIN noting you've
-   completed the form. You should have accessin 1-3 days
+   completed the form. You should have accessin 1-3 days.
 5. The first time, you may need to add EBSC people as a 'proxy' by logging 
    into Chrome River > Account Settings > Delegate Settings > Add New Delegates
-   and add *tjconner*, *mbelsis2*, and *cmaylmer*
+   and add *tjconner*, *mbelsis2*, *jenilynn*, and *cmaylmer* (reimbursement people from [the directory](https://ebsc.grainger.illinois.edu/directory)).
 6. On the dashboard under Expenses will be your Expense Report to review and approve.
 7. Please review the form for accuracy and that all the expenses are listed 
    (print mode makes it easier to see).
