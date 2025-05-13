@@ -144,7 +144,7 @@ fill out an online form for you.
 4. Note: If you are not authorized to log in, you will need to fill out the
    [Security Compliance Form](https://go.uillinois.edu/InfoSecCompForm), then
    contact Nicloe M Elliot (elliottn@illinois.edu) with your UIN noting you've
-   completed the form. You should have accessin 1-3 days.
+   completed the form. You should have access in 1-3 days.
 5. The first time, you may need to add EBSC people as a 'proxy' by logging 
    into Chrome River > Account Settings > Delegate Settings > Add New Delegates
    and add *tjconner*, *mbelsis2*, *jenilynn*, and *cmaylmer* (reimbursement people from [the directory](https://ebsc.grainger.illinois.edu/directory)).
