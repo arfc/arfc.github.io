@@ -7,27 +7,24 @@ permalink: /manual/guides/accessibility
 
 ## Accessibility Standards
 
-There are three key areas to consider while writing a document: 
-
  - Color Blindness
  - Font Choice
  - Screen Reader Accessibility
  - Figure Creation
 
-This guide will provide a checklist of what to look for while 
-writing as well as resources to help make your documents more 
-accessible. 
+This guide will provide a checklist as well as resources to 
+make your documents more accessible. 
 
 ## 1. Color Blindness
 
 Before picking a friendly color palette, consider using non-color means 
-to distinguish lines, such as linestyle or markers. Matplotlib already 
-has functions to do this within a plot for each data set.
+to distinguish lines or datasets, such as linestyle or markers. Matplotlib
+already has functions to do this within a plot for each dataset.
 
 For specific color guidance, avoid combinations of red, green, brown,
-and yellow for contrasting colors, as most forms of colorblindness impact
-the red and green cones in the eyes. Also, avoid only using blues or purples 
-as contrasting colors. This is a useful [tool](https://davidmathlogic.com/colorblind/#) 
+and yellow for contrasting colors - as most forms of colorblindness impact
+the red and green cones of the eyes. Also, avoid only using blues or purples 
+as contrasting colors. 'Coloring for Colorbliness' is a useful [tool](https://davidmathlogic.com/colorblind/#) 
 to check color blind friendliness in your palate as well as creating good pallets
 from scratch.
 
@@ -60,7 +57,7 @@ for checking webpage accessibility.
 
 However, in this group we generally use LaTeX and PDFs, and making these documents screen 
 reader-friendly is generally much harder. Some suggested LaTeX packages are accessibility, pdfcomment, 
-and axessibility - the latter being for equations.  This [jounral](https://www.ams.org/journals/notices/202301/rnoti-p68.pdf)
+and axessibility - the latter being for equations.  This [journal](https://www.ams.org/journals/notices/202301/rnoti-p68.pdf)
 and this [page](https://libguides.lib.msu.edu/c.php?g=995742&p=8207771) have more extensive advice.
 
 Overleaf also has an 
@@ -83,14 +80,14 @@ plt.style.use(['dark_background','presentation'])
 
 These global variables can be defined in a top-level file `*.mplstyle`. Matplotlib's
 default style can be found [here](https://matplotlib.org/stable/users/explain/customizing.html#the-default-matplotlibrc-file)
-while Nathan Ryan's better style file can be found [here](https://drive.google.com/file/d/1lV1IJgUo_V6rs7PCg5ccO6TK2ziaOM-_/view)
+while Nathan Ryan's better style file can be found [here](https://drive.google.com/file/d/1lV1IJgUo_V6rs7PCg5ccO6TK2ziaOM-_/view).
 
-5. Additional Reading
+## 5. Additional Reading
 
  - Zoey's Accessibility [Slideshow](https://docs.google.com/presentation/d/e/2PACX-1vTQ6AyYOjNiIIyojh97CZJ7v9-FwkfurTOA9E0pxQ2e5bz1xfKxZP_K3P1RA8l81d6FgFhMPjLfdiBU/pub?start=false&loop=false&delayms=3000)
  - Nathan's Plots [Guide](https://arfc.github.io/manual/guides/plots/)
- - '[Simple Tools for Mastering Color in Scientific Figures](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)'
- - '[Best Color Palettes for Scientific Figures and Data Visualizations](https://www.simplifiedsciencepublishing.com/resources/best-color-palettes-for-scientific-figures-and-data-visualizations)'
- - '[How To Choose a Color Scheme for Your Scientific Figure](https://sites.northwestern.edu/researchcomputing/2022/05/20/how-to-choose-a-color-scheme-for-your-scientific-figure/)'
- - '[Introduction to the Viridis Color Map](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)'
- - '[Why you should use Viridis and not Jet (rainbow) as a colormap](https://www.domestic-engineering.com/drafts/viridis/viridis.html)'
+ - [Simple Tools for Mastering Color in Scientific Figures](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
+ - [Best Color Palettes for Scientific Figures and Data Visualizations](https://www.simplifiedsciencepublishing.com/resources/best-color-palettes-for-scientific-figures-and-data-visualizations)
+ - [How To Choose a Color Scheme for Your Scientific Figure](https://sites.northwestern.edu/researchcomputing/2022/05/20/how-to-choose-a-color-scheme-for-your-scientific-figure/)
+ - [Introduction to the Viridis Color Map](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
+ - [Why you should use Viridis and not Jet (rainbow) as a colormap](https://www.domestic-engineering.com/drafts/viridis/viridis.html)
