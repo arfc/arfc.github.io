@@ -16,33 +16,33 @@ There are three key areas to consider while writing a document:
 
 This guide will provide a checklist of what to look for while 
 writing as well as resources to help make your documents more 
-accesable. 
+accessible. 
 
-## 1. Color Blindess
+## 1. Color Blindness
 
-Prior to picking a friendly color pallet, condsider using non-color means 
+Before picking a friendly color palette, consider using non-color means 
 to distinguish lines, such as linestyle or markers. Matplotlib already 
 has functions to do this within a plot for each data set.
 
-For specific color guidence, avoid combinations of red, green, brown,
-and yellow for contrasting colors as most forms of colorblindness impact
-the red and green cones in the eyes. Also avoid only using blues or purples 
-as contrasting colors. This is a usefull [tool](https://davidmathlogic.com/colorblind/#) 
-to check color blind friendliness in your pallets as well as creating good pallets
+For specific color guidance, avoid combinations of red, green, brown,
+and yellow for contrasting colors, as most forms of colorblindness impact
+the red and green cones in the eyes. Also, avoid only using blues or purples 
+as contrasting colors. This is a useful [tool](https://davidmathlogic.com/colorblind/#) 
+to check color blind friendliness in your palate as well as creating good pallets
 from scratch.
 
 ## 2. Font Choice
 
-Font choice relates to both the font itself as well as the contrast of the font 
+Font choice relates to both the font itself and the contrast of the font 
 against the background. [WebAIM](https://webaim.org/resources/contrastchecker/)
-is a tool to check if the contrast ratio meets the accesibility standards. Generally,
-headings should have a contrast ratio of at least 3:1 and body text should be at least
+is a tool to check if the contrast ratio meets the accessibility standards. Generally,
+headings should have a contrast ratio of at least 3:1, and body text should be at least
 4.5:1. If you forget, WebAIM will also tell you if the font passes.
 
-While choosing a font, consider these points
+While choosing a font - consider:
 
  - Sans Serif fonts are generally easier to read than Serif fonts
- - Avoid thin, narrow fonts, or fonts with uneven heights between lowercase and capital letters
+ - Avoid thin fonts, narrow fonts, or fonts with uneven heights between lowercase and capital letters
  - Good font examples: Times New Roman, Arial, Verdana, Helvetica
 
 Additional information and tools for font accessibility are found at
@@ -58,8 +58,8 @@ metadata text. Alt text is relatively easy to add within Microsoft Word or HTML.
 has some [suggested tools](https://accessibility.huit.harvard.edu/auto-tools-testing#free)
 for checking webpage accessibility.
 
-However, in this group we generally use LaTeX and pdfs, and making these documents screen reader
-friendly is generally much harder. Some suggested LaTex packages are accessibility, pdfcomment, 
+However, in this group we generally use LaTeX and PDFs, and making these documents screen 
+reader-friendly is generally much harder. Some suggested LaTeX packages are accessibility, pdfcomment, 
 and axessibility - the latter being for equations.  This [jounral](https://www.ams.org/journals/notices/202301/rnoti-p68.pdf)
 and this [page](https://libguides.lib.msu.edu/c.php?g=995742&p=8207771) have more extensive advice.
 
@@ -70,11 +70,11 @@ with additional advice dedicated to this topic.
 ## 4. Figure Creation
 
 Avoid the jet (rainbow) color scheme since it's not particularly accessible, and there are
-better colormaps for conveying information. Think about what information you’re trying to 
+better color maps for conveying information. Think about what information you’re trying to 
 convey when choosing colors. Not all color palettes are created equal. Jet, for example, is not perceptually
 uniform - i.e., colors near to each other look relatively similar, while colors far apart are distinct.
 
-With Matplotlib you can set the style of plots for a whole script with global parameters.
+With Matplotlib, you can set the style of plots for a whole script with global parameters.
 
 ```python
 import matplotlib.pyplot as plt
@@ -87,13 +87,10 @@ while Nathan Ryan's better style file can be found [here](https://drive.google.c
 
 5. Additional Reading
 
- - Zoey's Accsesbility [Slideshow](https://docs.google.com/presentation/d/e/2PACX-1vTQ6AyYOjNiIIyojh97CZJ7v9-FwkfurTOA9E0pxQ2e5bz1xfKxZP_K3P1RA8l81d6FgFhMPjLfdiBU/pub?start=false&loop=false&delayms=3000)
+ - Zoey's Accessibility [Slideshow](https://docs.google.com/presentation/d/e/2PACX-1vTQ6AyYOjNiIIyojh97CZJ7v9-FwkfurTOA9E0pxQ2e5bz1xfKxZP_K3P1RA8l81d6FgFhMPjLfdiBU/pub?start=false&loop=false&delayms=3000)
  - Nathan's Plots [Guide](https://arfc.github.io/manual/guides/plots/)
  - '[Simple Tools for Mastering Color in Scientific Figures](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)'
  - '[Best Color Palettes for Scientific Figures and Data Visualizations](https://www.simplifiedsciencepublishing.com/resources/best-color-palettes-for-scientific-figures-and-data-visualizations)'
  - '[How To Choose a Color Scheme for Your Scientific Figure](https://sites.northwestern.edu/researchcomputing/2022/05/20/how-to-choose-a-color-scheme-for-your-scientific-figure/)'
  - '[Introduction to the Viridis Color Map](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)'
  - '[Why you should use Viridis and not Jet (rainbow) as a colormap](https://www.domestic-engineering.com/drafts/viridis/viridis.html)'
-
-
-
