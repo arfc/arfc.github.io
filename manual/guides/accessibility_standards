@@ -1,11 +1,11 @@
 ---
 layout: manual
 title: Accessibility Standards
-subtitle: "Checklist for writing or creating figures."
+subtitle: "Guidelines for accessible writing and figure creation."
 permalink: /manual/guides/accessibility
 ---
 
-# Accessibility Standards
+## Accessibility Standards
 
 There are three key areas to consider while writing a document: 
 
@@ -18,7 +18,7 @@ This guide will provide a checklist of what to look for while
 writing as well as resources to help make your documents more 
 accesable. 
 
-# Color Blindess
+## 1. Color Blindess
 
 Prior to picking a friendly color pallet, condsider using non-color means 
 to distinguish lines, such as linestyle or markers. Matplotlib already 
@@ -31,7 +31,7 @@ as contrasting colors. This is a usefull [tool](https://davidmathlogic.com/color
 to check color blind friendliness in your pallets as well as creating good pallets
 from scratch.
 
-# Font Choice
+## 2. Font Choice
 
 Font choice relates to both the font itself as well as the contrast of the font 
 against the background. [WebAIM](https://webaim.org/resources/contrastchecker/)
@@ -50,7 +50,7 @@ Additional information and tools for font accessibility are found at
 [ADA Site Complience](https://adasitecompliance.com/accessible-fonts/), and
 [UNC Greensboro’s Page on Fonts](https://accessibility.uncg.edu/make-content-accessible/design-elements/).
 
-# Screen Reader Accessibility
+## 3. Screen Reader Accessibility
 
 Make sure to use common fonts that screen readers can recognize to make your documents
 more friendly. Screen readers also often struggle with interpreting images that have no 
@@ -67,7 +67,7 @@ Overleaf also has an
 [extensive page](https://www.overleaf.com/learn/latex/An_introduction_to_tagged_PDF_files%3A_internals_and_the_challenges_of_accessibility)
 with additional advice dedicated to this topic.
 
-# Figure Creation
+## 4. Figure Creation
 
 Avoid the jet (rainbow) color scheme since it's not particularly accessible, and there are
 better colormaps for conveying information. Think about what information you’re trying to 
@@ -75,6 +75,25 @@ convey when choosing colors. Not all color palettes are created equal. Jet, for 
 uniform - i.e., colors near to each other look relatively similar, while colors far apart are distinct.
 
 With Matplotlib you can set the style of plots for a whole script with global parameters.
+
+```python
+import matplotlib.pyplot as plt
+plt.style.use(['dark_background','presentation'])
+```
+
+These global variables can be defined in a top-level file `*.mplstyle`. Matplotlib's
+default style can be found [here](https://matplotlib.org/stable/users/explain/customizing.html#the-default-matplotlibrc-file)
+while Nathan Ryan's better style file can be found [here](https://drive.google.com/file/d/1lV1IJgUo_V6rs7PCg5ccO6TK2ziaOM-_/view)
+
+5. Additional Reading
+
+ - Zoey's Accsesbility [Slideshow](https://docs.google.com/presentation/d/e/2PACX-1vTQ6AyYOjNiIIyojh97CZJ7v9-FwkfurTOA9E0pxQ2e5bz1xfKxZP_K3P1RA8l81d6FgFhMPjLfdiBU/pub?start=false&loop=false&delayms=3000)
+ - Nathan's Plots [Guide](https://arfc.github.io/manual/guides/plots/)
+ - '[Simple Tools for Mastering Color in Scientific Figures](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)'
+ - '[Best Color Palettes for Scientific Figures and Data Visualizations](https://www.simplifiedsciencepublishing.com/resources/best-color-palettes-for-scientific-figures-and-data-visualizations)'
+ - '[How To Choose a Color Scheme for Your Scientific Figure](https://sites.northwestern.edu/researchcomputing/2022/05/20/how-to-choose-a-color-scheme-for-your-scientific-figure/)'
+ - '[Introduction to the Viridis Color Map](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)'
+ - '[Why you should use Viridis and not Jet (rainbow) as a colormap](https://www.domestic-engineering.com/drafts/viridis/viridis.html)'
 
 
 
