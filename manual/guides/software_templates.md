@@ -17,7 +17,12 @@ that can be useful in software development. If your project falls under the
 range of capabilities they have you can save a lot of time by using them or 
 adapting them to start your project.
 
-## Shablona
+## Scientific Python Development Tools
+[learnscientificpython.org](https://learn.scientific-python.org/development/guides/packaging-simple/) 
+has templates and tutorials guiding development of python packages using the 
+most updated standards and norms in the scientific python community. 
+
+## Shablona 
 [Shablona](https://github.com/uwescience/shablona) is a template repository that 
 is designed for scientific python projects. The template comes with everything a 
 small-scale project might need, and can be easily adapted for python projects.
