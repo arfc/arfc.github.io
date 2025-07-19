@@ -16,7 +16,9 @@ that can be captured in one.
 # <a name="gettingstarted"></a>Getting Started
 
 You're new to the research group. There are a lot of tasks to get done before
-you can really fly.
+you can really fly. When you start in the group, work with Prof. Huff to set up 
+a GitHub Project with the following tasks designed as issues to get you 
+started. 
 
 - Handle HR stuff.
 - Get a [GitHub](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration) account

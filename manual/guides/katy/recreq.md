@@ -14,10 +14,11 @@ first whether I would be willing to support your application.
 
 I am very happy to write a letter of reference for most people who:
 
-- took at least one course from me
-- worked in my research group
-- collaborated with me or my research group
-- or interacted with me in some other way relevant to the application
+- took at least one course from me,
+- worked in my research group,
+- collaborated with me or my research group,
+- served on the UIUC ANS executive committee,
+- or interacted with me in some other way relevant to the application.
 
 In all cases, I consider letter writing an exercise in integrity. I seek to be
 simultaneously as honest and generous as possible. Given this, please use your
@@ -33,8 +34,7 @@ information:
 - Please make your request well in advance (at least a few weeks) before it will be due.
 - Please don't forget to [write a professional email](http://chrisblattman.com/2010/11/08/students-how-to-email-to-your-professor-employer-and-professional-peers/).
 
-I'm going to need some information. 
-Most importantly, if I don't see you on a 
+I'm going to need some information.  Most importantly, if I don't see you on a 
 daily basis, please remind me how we know one another and when we met (what 
 year). 
 

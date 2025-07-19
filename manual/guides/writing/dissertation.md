@@ -10,7 +10,7 @@ permalink: /manual/guides/writing/dissertation
 - The preliminary examination must be successful before dissertation writing 
   can begin.
 - Create a repository to hold your dissertation during the writing process.
-- A UIUC template is available at: 
+- A UIUC template is available in the ARFC GitHub organization. 
 - Review an outline with your advisor.
 - Collect figures and tables. Arrange them to tell a story.
 - Determine a timeline for each chapter draft to be completed. 
