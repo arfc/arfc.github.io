@@ -99,10 +99,10 @@ In Prof. Huff's experience, it is best to enable chapter-by-chapter review of yo
 A great way to do this with Prof. Huff is the following workflow:
 
 - Note the [ms-thesis-template](https://github.com/arfc/ms-thesis-template) in the arfc github org.
-- Create a GitHub respository in your own GitHub user space (ideally, usetemplate).
+- Create a GitHub respository in the ARFC GitHub space (ideally, using the template).
 - Work on this document in your repository. Feel free to use feature branches 
   and merge into master, or just commit directly to master as you go.
-- You need to give Prof. Huff collaborator permission on this repository to allow issue assignment.
+- If your MS repository is in your own GitHub user pace, then give Prof. Huff collaborator permission on this repository to allow issue assignment.
 - At some point, you decide that a part of your masters thesis is ready for 
   Prof. Huff's review (e.g. the literature review chapter) 
 - (optional) Tag the repository at that state. (e.g. ch1-draft-1)
@@ -125,6 +125,7 @@ Both the thesis advisor and the second reader should be given at least two weeks
 
 ## After Writing
 
+- Check the NPRE and UIUC grad college websites for the most recent requirements.
 - Add yourself to the degree list.
 - Get the TDA form from Kristie. 
 - Get Prof. Huff, the 2nd reader, and the NPRE department head to sign the 
