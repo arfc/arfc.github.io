@@ -21,8 +21,7 @@ and read the errors for clues.
 # Stack Overflow
 
 If Google isn't sufficiently refined, or if your code issue isn't extremely 
-urgent, consider asking your question on the largest programming bug forum in  
-the solar system... [Stack Overflow](http://stackoverflow.com/). Be forewarned: the SO community 
+urgent, consider asking your question on the largest programming bug forum in the solar system... [Stack Overflow](http://stackoverflow.com/). Be forewarned: the SO community 
 is not always friendly or well-moderated for snark. That said, you can definitely improve your odds of kind 
 answers by following [these tips on asking a question 
 well.](http://stackoverflow.com/help/how-to-ask).
