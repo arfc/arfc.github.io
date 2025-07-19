@@ -9,8 +9,10 @@ permalink: /manual/guides/writing/prelim
 
 Review the graduate handbook.
 
-- fill ou the PhD Preliminary and Final Exam Proposal form available in the Student Services Office.
-- the students advisor and the department head must approve the thesis committee.
+
+- Work out a plan, scope, and schedule, with Prof. Huff.
+- Fill out the PhD Preliminary and Final Exam Proposal form available in the Student Services Office.
+- Ensure that your advisor and the department head approve the thesis committee.
 
 ## Rules of the Prelim
 
