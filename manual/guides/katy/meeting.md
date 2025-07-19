@@ -12,7 +12,8 @@ I look forward to speaking with you virtually or in person.
 I am always open to discuss new ideas with
 colleagues, group members, students, and potential collaborators. My office
 door is often open for this reason. Feel free to pop by. However, if you'd like 
-to schedule a meeting, you're welcome to use the form described below. 
+to schedule a meeting either virtually or in person, you're welcome to use the 
+form described below. 
 
 
 # When
