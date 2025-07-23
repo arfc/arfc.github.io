@@ -75,10 +75,10 @@ and maybe they can help.
 
 There should be ample opportunities to ask me quick questions about what you 
 can try to solve your bug -- try to drop by Coffee Chat or pop by my office if 
-you think it'll only take a few minutes. 
+you think it'll only take a few minutes and my door is open. 
 
 If you have tried _everything_ above and nothing has been clarified,  and you 
-think it might take a while to debut, then 
+think it might take a while to debug, then 
 should you email me or Slack message me.  If possible, it should point to details somewhere (ideally 
 GitHub or a Gist) about your minimal working example or 
 your detailed documentation of the problem (above). I may need a few days to 
