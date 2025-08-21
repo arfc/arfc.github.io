@@ -116,6 +116,7 @@ twitter accounts, and whatnot that tie us together.
 - Cloud Computing
 - [Using Blue Waters](/manual/guides/bluewaters)
 - [Using Git Large File Storage](/manual/guides/git-lfs)
+- [Generating UML diagrams](/manual/guides/uml) 
 
 
 # Presenting Work
