@@ -109,6 +109,25 @@
       icon: github-alt
       name: Github
 
+- name: Liam Pohlmann
+  pic: /img/people/pohlmannl.jpg
+  dates: 2025-present
+  role: Graduate Research Assistant
+  description: 'Liam is a PhD student in the Advanced Reactors and Nuclear Fuel Cycle group at UIUC. He is interested in modeling and simulation of advanced reactors and code development in the open source community. He is particularly interested in high-temperature gas-cooled and molten salt reactors.'
+  social:
+    - url: mailto:liamp2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://https://github.com/LP1012
+      icon: githuib-alt
+      name: Github
+    - url: http://https://https://scholar.google.com/citations?hl=en&user=lbIbZsQAAAAJ
+      icon: graduation-cap
+      name: Google Scholar
+    - url: https://www.linkedin.com/in/liam-pohlmann-34b000297/
+      icon: linkedin
+      name: LinkedIn
+
 - name: Rhys MacMillan
   pic: /img/people/macmillanr.png
   dates: 2024-Present
