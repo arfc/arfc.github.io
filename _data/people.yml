@@ -198,6 +198,19 @@
       icon: github-alt
       name: Github
 
+- name: Amanda Schultz
+  pic: /img/people/schultza.jpg
+  dates: 2025-Present
+  role: Undergraduate Research Assistant
+  description: 'Amanda is an undergraduate in MechSE interested in advanced computation and nuclear power as a sustainable energy solution.'
+  social: 
+    - url: mailto:@amanda36@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/amandas36
+      icon: github-alt
+      name: Github
+
 - name: You
   pic: /img/people/you.png
   dates: now
