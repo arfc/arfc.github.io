@@ -1,3 +1,22 @@
+- title: "A Hybrid SN-Diffusion Method for Molten Salt Reactor Control Rod Modeling"
+  presenter: Sun Myung Park
+  event: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering (M&C 2025)
+  type: Technical Presentation
+  place: Denver, CO
+  month: April
+  day: 28
+  year: 2025
+  pic: '/img/pres/2025-mc.png'
+  slides: '/pres/2025-park-mc.pdf'
+  description: "This presentation presents a hybrid SN-diffusion method for
+  accurate modeling of control rods in time-dependent molten salt reactor
+  simulations. The hybrid method combines the strengths of both approaches by
+  applying transport corrections generated using the SN method near control
+  rods. 1-D simulation results show that the hybrid method provides improved
+  rod worth estimates compared to pure diffusion models. The hybrid method
+  iterative scheme demonstrates robustness in convergence and converges rapidly
+  within two outer iterations."
+
 - title: "Useful practices in open-source software development for nuclear science and engineering"
   presenter: Oleksandr R. Yardas
   event: American Nuclear Society Student Conference
