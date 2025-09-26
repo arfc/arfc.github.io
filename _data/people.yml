@@ -99,7 +99,7 @@
 - name: Elijah Capps
   pic: /img/people/cappse.png
   dates: 2024-Present
-  role: Undergraduate Research Assistant
+  role: Graduate Research Assistant
   description: 'Eli started as an undergraduate in NPRE and is now a graduate research assistant interested in modeling nuclear energy systems.'
   social:
     - url: mailto:ecapps2@illinois.edu
@@ -183,6 +183,7 @@
       icon: github-alt
       name: Github
     - url: https://www.linkedin.com/in/bryan-park-11a6b32b4/
+      icon: linkedin
       name: LinkedIn
       
 - name: Thomas Bohnert
