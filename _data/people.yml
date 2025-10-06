@@ -212,6 +212,20 @@
       icon: github-alt
       name: Github
 
+- name: Madeleine Wallman
+  pic: /img/people/wallmanm.png
+  dates: 2025-present
+  role: Undergraduate Research Assisitant
+  description: 'Madeleine is an undergraduate in NPRE interested in modeling and design for advanced reactors'
+  social:
+    - url: mailto:@wallman2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/TokamakBagel
+      icon: github-alt
+      name: Github
+
+remote: Enumeratin
 - name: You
   pic: /img/people/you.png
   dates: now
