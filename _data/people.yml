@@ -99,7 +99,7 @@
 - name: Elijah Capps
   pic: /img/people/cappse.png
   dates: 2024-Present
-  role: Undergraduate Research Assistant
+  role: Graduate Research Assistant
   description: 'Eli started as an undergraduate in NPRE and is now a graduate research assistant interested in modeling nuclear energy systems.'
   social:
     - url: mailto:ecapps2@illinois.edu
@@ -183,6 +183,7 @@
       icon: github-alt
       name: Github
     - url: https://www.linkedin.com/in/bryan-park-11a6b32b4/
+      icon: linkedin
       name: LinkedIn
       
 - name: Thomas Bohnert
@@ -195,6 +196,19 @@
       icon: envelope-o
       name: Email
     - url: https://github.com/thomasbohnert
+      icon: github-alt
+      name: Github
+
+- name: Amanda Schultz
+  pic: /img/people/schultza.png
+  dates: 2025-Present
+  role: Undergraduate Research Assistant
+  description: 'Amanda is an undergraduate in MechSE interested in advanced computation and nuclear power as a sustainable energy solution.'
+  social: 
+    - url: mailto:@amanda36@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/amandas36
       icon: github-alt
       name: Github
 
