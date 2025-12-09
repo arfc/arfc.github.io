@@ -24,10 +24,11 @@ following options allow a more streamlined document collaboration:
 - Overleaf
 
 If you are working in one of the environments, please just point me to the 
-repository or send me a link, ideally in a GitHub issue. 
+repository or send me a link, ideally in a GitHub issue assigned to me. It 
+helps if you link to or attached a built pdf. 
 
 If, for whatever reason, you can't work in one of those frameworks, send me a 
-PDF. It's a Portable Document Format after all. Word documents render 
+PDF by email. It's a Portable Document Format after all. Word documents render 
 differently on different machines, so if you send me a word document, I may 
 complain about formatting you can't even see. Send me a pdf.
 
@@ -68,15 +69,18 @@ deadline, please remind me.
 
 # Reading my comments
 
-- Sometimes, I'll directly edit the document if that's possible. 
+- Usually, whether or not you've sent me a pdf, I'll send 
+  you a marked up pdf in return. This is because I usually read 
+  these documents with my ipad and my stylus. 
+  I try to match comments by color. If I send you a pdf like this, I'll likely 
+  ask you to make all the contained changes yourself.
+  My handwriting is inconsistent. If anything is unclear, please ask! 
+- Sometimes, I'll directly edit and push my changes to the document on github 
+  if that's possible and appropriate. 
 - Other times, I'll submit my changes to your document with a pull request.
-- If I have a question, I'll probably make comments inline on a github repository.
-- Or, if it's something larger, I might make a github issue capturing the changes 
-that need to be made. 
-- Whether or not you've sent me a pdf, it's possible that I'll send you a marked 
-up pdf in return. This is because I am sometimes stuck on an airplane with my 
-ipad and my stylus. You'll learn to read my handwriting. I try to match 
-comments by color. If I send you a pdf like this, I'll likely ask you to make 
-all the contained changes yourself.
+- If I have a question, I'll probably write it on the pdf or inline on a github 
+  repository. Please answer those questions the next time we talk.
+- Sometimes, if it's something larger, I might make a github issue capturing the 
+  changes that need to be made. 
 
 
