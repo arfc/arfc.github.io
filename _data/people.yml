@@ -113,7 +113,7 @@
   pic: /img/people/pohlmannl.jpg
   dates: 2025-present
   role: Graduate Research Assistant
-  description: 'Liam is a PhD student in the Advanced Reactors and Nuclear Fuel Cycle group at UIUC. He is interested in modeling and simulation of advanced reactors and code development in the open source community. He is particularly interested in high-temperature gas-cooled and molten salt reactors.'
+  description: 'Liam is a PhD student in the Advanced Reactors and Nuclear Fuel Cycle group at UIUC. He is interested in modeling and simulation of advanced reactors and code development in the open source community.'
   social:
     - url: mailto:liamp2@illinois.edu
       icon: envelope-o
