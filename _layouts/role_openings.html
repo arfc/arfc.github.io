@@ -1,0 +1,46 @@
+---
+layout: page 
+---
+   <section id="jobs" class="{% cycle '', 'bg-light-gray' %}">
+        <div class="container">
+             <div class="row">
+             {% for type in site.data.positions %}
+                   {% if type.role == page.role %}
+                        {% for job in type.available %}
+			<div class="container">
+			    <div class="row job">
+				<div class="col-md-4">
+					<img src="{{ job.pic }}" class="img-responsive" alt="{{ job.title }}">
+				</div>
+				<div class="col-md-8"> 
+                                        <h4>{{ job.title }}</h4> 
+					{% if job.url %}<p><i class="fa fa-link"></i> <b>Link:</b> <a href="{{ job.url }}">{{ job.url }}</a></p>{% endif %}
+					{% if job.start %}<p><i class="fa fa-calendar"></i> <b>Start Date:</b> {{ job.start }}</a></p>{% endif %}
+					{% if job.required %}<p><i class="fa fa-graduation-cap"></i> <b>Required Skills:</b> {{ job.required }}</a></p>{% endif %}
+					{% if job.desired %}<p><i class="fa fa-graduation-cap"></i> <b>Desired Skills:</b> {{ job.desired }}</p>{% endif %}
+                                        <button class="btn btn-primary" 
+                                                type="button" 
+                                                data-toggle="collapse" 
+                                                data-target="#{{ forloop.index }}" 
+                                                aria-expanded="false" 
+                                                aria-controls="{{ forloop.index }}">
+                                                More Details 
+                                        </button> 
+                                        <div class="collapse" id="{{ forloop.index }}"> 
+                                                <div class="card card-block"> 
+                                                        <p class="text-muted">{{ job.description }}</p> 
+                                                </div> 
+                                        </div>
+                                        <br/>
+				</div>
+			    </div>
+                                        <br/>
+			</div>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+
+

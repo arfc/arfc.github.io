@@ -1,0 +1,53 @@
+# Site settings
+title: ARFC
+email: katyhuff@gmail.com
+description: "Website for the Advanced Reactors and Fuel Cycles group"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://arfc.github.io" # the base hostname & protocol for your site
+twitter_username: katyhuff
+github_username: arfc
+logo: "/img/logo.svg"
+
+# Agency color settings
+color:
+  primary: e87722
+  primary-dark: d45d00
+  secondary: 606eb2
+  secondary-dark: 002058
+  transparent: rgba(0,21,56,0.7)
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: pretty
+
+# Jekyll Scholar
+scholar:
+  style: chicago-author-date
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bibliography
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+  
+  repository: papers

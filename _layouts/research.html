@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<!-- Research -->
+    <section id="research" class="{% cycle '', 'bg-light-gray' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ page.title }}</h2>
+                    <h3 class="section-subheading text-muted">{{ page.subtitle }}</h3>
+                </div>
+            </div>
+        </div>
+
+        {% for topic in site.data.research %}
+        <div class="container">
+            <div class="row project">
+                <div class="col-md-4">
+                        <img src="{{ site.baseurl }}/img/{{ topic.pic }}" class="img-responsive" alt="{{ topic.name }}">
+                </div>
+                <div class="col-lg-8">
+                        <h4>{{ topic.name }}</h4>
+                        <p class="text-muted">{{ topic.description }}</p>
+                        {% if topic.url %}<p><i class="fa fa-code"></i> <a href="{{ site.baseurl }}/{{ topic.url }}">{{ topic.url }}</a></p>{% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    </section>
+    
+

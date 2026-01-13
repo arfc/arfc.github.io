@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<!-- CODE -->
+    <section id="code" class="{% cycle '', 'bg-light-gray' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ page.title }}</h2>
+                    <h3 class="section-subheading text-muted">{{ page.subtitle }}</h3>
+                </div>
+            </div>
+        </div>
+
+        {% for topic in site.data.projects %}
+        <div class="container">
+            <div class="row project">
+                <div class="col-md-4">
+                        <img src="{{ site.baseurl }}/img/{{ topic.pic }}" class="img-responsive" alt="{{ topic.name }}">
+                </div>
+                <div class="col-lg-8">
+                        <h4>{{ topic.name }}</h4>
+                        <p class="text-muted">{{ topic.description }}</p>
+                        <p class="text-muted"><i>Role: {{ topic.role }}</i>. {{ topic.dates }}.</p>
+                        <p><i class="fa fa-link"></i> <a class="page-scroll" href="{{ topic.url }}">{{ topic.url }}</a></p>
+                        <p><i class="fa fa-code"></i> <a class="page-scroll" href="{{ topic.src }}">{{ topic.src }}</a></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    </section>
+    
+

@@ -1,0 +1,14 @@
+work:
+    - title: <++>
+      inst: <++>
+      location: <++>
+      dates: <++> - <++>
+      description: 
+        - "<++>"
+
+education:
+    - degree: <++>
+      school: <++>
+      dates: <++> - <++>
+      description: 
+       - "<++>"

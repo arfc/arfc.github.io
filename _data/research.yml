@@ -1,0 +1,15 @@
+- name: Presentations
+  pic: research/pres.png
+  url: research/presentations
+  description: 'We present our work in many venues.'
+  
+- name: Publications
+  pic: research/pubs.png
+  url: research/publications
+  description: 'Discover and download our books, journal articles, and conference papers here.'
+
+- name: Software
+  pic: research/zen.png
+  url: software
+  description: 'ARFC has a strong focus on creating high quality scientific software. Discover it here.'
+

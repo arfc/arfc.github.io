@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<!-- Presentations -->
+<section id="code" class="{% cycle '', 'bg-light-gray' %}">
+        <div class="container">
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <h2 class="section-heading">{{ page.title }}</h2>
+                                <h3 class="section-subheading text-muted">{{ page.subtitle }}</h3>
+                        </div>
+                </div>
+        </div>
+
+        {% for topic in site.data.presentations %}
+        <div class="container">
+                <div class="row project">
+                        <div class="col-md-4">
+                                <a href="{{ topic.slides }}"><img src="{{ topic.pic }}" class="img-responsive" alt="{{ topic.name }}"></a>
+                        </div>
+                        <div class="col-md-8"> <h3 class="text-muted text-left">{{ topic.month }}{% if topic.day %} {{ topic.day }},{% endif %} {{ topic.year }}{% if topic.time %} at {{ topic.time }}{% endif %}</h3>
+                                <h4>{{ topic.title }}</h4>
+                                <h5>{{ topic.event }}</h4>
+                                {% if topic.presenter %}<p><i class="fa fa-user"> {{ topic.presenter }}</i></p>{% endif %}
+                                {% if topic.place %}<p><i class="fa fa-map-marker"> {{ topic.place }}</i></p>{% endif %}
+                                {% if topic.type %}<p><i class="fa fa-comment"> {{ topic.type }}</i></p>{% endif %}
+                                {% if topic.slides %}<p><i class="fa fa-image"></i> <a href="{{ topic.slides }}"> {{ topic.slides }}</a></p>{% endif %}
+                                {% if topic.vid %}<p><i class="fa fa-play"></i> <a href="{{ topic.vid }}">{{ topic.vid }}</a></p>{% endif %}
+                                {% if topic.description %}<p class="text-muted">{{ topic.description }}</p>{% endif %}
+                        </div>
+                </div>
+        </div>
+        {% endfor %}
+        </div>
+</section>

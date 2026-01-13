@@ -1,0 +1,47 @@
+---
+layout: page
+---
+<div class="container">
+        <div class="row">
+                {% assign counter = 0 %}
+                {% for person in site.data.alumni %}
+                        {% assign counter = counter | plus: 1 %}
+                        {% if counter == 5 %}
+                                </div>
+                                <div class="row">
+                                {% assign counter = 1 %}
+                        {% endif %}
+                <div class="col-md-3 col-sm-3 portfolio-item">
+                        <a href="{{ person.url }}" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content img-circle">
+                                                <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                </div>
+                                <img src="{{ person.pic }}" class="img-circle img-responsive" alt="{{ person.name }}">
+                        </a>
+                        <div class="portfolio-caption">
+                                <p class="text-muted">{{ role.description }}</p>
+                                <h3>{{ person.name }}</h3>
+                                <h6 class="job-title">{{ person.role }}</h6>
+                                <p class="email">{{ person.email }}</p>
+                                <ul class="list-inline social-buttons">
+                                        {% for network in person.social %}
+                                        <li class="social-button-item"><a href="{{ network.url }}"><i class="fa fa-{{ network.icon }}"></i></a>
+                                        </li>
+                                        {% endfor %}
+                                </ul>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#{{ forloop.index }}" aria-expanded="false" aria-controls="{{ forloop.index }}">
+                                        bio
+                                </button>
+                                <div class="collapse" id="{{ forloop.index }}">
+                                        <div class="card card-block">
+                                                <p class="text-muted">{{ person.description }}</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                {% endfor %}
+        </div>
+</div>
+
