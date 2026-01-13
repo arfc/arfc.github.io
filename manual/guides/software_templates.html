@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Advanced Reactors and Fuel Cycles</title>
+  <title>Software Templates</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/software_templates">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -279,183 +279,178 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- Page -->
-    <section id="code" class="">
+        <!-- Manual -->
+    <section id="title" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Advanced Reactors and Fuel Cycles</h2>
-                    <h3 class="section-subheading text-muted">University of Illinois at Urbana-Champaign</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">
-                            This group is led by Kathryn Huff, an Associate Professor at the <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a> in the Department of <a href="http://npre.illinois.edu">Nuclear, Plasma, and Radiological Engineering</a>. We develop models and and conduct simulations to understand and improve the safety and sustainability of nuclear energy.
-                    </h3>
+                    <h2 class="section-heading">Software Templates</h2>
+                    <h3 class="section-subheading text-muted">A few tools and templates for building a software project</h3>
                 </div>
             </div>
         </div>
+
         <div class="container">
             <div class="row">
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="/research/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/multiphysics.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Coupled Multiphysics of Advanced Reactors</h4>
-                        <br/>
-                        <p class="text-muted">Advanced nuclear reactors often involve complex geometries, unique materials, and new physical regimes. To simulate the coupled physics in such designs, current tools must be extended to capture those geometries, materials, and regimes. Our work focuses on extending current tools with features essential to simulating advanced reactor multiphysics.</p>
-                    </div>
+                <div class="col-md-2">
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.fuelcycle.org" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Nuclear_Fuel_Cycle.svg/820px-Nuclear_Fuel_Cycle.svg.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Fuel Cycle Analysis</h4>
-                        <br/>
-                        <p class="text-muted">Our nuclear energy future may involve a mixture of technologies, reprocessing schemes, and waste management strategies. Deployments may be driven by politics or demand, the options may be constrained by complex logistics, and the assessment of impacts requires analysis at scale. Our work focuses on modeling, simulation, and analysis of the global nuclear fuel cycle, with an emphasis on sustainability.</p>
-                    </div>
+                <div class="col-md-8">
+    <p>Software projects are often unique with specifications that 
+exceed the capabilities of a single template. However, there are some cases 
+where a template can save a lot of time and overhead. This document will 
+hopefully provide ARFC members with the individual tools to mix and match as 
+they create software projects.</p>
+
+<h1 id="existing-templates">Existing Templates</h1>
+<p>There are some open source projects that provide high quality templates
+that can be useful in software development. If your project falls under the 
+range of capabilities they have you can save a lot of time by using them or 
+adapting them to start your project.</p>
+
+<h2 id="scientific-python-development-tools">Scientific Python Development Tools</h2>
+<p><a href="https://learn.scientific-python.org/development/guides/packaging-simple/">learnscientificpython.org</a> 
+has templates and tutorials guiding development of python packages using the 
+most updated standards and norms in the scientific python community.</p>
+
+<h2 id="shablona">Shablona</h2>
+<p><a href="https://github.com/uwescience/shablona">Shablona</a> is a template repository that 
+is designed for scientific python projects. The template comes with everything a 
+small-scale project might need, and can be easily adapted for python projects.</p>
+
+<p>To get a sense of whether or not using the Shablona template is appropriate for 
+your project, check out the 
+<a href="https://github.com/uwescience/shablona/tree/master/examples">example</a> provided.</p>
+
+<h2 id="cookiecutter">Cookiecutter</h2>
+<p><a href="https://github.com/cookiecutter/cookiecutter">Cookiecutter</a> is not a template 
+repository like Shablona, instead it is a command-line utility that
+allows you to build a repository from a “pantry” of templates. This project has 
+an extensive 
+<a href="https://cookiecutter.readthedocs.io/en/1.7.2/index.html">Read the Docs</a>, and 
+it’s definitely worth a review before you decide.</p>
+
+<p>Additional documents that will give you a sense of whether or not to use this 
+utility:</p>
+<ol>
+  <li><a href="https://cookiecutter.readthedocs.io/en/1.7.2/tutorial1.html">Getting to Know Cookiecutter</a></li>
+  <li><a href="https://cookiecutter.readthedocs.io/en/1.7.2/usage.html">Usage</a></li>
+  <li><a href="https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html">Building a Cookiecutter</a></li>
+</ol>
+
+<h1 id="software-project-parts">Software Project Parts</h1>
+<p>Even if neither of the above templates fit your requirements, there are still 
+some pieces that might benefit your project. JOSS (The Journal of Open Source 
+Software) has 
+a useful <a href="https://joss.readthedocs.io/en/latest/review_checklist.html">review checklist</a> 
+for reviewers that you should review before beginning your project.</p>
+
+<h2 id="make-files">Make Files</h2>
+<p>Makefile is a scripting tool that
+compiles or re-compiles a program or process through a user-defined command in the command-line: <code class="language-plaintext highlighter-rouge">make</code>. Makefiles streamline the build process for project contributors or reviewers.</p>
+
+<h3 id="resources">Resources:</h3>
+<ul>
+  <li><a href="https://www.gnu.org/software/make/manual/html_node/Introduction.html">Introduction</a></li>
+  <li><a href="https://www.gnu.org/software/make/manual/html_node/Makefiles.html#Makefiles">Writing Makefiles</a></li>
+  <li><a href="https://makefiletutorial.com/">Tutorial</a></li>
+</ul>
+
+<h2 id="cmake-files">CMake Files</h2>
+<p>CMake generates makefiles, similar Make or a makefile, except that it is much 
+more compatible with C++.</p>
+
+<h3 id="resources-1">Resources:</h3>
+<ul>
+  <li><a href="https://cmake.org/overview/">Overview</a></li>
+  <li><a href="https://cmake.org/cmake/help/latest/guide/tutorial/index.html">Step-by-step Tutorial</a></li>
+  <li><a href="https://gitlab.kitware.com/cmake/community/-/wikis/Home">Wiki</a></li>
+</ul>
+
+<h2 id="snakemake-files">Snakemake Files</h2>
+<p>Snakemake is a workflow engine with a python-based language and an optimizing 
+execution environment. It allows developers to write human-readable workflows that 
+document themselves.</p>
+
+<h3 id="resources-2">Resources:</h3>
+<ul>
+  <li><a href="https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html">Tutorial</a></li>
+  <li><a href="https://github.com/snakemake/snakemake/tree/master/examples">Examples</a></li>
+  <li><a href="https://snakemake.readthedocs.io/en/stable/index.html">Wiki</a></li>
+</ul>
+
+<h2 id="docker-files">Docker Files</h2>
+<p>A Dockerfile is a text file that contains commands that can be used from the 
+command line to generate images. 
+Like a Makefile, docker build can automate a series of command line 
+instructions. Several links have been 
+provided as informational resources, and there exists a template file.</p>
+
+<p>Here is a 
+<a href="https://gist.github.com/ju2wheels/3d1a1dfa498977874d03">template dockerfile</a>, 
+which also has a lot of useful information on what different components do.</p>
+
+<h3 id="resources-3">Resources:</h3>
+<ul>
+  <li>Information on <a href="https://docs.docker.com/engine/reference/builder/">Dockerfiles</a></li>
+  <li>A <a href="https://docs.docker.com/get-started/">Quickstart Guide</a></li>
+  <li>A <a href="https://docs.docker.com/develop/dev-best-practices/">Best Practices Guide</a></li>
+</ul>
+
+<h2 id="automated-testing">Automated Testing</h2>
+<p>Continuous integration with CircleCI allows users to verify that their contributions do not break any software functionality.
+CircleCI automatically builds environments and executes tests before every pull request. An example repository 
+is <a href="https://github.com/pyne/pyne">PyNE</a>, which employs CircleCI to run multiple 
+tests on every pull request. Prof. Huff’s book gives an overview of testing approaches.</p>
+
+<h3 id="resources-4">Resources:</h3>
+<ul>
+  <li><a href="https://circleci.com/docs/2.0/hello-world/">Getting Started</a></li>
+  <li><a href="https://circleci.com/docs/2.0/tutorials/">Tutorial</a></li>
+  <li><a href="https://circleci.com/docs/2.0/sample-config/">Examples</a></li>
+</ul>
+
+<h2 id="licensing">Licensing</h2>
+<p>Every repository that is a part of the ARFC Github Organization should have some 
+form of license. Choosing a license can seem daunting but for 
+a simple 
+<a href="https://spdx.org/licenses/BSD-3-Clause.html">BSD-3 Clause</a> will cover many
+software projects. If your project uses pieces of code under a different license, there are 
+many ways you can address it.</p>
+
+<p>One suggestion is that you create separate directories for the code that is 
+under the other license. In the separate directory, you can then include the 
+license that covers the code in that directory.</p>
+
+<p>Another suggestion is that you add all the licenses to the docs 
+folder and then indicate which files or directories are covered under the 
+respective licenses in the README.md files in the directory covered by it, or in 
+the file itself.</p>
+
+<p>There are many other ways to abide by differing licenses, the above are simply 
+suggestions and should not be taken as legal advice. 
+Regardless of the method you use, make sure you are following the 
+requirements of any software you are using or adapting.</p>
+
+<h3 id="resources-5">Resources:</h3>
+<ul>
+  <li><a href="https://opensource.org/licenses/alphabetical">List of open source licenses</a></li>
+  <li><a href="https://opensource.org/faq#copyleft">What is copyleft?</a></li>
+  <li><a href="https://www.linuxfoundation.org/resources/open-source-guides/using-open-source-code/">Using open source code</a></li>
+</ul>
+
+<h2 id="labels-and-projects">Labels and Projects</h2>
+<p>Make sure that your repository has the ability to add all of the ARFC labels 
+and projects. The labels and projects are an important part of the workflow in 
+the organization, and they help categorize issues and pull requests.</p>
+
                 </div>
-            
-                <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.ncsa.illinois.edu/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/research/bw_cropped.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Advanced Computation</h4>
-                        <br/>
-                        <p class="text-muted">A crosscutting theme of our research is an emphasis on advancing methods and software for computational nuclear engineering. Simulations of reactors and fuel cycle systems are sufficiently complex that sophisticated scientific software and high-performance computing resources are essential to understanding and improving them. Accordingly, the Advanced Reactors and Fuel Cycles group is proud to be affiliated with the University of Illinois National Center for Supercomputing Applications.</p>
-                    </div>
+                <div class="col-md-2">
                 </div>
-            
             </div>
         </div>
+    </div>
     </section>
-
-
-
-<!--- NEWS -->
-    <section id="news" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">News</h2>
-                    <h3 class="section-subheading text-muted">Updates from the research group.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-		    
-                    <span class="post-meta"><h2>May 13, 2024</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2024/05/13/huff-returns/">A Return to NPRE</a></h3>
-		    
-                    <span class="post-meta"><h2>May 10, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/05/10/ansh-andrei-landis/">Two ARFC Graduate Students Recognized with ANS Scholarships</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 20, 2018</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2018/04/20/park-ugrad-award/">Gyu Tae Park Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Oct 2, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/10/02/bae-global/">Bae Presents Poster at GLOBAL 2017</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 23, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/08/23/andrei-landis/">Andrei Rykhlevskii Recognized with ANS Scholarship</a></h3>
-		    
-                    <span class="post-meta"><h2>Apr 4, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/04/04/bae-ugrad-award/">Jin Whan Bae Recognized for Outstanding Undergraduate Research</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 1, 2017</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2017/02/01/mummah-wins-awards/">Kathryn Mummah Rakes in Awards</a></h3>
-		    
-                    <span class="post-meta"><h2>Aug 16, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/08/16/new-arfc-members/">New Group Members Join ARFC</a></h3>
-		    
-                    <span class="post-meta"><h2>Jul 12, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/07/12/huff-npre-article/">Huff Featured in NPRE News</a></h3>
-		    
-                    <span class="post-meta"><h2>Jun 14, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/06/14/neup-demand-driven/">ARFC and ERGS Receive NEUP R&D Award</a></h3>
-		    
-                    <span class="post-meta"><h2>Feb 6, 2016</h2></span>
-			<h3><a class="post-link" href="/jekyll/update/2016/02/06/huff-joins-npre/">Huff Plans to Join NPRE</a></h3>
-		    
-		<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!--- LICENSE -->
-    <section id="license" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">License</h2>
-                    <h3 class="section-subheading text-muted">This website and 
-                            all its contents are CC-BY-4.0 licensed.
-                     So, you may share and adapt this material as long as 
-                        you give appropriate credit, provide a link to the 
-                        license, and indicate if changes were made. You may do 
-                        so in any reasonable manner, but not in any way that 
-                        suggests the licensor endorses you or your use.
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center">
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Advanced Reactors and Fuel Cycles</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://arfc.github.io" property="cc:attributionName" rel="cc:attributionURL">ARFC Research Group</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/arfc/arfc.github.io" rel="dct:source">github.com/arfc/arfc.github.io</a>.
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!--- Software
-    <section id="software" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Software</h2>
-                    <h3 class="section-subheading text-muted">Simulation leverages the ubiquity of data, the efficiency of computation, and the purity of mathematics toward scientific discovery.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-right">
-                    <p class="large text-muted">This group strives create reproducible, transparent, extendible research products.</p> 
-                </div>
-                <div class="col-md-6">
-                    <ul class="code">
-                        <li>
-                            <h4><i class="fa fa-"></i> &nbsp;
-                            <a href=""></a></h4>
-                            <p></p>
-                        </li>
-                    </ul>
-                </div>                
-            </div>
-        </div>
-    </section>
--->
+    
 
       </div>
     </div>
