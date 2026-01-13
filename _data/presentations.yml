@@ -18,9 +18,9 @@
   time steps exhibit large negative initial concentration the becomes more
   positive with time due to overestimation of nuclide production stemming
   from the lack of spatial coupling to neutron transport. For ten 3-day time
-  steps, fission product concentration errors are all under 3\%. Actinide
-  concentration errors range from 10-15\% for Am and Cm, 5-7\% for Pu and Np,
-  and 2\% and less for U. Surprisingly, the numbers are similar for 30-day
+  steps, fission product concentration errors are all under 3%. Actinide
+  concentration errors range from 10-15% for Am and Cm, 5-7% for Pu and Np,
+  and 2% and less for U. Surprisingly, the numbers are similar for 30-day
   time steps. These results demonstrate the potential of this new method with
   moderate accuracy and extraordinary time savings for low and medium
   fidelity simulations. Concentration error characterization on larger models
