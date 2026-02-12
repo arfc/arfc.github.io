@@ -204,6 +204,19 @@
       icon: github-alt
       name: Github
 
+- name: Peter Cannon
+  pic: /img/people/cannonp.png
+  dates: 2026-Present
+  role: Undergraduate Research Assistant
+  description: 'Peter Cannon is an undergraduate in NPRE and is interested in OpenMC neutron transport modeling and simulation for advanced reactors.'
+  social: 
+    - url: mailto:peterac2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/PeterCannon10
+      icon: github-alt
+      name: Github
+
 - name: You
   pic: /img/people/you.png
   dates: now
