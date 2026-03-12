@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Install rbenv if not already installed
 if ! command -v rbenv &> /dev/null; then
@@ -25,3 +26,4 @@ bundle install
 
 # Serve site
 bundle exec jekyll serve
+
