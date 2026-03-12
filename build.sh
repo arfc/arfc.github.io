@@ -1,6 +1,20 @@
 #!/bin/bash
 set -e
 
+# Check if the curl executable is found in the system's PATH
+CURL_PATH=$(type -p curl)
+
+if [ -n "$CURL_PATH" ]; then
+    if [[ "$CURL_PATH" == /snap/* ]]; then
+	echo "Please run `snap remove curl` and use `apt install curl`"
+	exit 1
+    fi
+else
+    echo "Please install curl with `apt install curl`."
+    exit 1
+fi
+
+
 # Install rbenv if not already installed
 if ! command -v rbenv &> /dev/null; then
   echo "rbenv not found, installing..."
