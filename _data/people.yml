@@ -225,7 +225,10 @@
   social: 
     - url: mailto:meganj5@illinois.edu
       icon: envelope-o
-      name: Email
+    - url: https://github.com/meganj547
+      icon: github-alt
+      name: Github
+    - url: www.linkedin.com/in/megan-johnson-nu1
     - url: https://github.com/meganj547
       icon: github-alt
       name: Github
