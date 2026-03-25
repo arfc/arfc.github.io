@@ -216,6 +216,25 @@
     - url: https://github.com/PeterCannon10
       icon: github-alt
       name: Github
+      
+- name: Megan Johnson
+  pic: /img/people/johnsonm.jpeg
+  dates: 2026-Present
+  role: Undergraduate Research Assistant
+  description: 'Megan is an undergraduate student in NPRE and is interested in modeling and simulating advanced nuclear reactors.'
+  social: 
+    - url: mailto:meganj5@illinois.edu
+      icon: envelope-o
+    - url: https://github.com/meganj547
+      icon: github-alt
+      name: Github
+    - url: www.linkedin.com/in/megan-johnson-nu1
+    - url: https://github.com/meganj547
+      icon: github-alt
+      name: Github
+      url: www.linkedin.com/in/megan-johnson-nu1
+      icon: linkedin
+      name: LinkedIn
 
 - name: You
   pic: /img/people/you.png
