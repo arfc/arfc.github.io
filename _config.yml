@@ -5,16 +5,17 @@ description: "Website for the Advanced Reactors and Fuel Cycles group"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://arfc.github.io" # the base hostname & protocol for your site
 twitter_username: katyhuff
+bluesky_username: katyhuff
 github_username: arfc
 logo: "/img/logo.svg"
 
 # Agency color settings
 color:
-  primary: e87722
-  primary-dark: d45d00
-  secondary: 606eb2
-  secondary-dark: 002058
-  transparent: rgba(0,21,56,0.7)
+  primary: C5050C
+  primary-dark: 9B0000
+  secondary: E1E5E7
+  secondary-dark: 282728
+  transparent: rgba(155, 0, 0, 0.7)
 
 # Build settings
 markdown: kramdown

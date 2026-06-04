@@ -4,10 +4,10 @@
 - url: https://calendar.google.com/calendar/embed?src=v3ih5p16gub2a2q32t23pv4esc%40group.calendar.google.com&ctz=America/Winnipeg
   icon: calendar
   name: Calendar
-- url: https://maps.app.goo.gl/zoRgtdKpk2LH42mM9
+- url: https://maps.app.goo.gl/kAEm2NYXKiriFSy36
   icon: map-marker
-  name: 118 Talbot Lab
-- url: mailto:kdhuff@illinois.edu 
+  name: Engineering Research Building, 1500 Engineering Drive
+- url: mailto:katy.huff@wisc.edu 
   icon: envelope-o
   name: Email
 - url: http://figshare.com/authors/Kathryn_Huff/417852 
@@ -19,6 +19,9 @@
 - url: http://scholar.google.com/citations?user=rD2qRk8AAAAJ 
   icon: graduation-cap
   name: Google Scholar
+- url: https://bsky.app/profile/katyhuff.bsky.social 
+  icon: bluesky
+  name: BlueSky
 - url: https://twitter.com/katyhuff 
   icon: twitter
   name: Twitter

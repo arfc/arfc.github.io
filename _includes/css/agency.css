@@ -66,7 +66,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #E1E5E7;
 }
 
 .bg-darkest-gray {
@@ -186,14 +186,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.secondary }};
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.color.secondary }};
+    color: #{{ site.color.primary }};
 }
 
 .navbar-default .logo > img {
@@ -262,7 +262,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default  .sub-menu {
     border-color: #{{ site.color.secondary }};
-    background-color: rgba(0,21,56,0.7);
+    background-color: rgba(18,18,18,0.7);
 }
 
 
@@ -295,7 +295,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: rgba(0,21,56,0.7);;
+        background-color: rgba(18,18,18,0.7);;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -314,7 +314,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: rgba(0, 21, 56, 0.7);
+        background-color: rgba(155, 0, 0, 0.7);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
