@@ -2,8 +2,17 @@
   title: Postdoctoral Researchers
   pic: /img/positions/postdoc.png
   url: '/positions/postdoc'
-  description: 'Postdoctoral scholars are exceptional early career researchers who join the research group to pursue one or more ambitious projects suited to a future in a research-focused career. They should have received a Ph.D. in their area of research recently and may be seated in either NCSA or NPRE, depending on the topic of their work.'
+  description: 'Postdoctoral scholars are exceptional early career researchers who join the research group to pursue one or more ambitious projects suited to a future in a research-focused career. They should have received a Ph.D. in their area of research recently.'
   available:
+    - title: "Postdoctoral Research Associate"
+      url: /img/positions/you.png
+      start: Fall 2026
+      description: 'The Advanced Reactors and Fuel Cycles research group (ARFC), led by Prof. Katy Huff, seeks exceptional candidates for a Postdoctoral Research Associate position.  
+The ARFC group pursues novel insights into nuclear energy challenges through advanced computational methods and simulations at many scales. Our work involves the development and use of computational tools to advance the safety and sustainability of nuclear energy production through improved reactor designs, fuel cycle strategies, and waste management techniques. The group specializes in the development of multiscale multiphysics methods for advanced reactor modeling and simulation. The successful candidate will assist in the continuation of these research efforts, take leadership in scholarly work, contribute to mentoring undergraduate and graduate students, support research administration activities, and participate in the development of funding proposals. The postdoctoral research associate will interact and collaborate with all members of the group to identify relevant work, design research, develop  software, analyze data, and publish results.'
+      required: "PhD in nuclear engineering, physics, computer science, or similar"
+      desired: "Experience in open-source software development, high performance computing, and reproducible scientific computing; familiarity with modern tools and methods for neutronics of advanced reactor systems; familiarity with best practices in open-source scientific computing; interest in AI/ML and the use of GPU-accelerated architectures."
+      pic: /img/positions/you.png
+      start: "Fall 2026"
   closed:
     - title: "Postdoctoral Research Associate"
       url: /img/positions/2024-huff-postdoc-ad-official.pdf
@@ -43,7 +52,7 @@ The ARFC group pursues novel insights into nuclear energy challenges through adv
   title: Graduate Research Assistants
   pic: /img/positions/grad.png
   url: '/positions/grad'
-  description: 'Graduate research assistants in ARFC are PhD or masters students enrolled at UofI, typically in the NPRE department. These students can be supported to conduct research that advances a dissertation or thesis project that is in synergy with the mission of the research group as a whole.'
+  description: 'Graduate research assistants in ARFC are PhD or masters students enrolled at UW-Madison, typically in the NEEP department. These students can be supported to conduct research that advances a dissertation or thesis project that is in synergy with the mission of the research group as a whole. Graduating undergraduates considering matriculation into the UW NEEP PhD program should contact Prof. Huff to discuss options, fellowships, and research areas of interest.'
   available:
     - title: "Graduate Research Assistant - General"
       description: 'Even if funding is not available, applications from exceptional graduate applicants are welcome. ARFC would be happy to guide you in fellowship applications to support your research. Both prospective and current NPRE students are welcome to contact Prof. Huff to learn more about graduate research opportunities in the group.'
