@@ -739,3 +739,146 @@
       icon: linkedin
       name: Linkedin
 
+- name: Rhys MacMillan
+  pic: /img/people/macmillanr.png
+  dates: 2024-2026
+  role: Undergraduate Research Assistant
+  description: 'Rhys was an undergraduate researcher in ARFC at UIUC interested in understanding the global fuel cycle. After graduating, Rhys joined Constellation.'
+  social:
+    - url: mailto:rhysrm2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/RhysMacMillan
+      icon: github-alt
+      name: Github
+
+- name: Owen Strong
+  pic: /img/people/strongo.jpg
+  dates: 2024-Present
+  role: Undergraduate Research Assistant
+  description: 'Owen was an undergraduate researcher at UIUC interested in modeling and simulation of nuclear power systems.'
+  social:
+    - url: mailto:ostrong2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/osanstrong
+      icon: github-alt
+      name: Github
+
+- name: Matthew Disimone
+  pic: /img/people/disimonem.png
+  dates: 2024-2026
+  role: Undergraduate Research Assistant
+  description: 'Matthew Disimone was an undergraduate researcher in ARFC at UIUC and is interested in modeling neutron transport in advanced reactors.'
+  social:
+    - url: mailto:mdisi2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/mdisi2
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/matthew-disimone-a53734290/
+      icon: linkedin
+      name: LinkedIn
+
+- name: Bryan Park
+  pic: /img/people/parkb.png
+  dates: 2025-2026
+  role: Undergraduate Research Assistant
+  description: 'Bryan Park was an undergraduate in ARFC at UIUC who contributed to modeling and simulating nuclear systems.'
+  social:
+    - url: mailto:bryanjp4@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/bryanjp05
+      icon: github-alt
+      name: Github
+    - url: https://www.linkedin.com/in/bryan-park-11a6b32b4/
+      icon: linkedin
+      name: LinkedIn
+
+- name: Thomas Bohnert
+  pic: /img/people/bohnertt.jpg
+  dates: 2025-2026
+  role: Undergraduate Research Assistant
+  description: 'Thomas was an undergraduate researcher in ARFC at UIUC who contributed to modeling and simulating power systems in advanced reactors.'
+  social:
+    - url: mailto:@bohnert3@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/thomasbohnert
+      icon: github-alt
+      name: Github
+
+- name: Amanda Schultz
+  pic: /img/people/schultza.png
+  dates: 2025-2026
+  role: Undergraduate Research Assistant
+  description: 'Amanda was an undergraduate in MechSE and worked with ARFC at UIUC in advanced computation and nuclear power as a sustainable energy solution. '
+  social:
+    - url: mailto:@amanda36@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/amandas36
+      icon: github-alt
+      name: Github
+
+- name: Madeleine Wallman
+  pic: /img/people/wallmanm.png
+  dates: 2025-2026
+  role: Undergraduate Research Assisitant
+  description: 'Madeleine was an undergraduate researcher in ARFC at UIUC and contributed to nuclear fuel cycle simulation.'
+  social:
+    - url: mailto:@wallman2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/TokamakBagel
+      icon: github-alt
+      name: Github
+
+- name: Peter Cannon
+  pic: /img/people/cannonp.png
+  dates: 2026
+  role: Undergraduate Research Assistant
+  description: 'Peter Cannon was an undergraduate researcher in ARFC at UIUC interested in OpenMC neutron transport modeling and simulation for advanced reactors.'
+  social:
+    - url: mailto:peterac2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://github.com/PeterCannon10
+      icon: github-alt
+      name: Github
+
+- name: Liam Pohlmann
+  pic: /img/people/pohlmannl.jpg
+  dates: 2025-2026
+  role: Graduate Research Assistant
+  description: 'Liam was a graduate student in ARFC at UIUC for one year before joining the research group of PRof. Uddin.'
+  social:
+    - url: mailto:liamp2@illinois.edu
+      icon: envelope-o
+      name: Email
+    - url: https://https://github.com/LP1012
+      icon: github-alt
+      name: Github
+    - url: http://https://https://scholar.google.com/citations?hl=en&user=lbIbZsQAAAAJ
+      icon: graduation-cap
+      name: Google Scholar
+    - url: https://www.linkedin.com/in/liam-pohlmann-34b000297/
+      icon: linkedin
+      name: LinkedIn
+
+
+- name: Luke Seifert
+  pic: /img/people/seifertl.png
+  dates: 2020-2026
+  role: Graduate Research Assistant
+  description: "Luke recieved his PhD in 2026, which was focused on nuclear data issues in modeling and simulation of Molten Salt Reactor kinetics."
+  social:
+      - url: mailto:seifert5@illinois.edu
+        icon: envelope-o
+        name: email
+      - url: https://github.com/LukeSeifert
+        icon: github-alt
+        name: Github
+
