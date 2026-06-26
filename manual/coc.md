@@ -37,8 +37,8 @@ immediately.
 
 If a member engages in harassing behavior, other group members and Kathryn Huff may 
 take any action they deem appropriate to stop this behavior, including warning the offender or 
-expulsion from the group and sactioning through official University of Illinois 
-channels.
+expulsion from the group and sactioning through official University of 
+Wisconsin channels.
 
 If you are being harassed, notice that someone else is being harassed, or have 
 any other concerns, please contact Katy Huff immediately.  Katy Huff is 
@@ -47,9 +47,8 @@ navigate official University reporting channels, or otherwise assist those
 experiencing harassment to feel safe in the research environment. 
 
 If Katy is the cause of the concern or you would prefer she not be involved, 
-official concerns can be addressed by contacting the 
-[UIUC WeCare office](http://wecare.illinois.edu/), or the 
-[Campus Office of Diversity, Equity and Access](http://www.diversity.illinois.edu/).
+official concerns can be addressed by leveraging the [Student Affairs 
+Office](https://students.wisc.edu/).
 
 We expect research group members to follow these rules in all professional 
 settings including the office, conferences, workshop venues, and group-related 
