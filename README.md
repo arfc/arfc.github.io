@@ -14,11 +14,8 @@ Clone the repo:
 Make your way to the top level of the source branch:
 `cd arfc.github.io && git checkout source`
 
-Install the gems:
-`bundle install`
-
-Build and serve the site locally:
-`bundle exec jekyll serve`
+Install the gems, build, and serve the site locally:
+`bash ./build.sh`
 
 The terminal will report that your website is being served at localhost:4000. 
 Navigate your browser there and you should see the webpage.
